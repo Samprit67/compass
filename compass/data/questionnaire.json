@@ -1,0 +1,313 @@
+{
+  "title": "O*NET Interest Profiler, Short Form",
+  "source": "U.S. Department of Labor / National Center for O*NET Development (CC BY 4.0). 60-item Short Form, paper-and-pencil item set; web-version 5-point response scale.",
+  "response_labels": [
+    "Strongly dislike",
+    "Dislike",
+    "Not sure",
+    "Like",
+    "Strongly like"
+  ],
+  "questions": [
+    {
+      "id": "r1",
+      "text": "Build kitchen cabinets",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i1",
+      "text": "Develop a new medicine",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a1",
+      "text": "Write books or plays",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s1",
+      "text": "Teach an individual an exercise routine",
+      "dimension": "social"
+    },
+    {
+      "id": "e1",
+      "text": "Buy and sell stocks and bonds",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c1",
+      "text": "Develop a spreadsheet using computer software",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r2",
+      "text": "Lay brick or tile",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i2",
+      "text": "Study ways to reduce water pollution",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a2",
+      "text": "Play a musical instrument",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s2",
+      "text": "Help people with personal or emotional problems",
+      "dimension": "social"
+    },
+    {
+      "id": "e2",
+      "text": "Manage a retail store",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c2",
+      "text": "Proofread records or forms",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r3",
+      "text": "Repair household appliances",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i3",
+      "text": "Conduct chemical experiments",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a3",
+      "text": "Compose or arrange music",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s3",
+      "text": "Give career guidance to people",
+      "dimension": "social"
+    },
+    {
+      "id": "e3",
+      "text": "Operate a beauty salon or barber shop",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c3",
+      "text": "Install software across computers on a large network",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r4",
+      "text": "Raise fish in a fish hatchery",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i4",
+      "text": "Study the movement of planets",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a4",
+      "text": "Draw pictures",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s4",
+      "text": "Perform rehabilitation therapy",
+      "dimension": "social"
+    },
+    {
+      "id": "e4",
+      "text": "Manage a department within a large company",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c4",
+      "text": "Operate a calculator",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r5",
+      "text": "Assemble electronic parts",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i5",
+      "text": "Examine blood samples using a microscope",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a5",
+      "text": "Create special effects for movies",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s5",
+      "text": "Do volunteer work at a non-profit organization",
+      "dimension": "social"
+    },
+    {
+      "id": "e5",
+      "text": "Start your own business",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c5",
+      "text": "Keep shipping and receiving records",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r6",
+      "text": "Drive a truck to deliver packages to offices and homes",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i6",
+      "text": "Investigate the cause of a fire",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a6",
+      "text": "Paint sets for plays",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s6",
+      "text": "Teach children how to play sports",
+      "dimension": "social"
+    },
+    {
+      "id": "e6",
+      "text": "Negotiate business contracts",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c6",
+      "text": "Calculate the wages of employees",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r7",
+      "text": "Test the quality of parts before shipment",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i7",
+      "text": "Develop a way to better predict the weather",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a7",
+      "text": "Write scripts for movies or television shows",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s7",
+      "text": "Teach sign language to people who are deaf or hard of hearing",
+      "dimension": "social"
+    },
+    {
+      "id": "e7",
+      "text": "Represent a client in a lawsuit",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c7",
+      "text": "Inventory supplies using a hand-held computer",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r8",
+      "text": "Repair and install locks",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i8",
+      "text": "Work in a biology lab",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a8",
+      "text": "Perform jazz or tap dance",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s8",
+      "text": "Help conduct a group therapy session",
+      "dimension": "social"
+    },
+    {
+      "id": "e8",
+      "text": "Market a new line of clothing",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c8",
+      "text": "Record rent payments",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r9",
+      "text": "Set up and operate machines to make products",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i9",
+      "text": "Invent a replacement for sugar",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a9",
+      "text": "Sing in a band",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s9",
+      "text": "Take care of children at a day-care center",
+      "dimension": "social"
+    },
+    {
+      "id": "e9",
+      "text": "Sell merchandise at a department store",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c9",
+      "text": "Keep inventory records",
+      "dimension": "conventional"
+    },
+    {
+      "id": "r10",
+      "text": "Put out forest fires",
+      "dimension": "realistic"
+    },
+    {
+      "id": "i10",
+      "text": "Do laboratory tests to identify diseases",
+      "dimension": "investigative"
+    },
+    {
+      "id": "a10",
+      "text": "Edit movies",
+      "dimension": "artistic"
+    },
+    {
+      "id": "s10",
+      "text": "Teach a high-school class",
+      "dimension": "social"
+    },
+    {
+      "id": "e10",
+      "text": "Manage a clothing store",
+      "dimension": "enterprising"
+    },
+    {
+      "id": "c10",
+      "text": "Stamp, sort, and distribute mail for an organization",
+      "dimension": "conventional"
+    }
+  ]
+}
