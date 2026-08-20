@@ -1,0 +1,587 @@
+# Curated list of common US undergraduate majors, each mapped to one or more
+# 2020 CIP codes. The refresh script (compass/data/refresh.py) joins these to
+# O*NET occupations through the NCES CIP-to-SOC crosswalk and builds an interest
+# profile for each major.
+#
+# This list is deliberately not exhaustive: the ~2,100 six-digit CIP codes
+# include things like "Czech Language and Literature" and "Poultry Veterinary
+# Residency". The goal here is the set of majors an 18-year-old actually chooses
+# between. Add one by giving it a slug, a name, a category, a one-line blurb, and
+# the CIP code(s) whose occupations describe the field.
+
+majors:
+  - slug: computer-science
+    name: Computer Science
+    category: Computing & Data
+    blurb: "Algorithms, systems, and the theory behind how software works."
+    cip: ["11.0701", "11.0101"]
+  - slug: software-engineering
+    name: Software Engineering
+    category: Computing & Data
+    blurb: "Building and maintaining large software systems as an engineering discipline."
+    cip: ["14.0903", "11.0701"]
+  - slug: data-science
+    name: Data Science
+    category: Computing & Data
+    blurb: "Turning data into models and decisions with statistics and code."
+    cip: ["30.7001", "27.0501"]
+  - slug: information-technology
+    name: Information Technology
+    category: Computing & Data
+    blurb: "Running the networks, systems, and infrastructure organizations depend on."
+    cip: ["11.0103", "11.1001"]
+  - slug: cybersecurity
+    name: Cybersecurity
+    category: Computing & Data
+    blurb: "Defending systems and networks against attackers."
+    cip: ["11.1003", "43.0404"]
+  - slug: informatics
+    name: Informatics
+    category: Computing & Data
+    blurb: "How people, information, and technology fit together."
+    cip: ["11.0104"]
+  - slug: computer-engineering
+    name: Computer Engineering
+    category: Engineering
+    blurb: "Where hardware meets software: chips, embedded systems, and architecture."
+    cip: ["14.0901", "14.4701"]
+  - slug: electrical-engineering
+    name: Electrical Engineering
+    category: Engineering
+    blurb: "Circuits, signals, power, and electronics."
+    cip: ["14.1001"]
+  - slug: mechanical-engineering
+    name: Mechanical Engineering
+    category: Engineering
+    blurb: "Machines, mechanisms, energy, and how physical things are made to move."
+    cip: ["14.1901"]
+  - slug: civil-engineering
+    name: Civil Engineering
+    category: Engineering
+    blurb: "Roads, bridges, water systems, and the built environment."
+    cip: ["14.0801"]
+  - slug: chemical-engineering
+    name: Chemical Engineering
+    category: Engineering
+    blurb: "Designing processes that turn raw materials into products at scale."
+    cip: ["14.0701"]
+  - slug: aerospace-engineering
+    name: Aerospace Engineering
+    category: Engineering
+    blurb: "Aircraft, spacecraft, propulsion, and flight."
+    cip: ["14.0201"]
+  - slug: biomedical-engineering
+    name: Biomedical Engineering
+    category: Engineering
+    blurb: "Applying engineering to medicine: devices, imaging, prosthetics, tissue."
+    cip: ["14.0501"]
+  - slug: industrial-engineering
+    name: Industrial Engineering
+    category: Engineering
+    blurb: "Making systems of people, machines, and materials run efficiently."
+    cip: ["14.3501"]
+  - slug: materials-engineering
+    name: Materials Science & Engineering
+    category: Engineering
+    blurb: "Why materials behave the way they do, and designing better ones."
+    cip: ["14.1801", "40.1001"]
+  - slug: environmental-engineering
+    name: Environmental Engineering
+    category: Engineering
+    blurb: "Engineering for clean water, clean air, and waste."
+    cip: ["14.1401"]
+  - slug: robotics-engineering
+    name: Robotics Engineering
+    category: Engineering
+    blurb: "Mechatronics, control, and autonomous machines."
+    cip: ["14.4201", "14.4101"]
+  - slug: engineering-general
+    name: General Engineering
+    category: Engineering
+    blurb: "A broad engineering foundation before specializing."
+    cip: ["14.0101", "14.1301"]
+  - slug: mathematics
+    name: Mathematics
+    category: Physical Sciences
+    blurb: "Proof, structure, and abstraction, pure and applied."
+    cip: ["27.0101", "27.0301"]
+  - slug: statistics
+    name: Statistics
+    category: Physical Sciences
+    blurb: "Reasoning about uncertainty and drawing conclusions from data."
+    cip: ["27.0501"]
+  - slug: physics
+    name: Physics
+    category: Physical Sciences
+    blurb: "The fundamental laws governing matter, energy, space, and time."
+    cip: ["40.0801"]
+  - slug: chemistry
+    name: Chemistry
+    category: Physical Sciences
+    blurb: "Matter at the level of atoms and molecules, and the reactions between them."
+    cip: ["40.0501"]
+  - slug: astronomy
+    name: Astronomy & Astrophysics
+    category: Physical Sciences
+    blurb: "Stars, galaxies, cosmology, and the physics of the universe."
+    cip: ["40.0201", "40.0202"]
+  - slug: geology
+    name: Geology & Earth Science
+    category: Physical Sciences
+    blurb: "The Earth's materials, structure, and history."
+    cip: ["40.0601"]
+  - slug: atmospheric-science
+    name: Atmospheric Science & Meteorology
+    category: Physical Sciences
+    blurb: "Weather, climate, and the physics of the atmosphere."
+    cip: ["40.0404"]
+  - slug: oceanography
+    name: Oceanography
+    category: Physical Sciences
+    blurb: "The physics, chemistry, and biology of the oceans."
+    cip: ["40.0607", "26.1302"]
+  - slug: biology
+    name: Biology
+    category: Life Sciences
+    blurb: "Living systems from molecules to ecosystems."
+    cip: ["26.0101"]
+  - slug: biochemistry
+    name: Biochemistry & Molecular Biology
+    category: Life Sciences
+    blurb: "The chemistry of life: proteins, DNA, metabolism, and cell machinery."
+    cip: ["26.0202", "26.0204"]
+  - slug: neuroscience
+    name: Neuroscience
+    category: Life Sciences
+    blurb: "How the brain and nervous system produce behavior and cognition."
+    cip: ["26.1501"]
+  - slug: microbiology
+    name: Microbiology
+    category: Life Sciences
+    blurb: "Bacteria, viruses, and other microbes, and their role in health and disease."
+    cip: ["26.0502"]
+  - slug: genetics
+    name: Genetics
+    category: Life Sciences
+    blurb: "Heredity, genomes, and how genes shape organisms."
+    cip: ["26.0801"]
+  - slug: ecology
+    name: Ecology & Evolutionary Biology
+    category: Life Sciences
+    blurb: "How organisms interact with each other and their environment over time."
+    cip: ["26.1301", "26.1310"]
+  - slug: marine-biology
+    name: Marine Biology
+    category: Life Sciences
+    blurb: "Life in the oceans, from plankton to whales."
+    cip: ["26.1302"]
+  - slug: zoology
+    name: Zoology
+    category: Life Sciences
+    blurb: "Animal biology, behavior, and physiology."
+    cip: ["26.0701"]
+  - slug: nursing
+    name: Nursing
+    category: Health & Medicine
+    blurb: "Direct patient care, assessment, and coordination across a care team."
+    cip: ["51.3801"]
+  - slug: public-health
+    name: Public Health
+    category: Health & Medicine
+    blurb: "Preventing disease and improving health at the population level."
+    cip: ["51.2201"]
+  - slug: kinesiology
+    name: Kinesiology & Exercise Science
+    category: Health & Medicine
+    blurb: "How the body moves, and how training and rehab change it."
+    cip: ["31.0505"]
+    extra_soc: ["29-1128", "29-1123", "29-9091", "25-1071"]
+  - slug: nutrition
+    name: Nutrition & Dietetics
+    category: Health & Medicine
+    blurb: "Food, metabolism, and how diet affects health."
+    cip: ["30.1901", "51.3101"]
+  - slug: athletic-training
+    name: Athletic Training
+    category: Health & Medicine
+    blurb: "Preventing, assessing, and rehabilitating athletic injuries."
+    cip: ["51.0913"]
+  - slug: health-administration
+    name: Health Administration
+    category: Health & Medicine
+    blurb: "Running hospitals, clinics, and health systems."
+    cip: ["51.0701"]
+    extra_soc: ["11-9111", "13-1111", "29-2072"]
+  - slug: communication-sciences-disorders
+    name: Communication Sciences & Disorders
+    category: Health & Medicine
+    blurb: "Speech, language, and hearing, and the disorders that affect them."
+    cip: ["51.0201"]
+  - slug: medical-laboratory-science
+    name: Medical Laboratory Science
+    category: Health & Medicine
+    blurb: "The lab testing that diagnoses disease."
+    cip: ["51.1005"]
+  - slug: pre-med
+    name: Pre-Medicine
+    category: Health & Medicine
+    blurb: "A science track aimed at medical, dental, or veterinary school."
+    cip: ["26.0102"]
+  - slug: economics
+    name: Economics
+    category: Social Sciences
+    blurb: "How people, firms, and governments allocate scarce resources."
+    cip: ["45.0601"]
+  - slug: political-science
+    name: Political Science
+    category: Social Sciences
+    blurb: "Government, power, institutions, and political behavior."
+    cip: ["45.1001"]
+  - slug: sociology
+    name: Sociology
+    category: Social Sciences
+    blurb: "How groups, institutions, and social structures shape behavior."
+    cip: ["45.1101"]
+  - slug: anthropology
+    name: Anthropology
+    category: Social Sciences
+    blurb: "Human cultures, past and present, and what makes us human."
+    cip: ["45.0201"]
+  - slug: geography
+    name: Geography
+    category: Social Sciences
+    blurb: "Places, spatial patterns, and the relationship between people and land."
+    cip: ["45.0701"]
+  - slug: international-relations
+    name: International Relations
+    category: Social Sciences
+    blurb: "Diplomacy, conflict, trade, and how countries deal with each other."
+    cip: ["45.0901"]
+  - slug: urban-studies
+    name: Urban Studies & Planning
+    category: Social Sciences
+    blurb: "How cities work, and how to make them work better."
+    cip: ["45.1201", "04.0301"]
+  - slug: criminology
+    name: Criminology & Criminal Justice
+    category: Social Sciences
+    blurb: "Crime, the justice system, and how society responds to both."
+    cip: ["43.0104", "45.0401"]
+  - slug: psychology
+    name: Psychology
+    category: Psychology & Behavior
+    blurb: "The science of mind and behavior."
+    cip: ["42.0101"]
+  - slug: cognitive-science
+    name: Cognitive Science
+    category: Psychology & Behavior
+    blurb: "Mind and intelligence across psychology, neuroscience, linguistics, and AI."
+    cip: ["30.2501"]
+    extra_soc: ["15-1221", "19-3033", "25-1066"]
+  - slug: human-development
+    name: Human Development & Family Studies
+    category: Psychology & Behavior
+    blurb: "How people grow and change across the lifespan, in families and communities."
+    cip: ["19.0701"]
+    extra_soc: ["25-1192", "21-1021", "21-1012"]
+  - slug: english
+    name: English
+    category: Humanities
+    blurb: "Literature, criticism, and writing."
+    cip: ["23.0101"]
+    extra_soc: ["25-1123", "27-3043", "27-3041", "27-3042"]
+  - slug: creative-writing
+    name: Creative Writing
+    category: Humanities
+    blurb: "The craft of fiction, poetry, and nonfiction."
+    cip: ["23.1302"]
+  - slug: history
+    name: History
+    category: Humanities
+    blurb: "The human past, and how we reconstruct and argue about it."
+    cip: ["54.0101"]
+  - slug: philosophy
+    name: Philosophy
+    category: Humanities
+    blurb: "Argument about knowledge, ethics, mind, and reality."
+    cip: ["38.0101"]
+    extra_soc: ["25-1126", "27-3043", "23-1011"]
+  - slug: religious-studies
+    name: Religious Studies
+    category: Humanities
+    blurb: "Religious traditions, texts, and practices, studied academically."
+    cip: ["38.0201"]
+    extra_soc: ["25-1126", "21-2011", "27-3043"]
+  - slug: classics
+    name: Classics
+    category: Humanities
+    blurb: "The languages, literature, and history of ancient Greece and Rome."
+    cip: ["16.1200"]
+  - slug: linguistics
+    name: Linguistics
+    category: Humanities
+    blurb: "The structure of language: sound, meaning, grammar, and change."
+    cip: ["16.0102"]
+    extra_soc: ["16-1020", "25-1113", "27-3091"]
+  - slug: american-studies
+    name: American Studies
+    category: Humanities
+    blurb: "US culture, history, and society across disciplines."
+    cip: ["05.0102"]
+    extra_soc: ["25-1062", "25-1125", "27-3043"]
+  - slug: gender-studies
+    name: Gender & Women's Studies
+    category: Humanities
+    blurb: "Gender and sexuality as they shape culture, politics, and everyday life."
+    cip: ["05.0207"]
+    extra_soc: ["25-1062", "19-3041", "27-3043"]
+  - slug: africana-studies
+    name: Africana / Black Studies
+    category: Humanities
+    blurb: "The history, culture, and politics of African and African-descended peoples."
+    cip: ["05.0201"]
+    extra_soc: ["25-1062", "25-1125", "19-3041"]
+  - slug: liberal-arts
+    name: Liberal Arts / Interdisciplinary Studies
+    category: Humanities
+    blurb: "A broad, self-directed path across the arts and sciences."
+    cip: ["24.0101"]
+    extra_soc: ["27-3043", "13-1111", "25-1062", "25-3021"]
+  - slug: studio-art
+    name: Studio Art
+    category: Arts & Design
+    blurb: "Making art: painting, sculpture, drawing, printmaking."
+    cip: ["50.0702"]
+  - slug: graphic-design
+    name: Graphic Design
+    category: Arts & Design
+    blurb: "Visual communication: type, layout, identity, and interface."
+    cip: ["50.0409"]
+  - slug: industrial-design
+    name: Industrial & Product Design
+    category: Arts & Design
+    blurb: "Designing physical products for how people actually use them."
+    cip: ["50.0404", "04.0501"]
+  - slug: interior-design
+    name: Interior Design
+    category: Arts & Design
+    blurb: "Shaping interior spaces for function, safety, and feel."
+    cip: ["50.0408"]
+  - slug: architecture
+    name: Architecture
+    category: Arts & Design
+    blurb: "Designing buildings and the spaces between them."
+    cip: ["04.0201"]
+  - slug: film
+    name: Film & Media Production
+    category: Arts & Design
+    blurb: "Making films and video: directing, shooting, editing, producing."
+    cip: ["50.0602", "50.0601"]
+  - slug: animation
+    name: Animation & Game Art
+    category: Arts & Design
+    blurb: "Animation, visual effects, and interactive media art."
+    cip: ["50.0411", "10.0304"]
+    extra_soc: ["27-1014", "27-1024", "27-2012"]
+  - slug: music
+    name: Music
+    category: Arts & Design
+    blurb: "Performance, composition, and the study of music."
+    cip: ["50.0901", "50.0903"]
+  - slug: theatre
+    name: Theatre & Drama
+    category: Arts & Design
+    blurb: "Acting, directing, design, and dramatic literature."
+    cip: ["50.0501"]
+  - slug: dance
+    name: Dance
+    category: Arts & Design
+    blurb: "Performance, choreography, and the study of dance."
+    cip: ["50.0301"]
+  - slug: photography
+    name: Photography
+    category: Arts & Design
+    blurb: "The technical and artistic craft of the photographic image."
+    cip: ["50.0605"]
+  - slug: fashion-design
+    name: Fashion & Apparel Design
+    category: Arts & Design
+    blurb: "Designing garments, from concept to construction."
+    cip: ["19.0901", "50.0407"]
+  - slug: communication
+    name: Communication
+    category: Media & Communication
+    blurb: "How messages move through people, organizations, and media."
+    cip: ["09.0100"]
+  - slug: journalism
+    name: Journalism
+    category: Media & Communication
+    blurb: "Reporting, writing, and producing the news."
+    cip: ["09.0401"]
+  - slug: public-relations
+    name: Public Relations & Advertising
+    category: Media & Communication
+    blurb: "Shaping how organizations are seen, and moving audiences to act."
+    cip: ["09.0902", "09.0903"]
+  - slug: digital-media
+    name: Digital & Multimedia
+    category: Media & Communication
+    blurb: "Web, social, video, and interactive content."
+    cip: ["09.0702", "11.0801"]
+  - slug: business-administration
+    name: Business Administration
+    category: Business
+    blurb: "A general foundation in management, operations, and strategy."
+    cip: ["52.0201"]
+  - slug: accounting
+    name: Accounting
+    category: Business
+    blurb: "Measuring, reporting, and auditing the financial position of an organization."
+    cip: ["52.0301"]
+  - slug: finance
+    name: Finance
+    category: Business
+    blurb: "Investment, valuation, capital markets, and corporate financial decisions."
+    cip: ["52.0801"]
+  - slug: marketing
+    name: Marketing
+    category: Business
+    blurb: "Understanding customers and bringing products to them."
+    cip: ["52.1401"]
+  - slug: management-information-systems
+    name: Management Information Systems
+    category: Business
+    blurb: "The business side of technology: systems, data, and process."
+    cip: ["52.1201"]
+  - slug: entrepreneurship
+    name: Entrepreneurship
+    category: Business
+    blurb: "Starting and growing new ventures."
+    cip: ["52.0701"]
+  - slug: supply-chain
+    name: Supply Chain & Operations
+    category: Business
+    blurb: "Getting products made and moved: logistics, sourcing, and operations."
+    cip: ["52.0203", "52.0205"]
+  - slug: human-resources
+    name: Human Resources
+    category: Business
+    blurb: "Hiring, developing, and supporting the people in an organization."
+    cip: ["52.1001"]
+  - slug: hospitality-management
+    name: Hospitality & Tourism Management
+    category: Business
+    blurb: "Running hotels, restaurants, events, and travel businesses."
+    cip: ["52.0901"]
+  - slug: actuarial-science
+    name: Actuarial Science
+    category: Business
+    blurb: "Pricing risk with probability and statistics, mostly for insurance and pensions."
+    cip: ["52.1304"]
+  - slug: real-estate
+    name: Real Estate
+    category: Business
+    blurb: "Property markets, development, valuation, and investment."
+    cip: ["52.1501"]
+  - slug: elementary-education
+    name: Elementary Education
+    category: Education
+    blurb: "Teaching across subjects in the early grades."
+    cip: ["13.1202"]
+  - slug: secondary-education
+    name: Secondary Education
+    category: Education
+    blurb: "Teaching a subject at the middle- and high-school level."
+    cip: ["13.1205"]
+  - slug: special-education
+    name: Special Education
+    category: Education
+    blurb: "Teaching students with disabilities and designing individualized support."
+    cip: ["13.1001"]
+  - slug: early-childhood-education
+    name: Early Childhood Education
+    category: Education
+    blurb: "Teaching and caring for children from birth through the early grades."
+    cip: ["13.1210"]
+  - slug: social-work
+    name: Social Work
+    category: Public & Social Service
+    blurb: "Helping individuals and families navigate hardship and systems."
+    cip: ["44.0701"]
+  - slug: public-administration
+    name: Public Administration
+    category: Public & Social Service
+    blurb: "Managing government agencies and public programs."
+    cip: ["44.0401"]
+  - slug: public-policy
+    name: Public Policy
+    category: Public & Social Service
+    blurb: "Analyzing and designing the policies governments adopt."
+    cip: ["44.0501"]
+  - slug: environmental-science
+    name: Environmental Science
+    category: Environment & Agriculture
+    blurb: "The science of ecosystems, pollution, and environmental change."
+    cip: ["03.0104"]
+  - slug: environmental-studies
+    name: Environmental Studies
+    category: Environment & Agriculture
+    blurb: "Environmental problems through policy, economics, and the social sciences."
+    cip: ["03.0103"]
+  - slug: sustainability
+    name: Sustainability
+    category: Environment & Agriculture
+    blurb: "Balancing human needs with the limits of natural systems."
+    cip: ["03.0201", "30.3301"]
+  - slug: forestry
+    name: Forestry & Natural Resources
+    category: Environment & Agriculture
+    blurb: "Managing forests, rangelands, and wild lands."
+    cip: ["03.0501", "03.0101"]
+  - slug: wildlife-biology
+    name: Wildlife & Fisheries
+    category: Environment & Agriculture
+    blurb: "Managing and conserving wild animal populations and their habitats."
+    cip: ["03.0601"]
+  - slug: agricultural-science
+    name: Agricultural Science
+    category: Environment & Agriculture
+    blurb: "The science and business of growing food and fiber."
+    cip: ["01.0000", "01.1101"]
+  - slug: animal-science
+    name: Animal Science
+    category: Environment & Agriculture
+    blurb: "The biology, care, and production of domestic animals."
+    cip: ["01.0901"]
+  - slug: food-science
+    name: Food Science
+    category: Environment & Agriculture
+    blurb: "The chemistry, safety, and engineering of the food supply."
+    cip: ["01.1001"]
+  - slug: sport-management
+    name: Sport Management
+    category: Business
+    blurb: "The business of athletics: teams, venues, events, and media."
+    cip: ["31.0504"]
+  - slug: recreation
+    name: Parks, Recreation & Leisure
+    category: Public & Social Service
+    blurb: "Programming and managing parks, recreation, and the outdoors."
+    cip: ["31.0101"]
+    extra_soc: ["25-1193", "39-9032", "27-2022"]
+  - slug: aviation
+    name: Aviation / Professional Flight
+    category: Engineering
+    blurb: "Flying aircraft professionally, and the systems around it."
+    cip: ["49.0102"]
+  - slug: construction-management
+    name: Construction Management
+    category: Engineering
+    blurb: "Planning, budgeting, and running building projects."
+    cip: ["52.2001", "15.1001"]
+  - slug: world-languages
+    name: World Languages & Cultures
+    category: Languages
+    blurb: "A modern language (Spanish, French, Mandarin, ...) plus the literature and culture behind it."
+    cip: ["16.0905", "16.0901", "16.0301", "16.0302", "16.0104"]
+    extra_soc: ["25-1124", "27-3091"]

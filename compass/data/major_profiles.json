@@ -1,0 +1,4830 @@
+{
+  "meta": {
+    "onet_version": "31.0",
+    "generated": "2026-09-01",
+    "n_majors": 112,
+    "riasec_order": [
+      "realistic",
+      "investigative",
+      "artistic",
+      "social",
+      "enterprising",
+      "conventional"
+    ],
+    "riasec_scale": "O*NET Occupational Interests, 1 to 7",
+    "sources": [
+      "O*NET Database 31.0, U.S. Department of Labor (CC BY 4.0)",
+      "CIP 2020 to SOC 2018 Crosswalk, NCES (public domain)"
+    ]
+  },
+  "majors": [
+    {
+      "slug": "animation",
+      "name": "Animation & Game Art",
+      "category": "Arts & Design",
+      "blurb": "Animation, visual effects, and interactive media art.",
+      "cip_codes": [
+        "50.0411",
+        "10.0304"
+      ],
+      "riasec": [
+        3.073,
+        2.623,
+        6.713,
+        2.487,
+        3.943,
+        3.537
+      ],
+      "example_careers": [
+        "Special Effects Artists and Animators",
+        "Graphic Designers",
+        "Producers and Directors"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Communications and Media",
+        "Computers and Electronics",
+        "English Language",
+        "Design",
+        "Customer and Personal Service",
+        "Fine Arts"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Speaking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "architecture",
+      "name": "Architecture",
+      "category": "Arts & Design",
+      "blurb": "Designing buildings and the spaces between them.",
+      "cip_codes": [
+        "04.0201"
+      ],
+      "riasec": [
+        3.78,
+        4.523,
+        3.75,
+        4.083,
+        4.17,
+        4.023
+      ],
+      "example_careers": [
+        "Architects, Except Landscape and Naval",
+        "Architectural and Engineering Managers",
+        "Architecture Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "Design",
+        "English Language",
+        "Building and Construction",
+        "Engineering and Technology",
+        "Computers and Electronics",
+        "Public Safety and Security"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Critical Thinking",
+        "Active Listening",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "dance",
+      "name": "Dance",
+      "category": "Arts & Design",
+      "blurb": "Performance, choreography, and the study of dance.",
+      "cip_codes": [
+        "50.0301"
+      ],
+      "riasec": [
+        3.83,
+        2.597,
+        6.373,
+        4.867,
+        3.023,
+        2.117
+      ],
+      "example_careers": [
+        "Dancers",
+        "Choreographers",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 3.67,
+      "top_knowledge": [
+        "Fine Arts",
+        "English Language",
+        "Education and Training",
+        "Communications and Media",
+        "Psychology",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Monitoring",
+        "Reading Comprehension",
+        "Learning Strategies",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "fashion-design",
+      "name": "Fashion & Apparel Design",
+      "category": "Arts & Design",
+      "blurb": "Designing garments, from concept to construction.",
+      "cip_codes": [
+        "19.0901",
+        "50.0407"
+      ],
+      "riasec": [
+        3.565,
+        3.86,
+        4.63,
+        5.293,
+        3.09,
+        3.025
+      ],
+      "example_careers": [
+        "Farm and Home Management Educators",
+        "Fashion Designers",
+        "Art, Drama, and Music Teachers, Postsecondary",
+        "Family and Consumer Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Administration and Management",
+        "Communications and Media"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Active Learning",
+        "Critical Thinking",
+        "Learning Strategies"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "film",
+      "name": "Film & Media Production",
+      "category": "Arts & Design",
+      "blurb": "Making films and video: directing, shooting, editing, producing.",
+      "cip_codes": [
+        "50.0602",
+        "50.0601"
+      ],
+      "riasec": [
+        3.297,
+        2.572,
+        5.63,
+        3.468,
+        3.315,
+        3.393
+      ],
+      "example_careers": [
+        "Producers and Directors",
+        "Camera Operators, Television, Video, and Film",
+        "Film and Video Editors",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Computers and Electronics",
+        "Telecommunications",
+        "Fine Arts",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "graphic-design",
+      "name": "Graphic Design",
+      "category": "Arts & Design",
+      "blurb": "Visual communication: type, layout, identity, and interface.",
+      "cip_codes": [
+        "50.0409"
+      ],
+      "riasec": [
+        3.132,
+        3.468,
+        6.242,
+        3.282,
+        3.308,
+        3.532
+      ],
+      "example_careers": [
+        "Web and Digital Interface Designers",
+        "Art Directors",
+        "Special Effects Artists and Animators",
+        "Graphic Designers",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 4.2,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Design",
+        "Communications and Media",
+        "Fine Arts",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Reading Comprehension",
+        "Speaking",
+        "Critical Thinking",
+        "Active Learning",
+        "Writing"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "industrial-design",
+      "name": "Industrial & Product Design",
+      "category": "Arts & Design",
+      "blurb": "Designing physical products for how people actually use them.",
+      "cip_codes": [
+        "50.0404",
+        "04.0501"
+      ],
+      "riasec": [
+        3.595,
+        3.97,
+        5.158,
+        3.898,
+        3.635,
+        3.575
+      ],
+      "example_careers": [
+        "Commercial and Industrial Designers",
+        "Graphic Designers",
+        "Interior Designers",
+        "Architectural and Engineering Managers",
+        "Architecture Teachers, Postsecondary",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Design",
+        "English Language",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Fine Arts",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "interior-design",
+      "name": "Interior Design",
+      "category": "Arts & Design",
+      "blurb": "Shaping interior spaces for function, safety, and feel.",
+      "cip_codes": [
+        "50.0408"
+      ],
+      "riasec": [
+        3.775,
+        4.1,
+        5.02,
+        4.725,
+        3.08,
+        3.51
+      ],
+      "example_careers": [
+        "Interior Designers",
+        "Architecture Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Design",
+        "Building and Construction",
+        "English Language",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Public Safety and Security"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "music",
+      "name": "Music",
+      "category": "Arts & Design",
+      "blurb": "Performance, composition, and the study of music.",
+      "cip_codes": [
+        "50.0901",
+        "50.0903"
+      ],
+      "riasec": [
+        2.675,
+        2.785,
+        5.79,
+        5.11,
+        3.315,
+        2.755
+      ],
+      "example_careers": [
+        "Music Directors and Composers",
+        "Musicians and Singers",
+        "Art, Drama, and Music Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "Fine Arts",
+        "Education and Training",
+        "English Language",
+        "Customer and Personal Service",
+        "Computers and Electronics",
+        "Communications and Media"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Monitoring",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "photography",
+      "name": "Photography",
+      "category": "Arts & Design",
+      "blurb": "The technical and artistic craft of the photographic image.",
+      "cip_codes": [
+        "50.0605"
+      ],
+      "riasec": [
+        4.285,
+        3.16,
+        5.505,
+        4.465,
+        2.2,
+        2.98
+      ],
+      "example_careers": [
+        "Photographers",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Fine Arts",
+        "English Language",
+        "Customer and Personal Service",
+        "Education and Training",
+        "Computers and Electronics",
+        "Communications and Media"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Active Learning",
+        "Reading Comprehension",
+        "Learning Strategies",
+        "Monitoring"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "studio-art",
+      "name": "Studio Art",
+      "category": "Arts & Design",
+      "blurb": "Making art: painting, sculpture, drawing, printmaking.",
+      "cip_codes": [
+        "50.0702"
+      ],
+      "riasec": [
+        3.54,
+        3.41,
+        6.365,
+        4.635,
+        2.245,
+        2.475
+      ],
+      "example_careers": [
+        "Fine Artists, Including Painters, Sculptors, and Illustrators",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Fine Arts",
+        "English Language",
+        "Education and Training",
+        "Computers and Electronics",
+        "Design",
+        "Communications and Media"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Learning",
+        "Active Listening",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Writing"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "theatre",
+      "name": "Theatre & Drama",
+      "category": "Arts & Design",
+      "blurb": "Acting, directing, design, and dramatic literature.",
+      "cip_codes": [
+        "50.0501"
+      ],
+      "riasec": [
+        2.58,
+        3.19,
+        5.935,
+        5.055,
+        3.95,
+        3.085
+      ],
+      "example_careers": [
+        "Producers and Directors",
+        "Art, Drama, and Music Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Communications and Media",
+        "English Language",
+        "Fine Arts",
+        "Education and Training",
+        "Computers and Electronics",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Monitoring",
+        "Writing",
+        "Critical Thinking"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "accounting",
+      "name": "Accounting",
+      "category": "Business",
+      "blurb": "Measuring, reporting, and auditing the financial position of an organization.",
+      "cip_codes": [
+        "52.0301"
+      ],
+      "riasec": [
+        1.68,
+        3.546,
+        1.473,
+        2.81,
+        4.347,
+        6.224
+      ],
+      "example_careers": [
+        "Accountants and Auditors",
+        "Appraisers of Personal and Business Property",
+        "Budget Analysts",
+        "Credit Analysts",
+        "Financial Risk Specialists",
+        "Financial Examiners",
+        "Tax Examiners and Collectors, and Revenue Agents",
+        "Tax Preparers"
+      ],
+      "job_zone": 3.89,
+      "top_knowledge": [
+        "English Language",
+        "Economics and Accounting",
+        "Mathematics",
+        "Customer and Personal Service",
+        "Law and Government",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 9,
+      "thin": false
+    },
+    {
+      "slug": "actuarial-science",
+      "name": "Actuarial Science",
+      "category": "Business",
+      "blurb": "Pricing risk with probability and statistics, mostly for insurance and pensions.",
+      "cip_codes": [
+        "52.1304"
+      ],
+      "riasec": [
+        1.792,
+        4.475,
+        1.66,
+        3.56,
+        4.145,
+        5.395
+      ],
+      "example_careers": [
+        "Insurance Underwriters",
+        "Financial Risk Specialists",
+        "Actuaries",
+        "Business Teachers, Postsecondary"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "Mathematics",
+        "English Language",
+        "Economics and Accounting",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "business-administration",
+      "name": "Business Administration",
+      "category": "Business",
+      "blurb": "A general foundation in management, operations, and strategy.",
+      "cip_codes": [
+        "52.0201"
+      ],
+      "riasec": [
+        2.526,
+        2.503,
+        1.591,
+        3.447,
+        6.427,
+        5.291
+      ],
+      "example_careers": [
+        "Chief Executives",
+        "Entertainment and Recreation Managers, Except Gambling",
+        "General and Operations Managers",
+        "Sales Managers",
+        "Administrative Services Managers",
+        "Facilities Managers",
+        "Industrial Production Managers",
+        "Transportation, Storage, and Distribution Managers"
+      ],
+      "job_zone": 3.92,
+      "top_knowledge": [
+        "Administration and Management",
+        "Customer and Personal Service",
+        "English Language",
+        "Personnel and Human Resources",
+        "Education and Training",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 12,
+      "thin": false
+    },
+    {
+      "slug": "entrepreneurship",
+      "name": "Entrepreneurship",
+      "category": "Business",
+      "blurb": "Starting and growing new ventures.",
+      "cip_codes": [
+        "52.0701"
+      ],
+      "riasec": [
+        1.82,
+        3.423,
+        2.217,
+        4.45,
+        5.93,
+        4.693
+      ],
+      "example_careers": [
+        "Chief Executives",
+        "General and Operations Managers",
+        "Business Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Administration and Management",
+        "English Language",
+        "Customer and Personal Service",
+        "Personnel and Human Resources",
+        "Economics and Accounting",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "category": "Business",
+      "blurb": "Investment, valuation, capital markets, and corporate financial decisions.",
+      "cip_codes": [
+        "52.0801"
+      ],
+      "riasec": [
+        1.536,
+        3.638,
+        1.562,
+        2.831,
+        5.395,
+        5.825
+      ],
+      "example_careers": [
+        "Chief Executives",
+        "Compensation, Benefits, and Job Analysis Specialists",
+        "Appraisers of Personal and Business Property",
+        "Budget Analysts",
+        "Credit Analysts",
+        "Financial and Investment Analysts",
+        "Personal Financial Advisors",
+        "Financial Risk Specialists"
+      ],
+      "job_zone": 4.17,
+      "top_knowledge": [
+        "Economics and Accounting",
+        "English Language",
+        "Customer and Personal Service",
+        "Mathematics",
+        "Administration and Management",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 12,
+      "thin": false
+    },
+    {
+      "slug": "hospitality-management",
+      "name": "Hospitality & Tourism Management",
+      "category": "Business",
+      "blurb": "Running hotels, restaurants, events, and travel businesses.",
+      "cip_codes": [
+        "52.0901"
+      ],
+      "riasec": [
+        3.02,
+        1.53,
+        1.705,
+        4.12,
+        6.23,
+        5.13
+      ],
+      "example_careers": [
+        "Entertainment and Recreation Managers, Except Gambling",
+        "Lodging Managers"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Customer and Personal Service",
+        "English Language",
+        "Administration and Management",
+        "Personnel and Human Resources",
+        "Public Safety and Security",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "human-resources",
+      "name": "Human Resources",
+      "category": "Business",
+      "blurb": "Hiring, developing, and supporting the people in an organization.",
+      "cip_codes": [
+        "52.1001"
+      ],
+      "riasec": [
+        1.576,
+        2.987,
+        1.834,
+        4.265,
+        5.255,
+        5.203
+      ],
+      "example_careers": [
+        "Compliance Officers",
+        "Human Resources Specialists",
+        "Labor Relations Specialists",
+        "Compensation, Benefits, and Job Analysis Specialists",
+        "Training and Development Specialists",
+        "Human Resources Assistants, Except Payroll and Timekeeping",
+        "Compensation and Benefits Managers",
+        "Human Resources Managers"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "English Language",
+        "Personnel and Human Resources",
+        "Administration and Management",
+        "Customer and Personal Service",
+        "Education and Training",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 10,
+      "thin": false
+    },
+    {
+      "slug": "management-information-systems",
+      "name": "Management Information Systems",
+      "category": "Business",
+      "blurb": "The business side of technology: systems, data, and process.",
+      "cip_codes": [
+        "52.1201"
+      ],
+      "riasec": [
+        2.942,
+        5.228,
+        2.365,
+        3.03,
+        3.03,
+        5.487
+      ],
+      "example_careers": [
+        "Database Architects",
+        "Computer Programmers",
+        "Computer and Information Systems Managers",
+        "Computer Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "Engineering and Technology",
+        "Mathematics",
+        "English Language",
+        "Customer and Personal Service",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "marketing",
+      "name": "Marketing",
+      "category": "Business",
+      "blurb": "Understanding customers and bringing products to them.",
+      "cip_codes": [
+        "52.1401"
+      ],
+      "riasec": [
+        1.224,
+        2.877,
+        2.753,
+        3.746,
+        6.197,
+        4.563
+      ],
+      "example_careers": [
+        "Fundraisers",
+        "Market Research Analysts and Marketing Specialists",
+        "Advertising and Promotions Managers",
+        "Marketing Managers",
+        "Sales Managers",
+        "Fundraising Managers",
+        "Business Teachers, Postsecondary"
+      ],
+      "job_zone": 4.14,
+      "top_knowledge": [
+        "English Language",
+        "Customer and Personal Service",
+        "Sales and Marketing",
+        "Administration and Management",
+        "Communications and Media",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 7,
+      "thin": false
+    },
+    {
+      "slug": "real-estate",
+      "name": "Real Estate",
+      "category": "Business",
+      "blurb": "Property markets, development, valuation, and investment.",
+      "cip_codes": [
+        "52.1501"
+      ],
+      "riasec": [
+        3.07,
+        2.263,
+        1.597,
+        2.685,
+        5.668,
+        5.707
+      ],
+      "example_careers": [
+        "Appraisers of Personal and Business Property",
+        "Appraisers and Assessors of Real Estate",
+        "Real Estate Brokers",
+        "Property, Real Estate, and Community Association Managers"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "English Language",
+        "Customer and Personal Service",
+        "Economics and Accounting",
+        "Administration and Management",
+        "Mathematics",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "sport-management",
+      "name": "Sport Management",
+      "category": "Business",
+      "blurb": "The business of athletics: teams, venues, events, and media.",
+      "cip_codes": [
+        "31.0504"
+      ],
+      "riasec": [
+        4.005,
+        2.877,
+        2.542,
+        5.465,
+        4.365,
+        3.785
+      ],
+      "example_careers": [
+        "Entertainment and Recreation Managers, Except Gambling",
+        "Coaches and Scouts",
+        "Exercise Trainers and Group Fitness Instructors",
+        "Recreation and Fitness Studies Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Education and Training",
+        "Customer and Personal Service",
+        "English Language",
+        "Psychology",
+        "Administration and Management",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Monitoring",
+        "Learning Strategies"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "supply-chain",
+      "name": "Supply Chain & Operations",
+      "category": "Business",
+      "blurb": "Getting products made and moved: logistics, sourcing, and operations.",
+      "cip_codes": [
+        "52.0203",
+        "52.0205"
+      ],
+      "riasec": [
+        3.543,
+        3.089,
+        1.499,
+        3.079,
+        5.481,
+        5.117
+      ],
+      "example_careers": [
+        "Logisticians",
+        "First-Line Supervisors of Mechanics, Installers, and Repairers",
+        "First-Line Supervisors of Production and Operating Workers",
+        "Facilities Managers",
+        "Computer and Information Systems Managers",
+        "Industrial Production Managers",
+        "Transportation, Storage, and Distribution Managers",
+        "Construction Managers"
+      ],
+      "job_zone": 3.78,
+      "top_knowledge": [
+        "Administration and Management",
+        "Customer and Personal Service",
+        "English Language",
+        "Mathematics",
+        "Computers and Electronics",
+        "Personnel and Human Resources"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Monitoring",
+        "Reading Comprehension",
+        "Active Learning"
+      ],
+      "n_occupations": 9,
+      "thin": false
+    },
+    {
+      "slug": "computer-science",
+      "name": "Computer Science",
+      "category": "Computing & Data",
+      "blurb": "Algorithms, systems, and the theory behind how software works.",
+      "cip_codes": [
+        "11.0701",
+        "11.0101"
+      ],
+      "riasec": [
+        3.217,
+        5.55,
+        2.419,
+        2.328,
+        2.612,
+        5.366
+      ],
+      "example_careers": [
+        "Information Security Analysts",
+        "Computer and Information Research Scientists",
+        "Computer Network Support Specialists",
+        "Database Architects",
+        "Computer Programmers",
+        "Software Developers",
+        "Software Quality Assurance Analysts and Testers",
+        "Web Developers"
+      ],
+      "job_zone": 4.08,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Mathematics",
+        "Engineering and Technology",
+        "Customer and Personal Service",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Active Learning",
+        "Writing"
+      ],
+      "n_occupations": 12,
+      "thin": false
+    },
+    {
+      "slug": "cybersecurity",
+      "name": "Cybersecurity",
+      "category": "Computing & Data",
+      "blurb": "Defending systems and networks against attackers.",
+      "cip_codes": [
+        "11.1003",
+        "43.0404"
+      ],
+      "riasec": [
+        3.339,
+        4.895,
+        1.719,
+        2.772,
+        3.279,
+        5.625
+      ],
+      "example_careers": [
+        "Information Security Analysts",
+        "Computer Network Support Specialists",
+        "Computer Network Architects",
+        "Database Administrators",
+        "Database Architects",
+        "Network and Computer Systems Administrators",
+        "Computer and Information Systems Managers",
+        "Criminal Justice and Law Enforcement Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Customer and Personal Service",
+        "Engineering and Technology",
+        "Administration and Management",
+        "Telecommunications"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 8,
+      "thin": false
+    },
+    {
+      "slug": "data-science",
+      "name": "Data Science",
+      "category": "Computing & Data",
+      "blurb": "Turning data into models and decisions with statistics and code.",
+      "cip_codes": [
+        "30.7001",
+        "27.0501"
+      ],
+      "riasec": [
+        2.598,
+        5.902,
+        2.241,
+        2.555,
+        2.955,
+        5.404
+      ],
+      "example_careers": [
+        "Computer and Information Research Scientists",
+        "Database Architects",
+        "Software Developers",
+        "Actuaries",
+        "Statisticians",
+        "Data Scientists",
+        "Survey Researchers",
+        "Computer and Information Systems Managers"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "Mathematics",
+        "English Language",
+        "Administration and Management",
+        "Customer and Personal Service",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Mathematics",
+        "Writing"
+      ],
+      "n_occupations": 10,
+      "thin": false
+    },
+    {
+      "slug": "informatics",
+      "name": "Informatics",
+      "category": "Computing & Data",
+      "blurb": "How people, information, and technology fit together.",
+      "cip_codes": [
+        "11.0104"
+      ],
+      "riasec": [
+        3.435,
+        5.922,
+        2.873,
+        1.885,
+        2.265,
+        5.123
+      ],
+      "example_careers": [
+        "Computer and Information Research Scientists",
+        "Software Developers",
+        "Software Quality Assurance Analysts and Testers",
+        "Web and Digital Interface Designers"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Mathematics",
+        "Customer and Personal Service",
+        "Engineering and Technology",
+        "Design"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Active Learning",
+        "Writing"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "information-technology",
+      "name": "Information Technology",
+      "category": "Computing & Data",
+      "blurb": "Running the networks, systems, and infrastructure organizations depend on.",
+      "cip_codes": [
+        "11.0103",
+        "11.1001"
+      ],
+      "riasec": [
+        3.461,
+        5.603,
+        1.893,
+        1.995,
+        2.708,
+        5.658
+      ],
+      "example_careers": [
+        "Computer Systems Analysts",
+        "Information Security Analysts",
+        "Computer and Information Research Scientists",
+        "Computer Network Support Specialists",
+        "Computer Network Architects",
+        "Database Architects",
+        "Network and Computer Systems Administrators",
+        "Software Developers"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Engineering and Technology",
+        "Mathematics",
+        "Customer and Personal Service",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 11,
+      "thin": false
+    },
+    {
+      "slug": "software-engineering",
+      "name": "Software Engineering",
+      "category": "Computing & Data",
+      "blurb": "Building and maintaining large software systems as an engineering discipline.",
+      "cip_codes": [
+        "14.0903",
+        "11.0701"
+      ],
+      "riasec": [
+        3.431,
+        5.323,
+        2.408,
+        2.426,
+        2.982,
+        5.242
+      ],
+      "example_careers": [
+        "Information Security Analysts",
+        "Computer and Information Research Scientists",
+        "Computer Network Support Specialists",
+        "Database Architects",
+        "Computer Programmers",
+        "Software Developers",
+        "Software Quality Assurance Analysts and Testers",
+        "Web Developers"
+      ],
+      "job_zone": 4.17,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Engineering and Technology",
+        "Mathematics",
+        "Customer and Personal Service",
+        "Design"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 12,
+      "thin": false
+    },
+    {
+      "slug": "early-childhood-education",
+      "name": "Early Childhood Education",
+      "category": "Education",
+      "blurb": "Teaching and caring for children from birth through the early grades.",
+      "cip_codes": [
+        "13.1210"
+      ],
+      "riasec": [
+        2.577,
+        3.263,
+        3.572,
+        6.92,
+        2.557,
+        3.77
+      ],
+      "example_careers": [
+        "Teaching Assistants, Preschool, Elementary, Middle, and Secondary School, Except Special Education",
+        "Teaching Assistants, Special Education",
+        "Education Teachers, Postsecondary",
+        "Preschool Teachers, Except Special Education",
+        "Kindergarten Teachers, Except Special Education",
+        "Elementary School Teachers, Except Special Education"
+      ],
+      "job_zone": 3.67,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Psychology",
+        "Customer and Personal Service",
+        "Mathematics",
+        "Sociology and Anthropology"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Learning Strategies",
+        "Reading Comprehension",
+        "Monitoring",
+        "Critical Thinking"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "elementary-education",
+      "name": "Elementary Education",
+      "category": "Education",
+      "blurb": "Teaching across subjects in the early grades.",
+      "cip_codes": [
+        "13.1202"
+      ],
+      "riasec": [
+        2.655,
+        4.06,
+        3.67,
+        7.0,
+        2.625,
+        3.695
+      ],
+      "example_careers": [
+        "Education Teachers, Postsecondary",
+        "Elementary School Teachers, Except Special Education"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Psychology",
+        "Mathematics",
+        "Customer and Personal Service",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Learning Strategies",
+        "Reading Comprehension",
+        "Active Listening",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "secondary-education",
+      "name": "Secondary Education",
+      "category": "Education",
+      "blurb": "Teaching a subject at the middle- and high-school level.",
+      "cip_codes": [
+        "13.1205"
+      ],
+      "riasec": [
+        2.7,
+        3.98,
+        3.62,
+        7.0,
+        2.79,
+        3.61
+      ],
+      "example_careers": [
+        "Education Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Education and Training",
+        "English Language",
+        "Psychology",
+        "Customer and Personal Service",
+        "Sociology and Anthropology",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Learning Strategies",
+        "Monitoring",
+        "Active Learning"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "special-education",
+      "name": "Special Education",
+      "category": "Education",
+      "blurb": "Teaching students with disabilities and designing individualized support.",
+      "cip_codes": [
+        "13.1001"
+      ],
+      "riasec": [
+        2.619,
+        3.7,
+        3.543,
+        7.0,
+        1.85,
+        3.556
+      ],
+      "example_careers": [
+        "Special Education Teachers, Preschool",
+        "Special Education Teachers, Kindergarten",
+        "Special Education Teachers, Elementary School",
+        "Special Education Teachers, Middle School",
+        "Special Education Teachers, Secondary School",
+        "Adapted Physical Education Specialists",
+        "Teaching Assistants, Special Education"
+      ],
+      "job_zone": 3.86,
+      "top_knowledge": [
+        "Education and Training",
+        "English Language",
+        "Psychology",
+        "Customer and Personal Service",
+        "Administrative",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Learning Strategies",
+        "Reading Comprehension",
+        "Monitoring",
+        "Critical Thinking"
+      ],
+      "n_occupations": 7,
+      "thin": false
+    },
+    {
+      "slug": "aerospace-engineering",
+      "name": "Aerospace Engineering",
+      "category": "Engineering",
+      "blurb": "Aircraft, spacecraft, propulsion, and flight.",
+      "cip_codes": [
+        "14.0201"
+      ],
+      "riasec": [
+        4.493,
+        5.333,
+        2.717,
+        3.323,
+        3.643,
+        4.103
+      ],
+      "example_careers": [
+        "Aerospace Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Mathematics",
+        "English Language",
+        "Computers and Electronics",
+        "Physics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Mathematics"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "aviation",
+      "name": "Aviation / Professional Flight",
+      "category": "Engineering",
+      "blurb": "Flying aircraft professionally, and the systems around it.",
+      "cip_codes": [
+        "49.0102"
+      ],
+      "riasec": [
+        4.765,
+        2.85,
+        1.27,
+        2.535,
+        3.865,
+        4.76
+      ],
+      "example_careers": [
+        "Airline Pilots, Copilots, and Flight Engineers",
+        "Commercial Pilots"
+      ],
+      "job_zone": 3.5,
+      "top_knowledge": [
+        "Transportation",
+        "English Language",
+        "Geography",
+        "Public Safety and Security",
+        "Customer and Personal Service",
+        "Mechanical"
+      ],
+      "top_skills": [
+        "Monitoring",
+        "Critical Thinking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Speaking",
+        "Active Learning"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "biomedical-engineering",
+      "name": "Biomedical Engineering",
+      "category": "Engineering",
+      "blurb": "Applying engineering to medicine: devices, imaging, prosthetics, tissue.",
+      "cip_codes": [
+        "14.0501"
+      ],
+      "riasec": [
+        4.423,
+        5.567,
+        2.637,
+        3.723,
+        3.417,
+        4.117
+      ],
+      "example_careers": [
+        "Bioengineers and Biomedical Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Mathematics",
+        "Computers and Electronics",
+        "English Language",
+        "Physics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Mathematics"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "chemical-engineering",
+      "name": "Chemical Engineering",
+      "category": "Engineering",
+      "blurb": "Designing processes that turn raw materials into products at scale.",
+      "cip_codes": [
+        "14.0701"
+      ],
+      "riasec": [
+        4.7,
+        5.233,
+        2.533,
+        3.247,
+        3.42,
+        4.137
+      ],
+      "example_careers": [
+        "Chemical Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Mathematics",
+        "English Language",
+        "Physics",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Speaking",
+        "Mathematics",
+        "Active Learning",
+        "Active Listening"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "civil-engineering",
+      "name": "Civil Engineering",
+      "category": "Engineering",
+      "blurb": "Roads, bridges, water systems, and the built environment.",
+      "cip_codes": [
+        "14.0801"
+      ],
+      "riasec": [
+        4.753,
+        5.033,
+        2.67,
+        3.47,
+        3.69,
+        4.16
+      ],
+      "example_careers": [
+        "Civil Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Mathematics",
+        "English Language",
+        "Computers and Electronics",
+        "Physics"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Reading Comprehension",
+        "Speaking",
+        "Critical Thinking",
+        "Mathematics",
+        "Writing"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "computer-engineering",
+      "name": "Computer Engineering",
+      "category": "Engineering",
+      "blurb": "Where hardware meets software: chips, embedded systems, and architecture.",
+      "cip_codes": [
+        "14.0901",
+        "14.4701"
+      ],
+      "riasec": [
+        4.202,
+        5.46,
+        2.277,
+        2.46,
+        2.769,
+        5.018
+      ],
+      "example_careers": [
+        "Computer Network Architects",
+        "Database Architects",
+        "Software Developers",
+        "Software Quality Assurance Analysts and Testers",
+        "Computer Hardware Engineers",
+        "Electrical Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "Engineering and Technology",
+        "Mathematics",
+        "English Language",
+        "Design",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 8,
+      "thin": false
+    },
+    {
+      "slug": "construction-management",
+      "name": "Construction Management",
+      "category": "Engineering",
+      "blurb": "Planning, budgeting, and running building projects.",
+      "cip_codes": [
+        "52.2001",
+        "15.1001"
+      ],
+      "riasec": [
+        4.48,
+        3.91,
+        1.9,
+        1.853,
+        4.127,
+        5.503
+      ],
+      "example_careers": [
+        "Cost Estimators",
+        "Civil Engineering Technologists and Technicians",
+        "Construction Managers"
+      ],
+      "job_zone": 3.67,
+      "top_knowledge": [
+        "Mathematics",
+        "Building and Construction",
+        "Engineering and Technology",
+        "Administration and Management",
+        "Design",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Mathematics",
+        "Writing"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "electrical-engineering",
+      "name": "Electrical Engineering",
+      "category": "Engineering",
+      "blurb": "Circuits, signals, power, and electronics.",
+      "cip_codes": [
+        "14.1001"
+      ],
+      "riasec": [
+        5.238,
+        5.47,
+        2.355,
+        2.517,
+        2.828,
+        4.465
+      ],
+      "example_careers": [
+        "Aerospace Engineers",
+        "Computer Hardware Engineers",
+        "Electrical Engineers",
+        "Electronics Engineers, Except Computer",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Computers and Electronics",
+        "Mathematics",
+        "English Language",
+        "Physics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "environmental-engineering",
+      "name": "Environmental Engineering",
+      "category": "Engineering",
+      "blurb": "Engineering for clean water, clean air, and waste.",
+      "cip_codes": [
+        "14.1401"
+      ],
+      "riasec": [
+        4.59,
+        5.42,
+        2.2,
+        3.277,
+        3.462,
+        4.285
+      ],
+      "example_careers": [
+        "Environmental Engineers",
+        "Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "English Language",
+        "Mathematics",
+        "Computers and Electronics",
+        "Physics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Critical Thinking",
+        "Monitoring"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "engineering-general",
+      "name": "General Engineering",
+      "category": "Engineering",
+      "blurb": "A broad engineering foundation before specializing.",
+      "cip_codes": [
+        "14.0101",
+        "14.1301"
+      ],
+      "riasec": [
+        3.915,
+        4.975,
+        2.9,
+        4.36,
+        4.205,
+        3.935
+      ],
+      "example_careers": [
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Mathematics",
+        "English Language",
+        "Computers and Electronics",
+        "Physics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Mathematics"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "industrial-engineering",
+      "name": "Industrial Engineering",
+      "category": "Engineering",
+      "blurb": "Making systems of people, machines, and materials run efficiently.",
+      "cip_codes": [
+        "14.3501"
+      ],
+      "riasec": [
+        4.197,
+        4.465,
+        2.195,
+        2.985,
+        4.433,
+        4.607
+      ],
+      "example_careers": [
+        "Industrial Engineers",
+        "Industrial Production Managers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Mathematics",
+        "Design",
+        "English Language",
+        "Production and Processing",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "materials-engineering",
+      "name": "Materials Science & Engineering",
+      "category": "Engineering",
+      "blurb": "Why materials behave the way they do, and designing better ones.",
+      "cip_codes": [
+        "14.1801",
+        "40.1001"
+      ],
+      "riasec": [
+        4.508,
+        5.108,
+        2.326,
+        2.63,
+        3.396,
+        4.514
+      ],
+      "example_careers": [
+        "Cost Estimators",
+        "Materials Engineers",
+        "Materials Scientists",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.4,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Mathematics",
+        "Design",
+        "English Language",
+        "Computers and Electronics",
+        "Physics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Mathematics",
+        "Writing"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "mechanical-engineering",
+      "name": "Mechanical Engineering",
+      "category": "Engineering",
+      "blurb": "Machines, mechanisms, energy, and how physical things are made to move.",
+      "cip_codes": [
+        "14.1901"
+      ],
+      "riasec": [
+        4.576,
+        4.86,
+        2.258,
+        2.57,
+        3.51,
+        4.716
+      ],
+      "example_careers": [
+        "Cost Estimators",
+        "Aerospace Engineers",
+        "Mechanical Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.4,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Mathematics",
+        "English Language",
+        "Computers and Electronics",
+        "Mechanical"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Mathematics",
+        "Speaking",
+        "Writing"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "robotics-engineering",
+      "name": "Robotics Engineering",
+      "category": "Engineering",
+      "blurb": "Mechatronics, control, and autonomous machines.",
+      "cip_codes": [
+        "14.4201",
+        "14.4101"
+      ],
+      "riasec": [
+        5.06,
+        5.13,
+        2.485,
+        2.915,
+        3.205,
+        4.282
+      ],
+      "example_careers": [
+        "Electrical Engineers",
+        "Mechanical Engineers",
+        "Architectural and Engineering Managers",
+        "Engineering Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Engineering and Technology",
+        "Design",
+        "Computers and Electronics",
+        "English Language",
+        "Mathematics",
+        "Mechanical"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Mathematics"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "agricultural-science",
+      "name": "Agricultural Science",
+      "category": "Environment & Agriculture",
+      "blurb": "The science and business of growing food and fiber.",
+      "cip_codes": [
+        "01.0000",
+        "01.1101"
+      ],
+      "riasec": [
+        5.27,
+        4.816,
+        1.851,
+        2.981,
+        3.289,
+        3.857
+      ],
+      "example_careers": [
+        "Animal Scientists",
+        "Food Scientists and Technologists",
+        "Soil and Plant Scientists",
+        "Agricultural Technicians",
+        "Farm and Home Management Educators",
+        "First-Line Supervisors of Farming, Fishing, and Forestry Workers",
+        "Farmers, Ranchers, and Other Agricultural Managers",
+        "Agricultural Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Food Production",
+        "Education and Training",
+        "Mathematics",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Listening",
+        "Speaking",
+        "Active Learning",
+        "Writing"
+      ],
+      "n_occupations": 8,
+      "thin": false
+    },
+    {
+      "slug": "animal-science",
+      "name": "Animal Science",
+      "category": "Environment & Agriculture",
+      "blurb": "The biology, care, and production of domestic animals.",
+      "cip_codes": [
+        "01.0901"
+      ],
+      "riasec": [
+        5.113,
+        4.352,
+        1.708,
+        3.337,
+        3.67,
+        3.917
+      ],
+      "example_careers": [
+        "Animal Scientists",
+        "Agricultural Technicians",
+        "Farm and Home Management Educators",
+        "First-Line Supervisors of Farming, Fishing, and Forestry Workers",
+        "Farmers, Ranchers, and Other Agricultural Managers",
+        "Agricultural Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.17,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Administration and Management",
+        "Food Production",
+        "Education and Training",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "environmental-science",
+      "name": "Environmental Science",
+      "category": "Environment & Agriculture",
+      "blurb": "The science of ecosystems, pollution, and environmental change.",
+      "cip_codes": [
+        "03.0104"
+      ],
+      "riasec": [
+        4.668,
+        5.276,
+        1.694,
+        3.342,
+        2.59,
+        4.744
+      ],
+      "example_careers": [
+        "Compliance Officers",
+        "Environmental Scientists and Specialists, Including Health",
+        "Environmental Science and Protection Technicians, Including Health",
+        "Forest and Conservation Technicians",
+        "Environmental Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "English Language",
+        "Customer and Personal Service",
+        "Law and Government",
+        "Computers and Electronics",
+        "Education and Training",
+        "Public Safety and Security"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "environmental-studies",
+      "name": "Environmental Studies",
+      "category": "Environment & Agriculture",
+      "blurb": "Environmental problems through policy, economics, and the social sciences.",
+      "cip_codes": [
+        "03.0103"
+      ],
+      "riasec": [
+        3.66,
+        5.47,
+        2.08,
+        3.99,
+        3.043,
+        4.69
+      ],
+      "example_careers": [
+        "Compliance Officers",
+        "Environmental Scientists and Specialists, Including Health",
+        "Environmental Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "English Language",
+        "Customer and Personal Service",
+        "Education and Training",
+        "Computers and Electronics",
+        "Law and Government",
+        "Biology"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Monitoring"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "food-science",
+      "name": "Food Science",
+      "category": "Environment & Agriculture",
+      "blurb": "The chemistry, safety, and engineering of the food supply.",
+      "cip_codes": [
+        "01.1001"
+      ],
+      "riasec": [
+        4.863,
+        5.193,
+        2.233,
+        3.377,
+        2.383,
+        4.167
+      ],
+      "example_careers": [
+        "Food Scientists and Technologists",
+        "Food Science Technicians",
+        "Agricultural Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Food Production",
+        "English Language",
+        "Biology",
+        "Production and Processing",
+        "Chemistry",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "forestry",
+      "name": "Forestry & Natural Resources",
+      "category": "Environment & Agriculture",
+      "blurb": "Managing forests, rangelands, and wild lands.",
+      "cip_codes": [
+        "03.0501",
+        "03.0101"
+      ],
+      "riasec": [
+        5.3,
+        4.538,
+        1.674,
+        3.468,
+        3.568,
+        4.218
+      ],
+      "example_careers": [
+        "Conservation Scientists",
+        "Foresters",
+        "Forest and Conservation Technicians",
+        "First-Line Supervisors of Farming, Fishing, and Forestry Workers",
+        "Forestry and Conservation Science Teachers, Postsecondary"
+      ],
+      "job_zone": 3.8,
+      "top_knowledge": [
+        "English Language",
+        "Biology",
+        "Mathematics",
+        "Education and Training",
+        "Administration and Management",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Speaking",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "sustainability",
+      "name": "Sustainability",
+      "category": "Environment & Agriculture",
+      "blurb": "Balancing human needs with the limits of natural systems.",
+      "cip_codes": [
+        "03.0201",
+        "30.3301"
+      ],
+      "riasec": [
+        4.338,
+        5.776,
+        2.292,
+        3.586,
+        3.228,
+        4.07
+      ],
+      "example_careers": [
+        "Conservation Scientists",
+        "Foresters",
+        "Environmental Scientists and Specialists, Including Health",
+        "Urban and Regional Planners",
+        "Environmental Science and Protection Technicians, Including Health",
+        "Natural Sciences Managers",
+        "Forestry and Conservation Science Teachers, Postsecondary",
+        "Environmental Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Biology",
+        "Mathematics",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 8,
+      "thin": false
+    },
+    {
+      "slug": "wildlife-biology",
+      "name": "Wildlife & Fisheries",
+      "category": "Environment & Agriculture",
+      "blurb": "Managing and conserving wild animal populations and their habitats.",
+      "cip_codes": [
+        "03.0601"
+      ],
+      "riasec": [
+        4.85,
+        6.2,
+        2.477,
+        3.963,
+        2.637,
+        3.673
+      ],
+      "example_careers": [
+        "Zoologists and Wildlife Biologists",
+        "Conservation Scientists",
+        "Forestry and Conservation Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "English Language",
+        "Biology",
+        "Mathematics",
+        "Geography",
+        "Education and Training",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "athletic-training",
+      "name": "Athletic Training",
+      "category": "Health & Medicine",
+      "blurb": "Preventing, assessing, and rehabilitating athletic injuries.",
+      "cip_codes": [
+        "51.0913"
+      ],
+      "riasec": [
+        4.45,
+        4.915,
+        2.075,
+        6.375,
+        2.115,
+        3.37
+      ],
+      "example_careers": [
+        "Athletic Trainers",
+        "Health Specialties Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "Medicine and Dentistry",
+        "English Language",
+        "Education and Training",
+        "Psychology",
+        "Customer and Personal Service",
+        "Biology"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Learning",
+        "Monitoring"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "communication-sciences-disorders",
+      "name": "Communication Sciences & Disorders",
+      "category": "Health & Medicine",
+      "blurb": "Speech, language, and hearing, and the disorders that affect them.",
+      "cip_codes": [
+        "51.0201"
+      ],
+      "riasec": [
+        3.29,
+        5.643,
+        2.727,
+        6.337,
+        1.747,
+        3.84
+      ],
+      "example_careers": [
+        "Speech-Language Pathologists",
+        "Audiologists",
+        "Health Specialties Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Customer and Personal Service",
+        "Psychology",
+        "Therapy and Counseling",
+        "Medicine and Dentistry"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "health-administration",
+      "name": "Health Administration",
+      "category": "Health & Medicine",
+      "blurb": "Running hospitals, clinics, and health systems.",
+      "cip_codes": [
+        "51.0701"
+      ],
+      "riasec": [
+        2.093,
+        4.507,
+        1.36,
+        3.543,
+        4.213,
+        6.057
+      ],
+      "example_careers": [
+        "Management Analysts",
+        "Medical Records Specialists",
+        "Medical and Health Services Managers"
+      ],
+      "job_zone": 3.67,
+      "top_knowledge": [
+        "English Language",
+        "Administration and Management",
+        "Customer and Personal Service",
+        "Computers and Electronics",
+        "Administrative",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "kinesiology",
+      "name": "Kinesiology & Exercise Science",
+      "category": "Health & Medicine",
+      "blurb": "How the body moves, and how training and rehab change it.",
+      "cip_codes": [
+        "31.0505"
+      ],
+      "riasec": [
+        4.622,
+        4.905,
+        1.952,
+        5.85,
+        2.428,
+        3.39
+      ],
+      "example_careers": [
+        "Physical Therapists",
+        "Exercise Physiologists",
+        "Athletic Trainers",
+        "Health Specialties Teachers, Postsecondary"
+      ],
+      "job_zone": 4.75,
+      "top_knowledge": [
+        "Medicine and Dentistry",
+        "Customer and Personal Service",
+        "English Language",
+        "Education and Training",
+        "Psychology",
+        "Biology"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Monitoring",
+        "Writing"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "medical-laboratory-science",
+      "name": "Medical Laboratory Science",
+      "category": "Health & Medicine",
+      "blurb": "The lab testing that diagnoses disease.",
+      "cip_codes": [
+        "51.1005"
+      ],
+      "riasec": [
+        4.54,
+        5.79,
+        2.065,
+        4.885,
+        1.75,
+        4.255
+      ],
+      "example_careers": [
+        "Medical and Clinical Laboratory Technologists",
+        "Health Specialties Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Biology",
+        "Medicine and Dentistry",
+        "Computers and Electronics",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Critical Thinking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Active Learning",
+        "Science",
+        "Speaking"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "nursing",
+      "name": "Nursing",
+      "category": "Health & Medicine",
+      "blurb": "Direct patient care, assessment, and coordination across a care team.",
+      "cip_codes": [
+        "51.3801"
+      ],
+      "riasec": [
+        3.2,
+        4.81,
+        2.315,
+        6.285,
+        2.255,
+        3.95
+      ],
+      "example_careers": [
+        "Registered Nurses",
+        "Nursing Instructors and Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Psychology",
+        "Medicine and Dentistry",
+        "English Language",
+        "Customer and Personal Service",
+        "Education and Training",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "nutrition",
+      "name": "Nutrition & Dietetics",
+      "category": "Health & Medicine",
+      "blurb": "Food, metabolism, and how diet affects health.",
+      "cip_codes": [
+        "30.1901",
+        "51.3101"
+      ],
+      "riasec": [
+        3.7,
+        5.656,
+        2.662,
+        4.378,
+        2.737,
+        4.044
+      ],
+      "example_careers": [
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Farm and Home Management Educators",
+        "Dietitians and Nutritionists",
+        "Dietetic Technicians",
+        "Natural Sciences Managers"
+      ],
+      "job_zone": 4.82,
+      "top_knowledge": [
+        "English Language",
+        "Biology",
+        "Education and Training",
+        "Mathematics",
+        "Computers and Electronics",
+        "Chemistry"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 11,
+      "thin": false
+    },
+    {
+      "slug": "pre-med",
+      "name": "Pre-Medicine",
+      "category": "Health & Medicine",
+      "blurb": "A science track aimed at medical, dental, or veterinary school.",
+      "cip_codes": [
+        "26.0102"
+      ],
+      "riasec": [
+        4.61,
+        6.08,
+        2.307,
+        3.837,
+        1.857,
+        4.323
+      ],
+      "example_careers": [
+        "Medical Scientists, Except Epidemiologists",
+        "Biological Technicians",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Chemistry",
+        "Mathematics",
+        "Computers and Electronics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Science",
+        "Speaking",
+        "Writing",
+        "Critical Thinking"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "public-health",
+      "name": "Public Health",
+      "category": "Health & Medicine",
+      "blurb": "Preventing disease and improving health at the population level.",
+      "cip_codes": [
+        "51.2201"
+      ],
+      "riasec": [
+        2.245,
+        4.49,
+        2.303,
+        6.033,
+        3.67,
+        4.005
+      ],
+      "example_careers": [
+        "Health Education Specialists",
+        "Community Health Workers",
+        "Medical and Health Services Managers",
+        "Health Specialties Teachers, Postsecondary"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Customer and Personal Service",
+        "Medicine and Dentistry",
+        "Administration and Management",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Reading Comprehension",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "africana-studies",
+      "name": "Africana / Black Studies",
+      "category": "Humanities",
+      "blurb": "The history, culture, and politics of African and African-descended peoples.",
+      "cip_codes": [
+        "05.0201"
+      ],
+      "riasec": [
+        2.473,
+        5.74,
+        3.927,
+        6.077,
+        2.893,
+        3.36
+      ],
+      "example_careers": [
+        "Sociologists",
+        "Area, Ethnic, and Cultural Studies Teachers, Postsecondary",
+        "History Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Sociology and Anthropology",
+        "History and Archeology",
+        "Computers and Electronics",
+        "Law and Government"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Writing",
+        "Learning Strategies",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "american-studies",
+      "name": "American Studies",
+      "category": "Humanities",
+      "blurb": "US culture, history, and society across disciplines.",
+      "cip_codes": [
+        "05.0102"
+      ],
+      "riasec": [
+        2.287,
+        4.657,
+        4.823,
+        5.577,
+        3.45,
+        3.273
+      ],
+      "example_careers": [
+        "Writers and Authors",
+        "Area, Ethnic, and Cultural Studies Teachers, Postsecondary",
+        "History Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Communications and Media",
+        "History and Archeology",
+        "Computers and Electronics",
+        "Sociology and Anthropology"
+      ],
+      "top_skills": [
+        "Writing",
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "classics",
+      "name": "Classics",
+      "category": "Humanities",
+      "blurb": "The languages, literature, and history of ancient Greece and Rome.",
+      "cip_codes": [
+        "16.1200"
+      ],
+      "riasec": [
+        2.243,
+        3.633,
+        4.037,
+        5.827,
+        2.44,
+        3.977
+      ],
+      "example_careers": [
+        "Interpreters and Translators",
+        "Foreign Language and Literature Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Foreign Language",
+        "Customer and Personal Service",
+        "Administrative",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Writing",
+        "Critical Thinking",
+        "Monitoring"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "creative-writing",
+      "name": "Creative Writing",
+      "category": "Humanities",
+      "blurb": "The craft of fiction, poetry, and nonfiction.",
+      "cip_codes": [
+        "23.1302"
+      ],
+      "riasec": [
+        1.437,
+        3.643,
+        5.42,
+        4.14,
+        3.77,
+        3.837
+      ],
+      "example_careers": [
+        "Editors",
+        "Writers and Authors",
+        "English Language and Literature Teachers, Postsecondary"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Customer and Personal Service",
+        "Computers and Electronics",
+        "Education and Training",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Writing",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "english",
+      "name": "English",
+      "category": "Humanities",
+      "blurb": "Literature, criticism, and writing.",
+      "cip_codes": [
+        "23.0101"
+      ],
+      "riasec": [
+        1.877,
+        3.385,
+        4.637,
+        3.938,
+        2.952,
+        4.433
+      ],
+      "example_careers": [
+        "Editors",
+        "Technical Writers",
+        "Writers and Authors",
+        "Proofreaders and Copy Markers",
+        "English Language and Literature Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.17,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Education and Training",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Writing",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "gender-studies",
+      "name": "Gender & Women's Studies",
+      "category": "Humanities",
+      "blurb": "Gender and sexuality as they shape culture, politics, and everyday life.",
+      "cip_codes": [
+        "05.0207"
+      ],
+      "riasec": [
+        1.87,
+        5.02,
+        4.837,
+        4.713,
+        3.61,
+        3.323
+      ],
+      "example_careers": [
+        "Sociologists",
+        "Writers and Authors",
+        "Area, Ethnic, and Cultural Studies Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Sociology and Anthropology",
+        "Communications and Media",
+        "Computers and Electronics",
+        "History and Archeology"
+      ],
+      "top_skills": [
+        "Writing",
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "history",
+      "name": "History",
+      "category": "Humanities",
+      "blurb": "The human past, and how we reconstruct and argue about it.",
+      "cip_codes": [
+        "54.0101"
+      ],
+      "riasec": [
+        2.815,
+        4.08,
+        3.72,
+        5.63,
+        2.873,
+        3.695
+      ],
+      "example_careers": [
+        "Historians",
+        "Tour Guides and Escorts",
+        "History Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.25,
+      "top_knowledge": [
+        "English Language",
+        "History and Archeology",
+        "Education and Training",
+        "Customer and Personal Service",
+        "Geography",
+        "Sociology and Anthropology"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "liberal-arts",
+      "name": "Liberal Arts / Interdisciplinary Studies",
+      "category": "Humanities",
+      "blurb": "A broad, self-directed path across the arts and sciences.",
+      "cip_codes": [
+        "24.0101"
+      ],
+      "riasec": [
+        1.982,
+        4.242,
+        4.082,
+        4.9,
+        3.94,
+        3.875
+      ],
+      "example_careers": [
+        "Management Analysts",
+        "Self-Enrichment Teachers",
+        "Writers and Authors",
+        "Area, Ethnic, and Cultural Studies Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Communications and Media",
+        "Customer and Personal Service",
+        "Computers and Electronics",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Writing",
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "linguistics",
+      "name": "Linguistics",
+      "category": "Humanities",
+      "blurb": "The structure of language: sound, meaning, grammar, and change.",
+      "cip_codes": [
+        "16.0102"
+      ],
+      "riasec": [
+        2.067,
+        4.247,
+        4.067,
+        5.827,
+        2.423,
+        3.78
+      ],
+      "example_careers": [
+        "Interpreters and Translators",
+        "Social Work Teachers, Postsecondary",
+        "Foreign Language and Literature Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Foreign Language",
+        "Sociology and Anthropology",
+        "Administrative",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Writing",
+        "Critical Thinking",
+        "Learning Strategies"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "philosophy",
+      "name": "Philosophy",
+      "category": "Humanities",
+      "blurb": "Argument about knowledge, ethics, mind, and reality.",
+      "cip_codes": [
+        "38.0101"
+      ],
+      "riasec": [
+        1.527,
+        4.257,
+        4.28,
+        4.447,
+        4.343,
+        3.803
+      ],
+      "example_careers": [
+        "Lawyers",
+        "Writers and Authors",
+        "Philosophy and Religion Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Law and Government",
+        "Customer and Personal Service",
+        "Computers and Electronics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Writing",
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "religious-studies",
+      "name": "Religious Studies",
+      "category": "Humanities",
+      "blurb": "Religious traditions, texts, and practices, studied academically.",
+      "cip_codes": [
+        "38.0201"
+      ],
+      "riasec": [
+        1.853,
+        3.5,
+        4.627,
+        5.257,
+        3.897,
+        3.237
+      ],
+      "example_careers": [
+        "Clergy",
+        "Writers and Authors",
+        "Philosophy and Religion Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Philosophy and Theology",
+        "Communications and Media",
+        "Education and Training",
+        "Customer and Personal Service",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Writing",
+        "Speaking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "world-languages",
+      "name": "World Languages & Cultures",
+      "category": "Languages",
+      "blurb": "A modern language (Spanish, French, Mandarin, ...) plus the literature and culture behind it.",
+      "cip_codes": [
+        "16.0905",
+        "16.0901",
+        "16.0301",
+        "16.0302",
+        "16.0104"
+      ],
+      "riasec": [
+        2.252,
+        3.92,
+        4.075,
+        6.12,
+        2.438,
+        3.855
+      ],
+      "example_careers": [
+        "Interpreters and Translators",
+        "English Language and Literature Teachers, Postsecondary",
+        "Foreign Language and Literature Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Foreign Language",
+        "Customer and Personal Service",
+        "Sociology and Anthropology",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Learning Strategies"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "biochemistry",
+      "name": "Biochemistry & Molecular Biology",
+      "category": "Life Sciences",
+      "blurb": "The chemistry of life: proteins, DNA, metabolism, and cell machinery.",
+      "cip_codes": [
+        "26.0202",
+        "26.0204"
+      ],
+      "riasec": [
+        4.425,
+        6.328,
+        2.311,
+        2.792,
+        2.317,
+        4.524
+      ],
+      "example_careers": [
+        "Biochemists and Biophysicists",
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Medical Scientists, Except Epidemiologists",
+        "Food Science Technicians",
+        "Biological Technicians"
+      ],
+      "job_zone": 4.7,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Chemistry",
+        "Mathematics",
+        "Computers and Electronics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Science",
+        "Reading Comprehension",
+        "Writing",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking"
+      ],
+      "n_occupations": 10,
+      "thin": false
+    },
+    {
+      "slug": "biology",
+      "name": "Biology",
+      "category": "Life Sciences",
+      "blurb": "Living systems from molecules to ecosystems.",
+      "cip_codes": [
+        "26.0101"
+      ],
+      "riasec": [
+        4.509,
+        5.725,
+        2.238,
+        2.949,
+        2.327,
+        4.614
+      ],
+      "example_careers": [
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Agricultural Technicians",
+        "Food Science Technicians",
+        "Biological Technicians",
+        "Forensic Science Technicians"
+      ],
+      "job_zone": 4.27,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Education and Training",
+        "Computers and Electronics",
+        "Mathematics",
+        "Chemistry"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Science"
+      ],
+      "n_occupations": 11,
+      "thin": false
+    },
+    {
+      "slug": "ecology",
+      "name": "Ecology & Evolutionary Biology",
+      "category": "Life Sciences",
+      "blurb": "How organisms interact with each other and their environment over time.",
+      "cip_codes": [
+        "26.1301",
+        "26.1310"
+      ],
+      "riasec": [
+        4.196,
+        6.435,
+        2.635,
+        3.692,
+        2.625,
+        4.168
+      ],
+      "example_careers": [
+        "Zoologists and Wildlife Biologists",
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Conservation Scientists",
+        "Natural Sciences Managers",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.8,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Mathematics",
+        "Education and Training",
+        "Computers and Electronics",
+        "Chemistry"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Science",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Critical Thinking"
+      ],
+      "n_occupations": 10,
+      "thin": false
+    },
+    {
+      "slug": "genetics",
+      "name": "Genetics",
+      "category": "Life Sciences",
+      "blurb": "Heredity, genomes, and how genes shape organisms.",
+      "cip_codes": [
+        "26.0801"
+      ],
+      "riasec": [
+        4.031,
+        6.394,
+        2.379,
+        3.301,
+        2.041,
+        4.647
+      ],
+      "example_careers": [
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Biological Technicians",
+        "Genetic Counselors",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.86,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Mathematics",
+        "Chemistry",
+        "Education and Training",
+        "Computers and Electronics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Science",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Speaking"
+      ],
+      "n_occupations": 7,
+      "thin": false
+    },
+    {
+      "slug": "marine-biology",
+      "name": "Marine Biology",
+      "category": "Life Sciences",
+      "blurb": "Life in the oceans, from plankton to whales.",
+      "cip_codes": [
+        "26.1302"
+      ],
+      "riasec": [
+        4.341,
+        6.47,
+        2.382,
+        2.913,
+        2.436,
+        4.57
+      ],
+      "example_careers": [
+        "Zoologists and Wildlife Biologists",
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Biological Technicians",
+        "Natural Sciences Managers",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.75,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Mathematics",
+        "Chemistry",
+        "Computers and Electronics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Science",
+        "Reading Comprehension",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Speaking"
+      ],
+      "n_occupations": 8,
+      "thin": false
+    },
+    {
+      "slug": "microbiology",
+      "name": "Microbiology",
+      "category": "Life Sciences",
+      "blurb": "Bacteria, viruses, and other microbes, and their role in health and disease.",
+      "cip_codes": [
+        "26.0502"
+      ],
+      "riasec": [
+        4.632,
+        5.724,
+        2.038,
+        3.004,
+        2.396,
+        4.476
+      ],
+      "example_careers": [
+        "Microbiologists",
+        "Food Science Technicians",
+        "Biological Technicians",
+        "Natural Sciences Managers",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.2,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Chemistry",
+        "Computers and Electronics",
+        "Mathematics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Science",
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Writing"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "neuroscience",
+      "name": "Neuroscience",
+      "category": "Life Sciences",
+      "blurb": "How the brain and nervous system produce behavior and cognition.",
+      "cip_codes": [
+        "26.1501"
+      ],
+      "riasec": [
+        4.186,
+        6.396,
+        2.393,
+        2.964,
+        2.451,
+        4.694
+      ],
+      "example_careers": [
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Biological Technicians",
+        "Natural Sciences Managers",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.86,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Mathematics",
+        "Chemistry",
+        "Computers and Electronics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Science",
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Speaking"
+      ],
+      "n_occupations": 7,
+      "thin": false
+    },
+    {
+      "slug": "zoology",
+      "name": "Zoology",
+      "category": "Life Sciences",
+      "blurb": "Animal biology, behavior, and physiology.",
+      "cip_codes": [
+        "26.0701"
+      ],
+      "riasec": [
+        4.433,
+        6.025,
+        2.312,
+        3.465,
+        2.82,
+        4.298
+      ],
+      "example_careers": [
+        "Zoologists and Wildlife Biologists",
+        "Biological Technicians",
+        "Natural Sciences Managers",
+        "Biological Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Mathematics",
+        "Computers and Electronics",
+        "Chemistry",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Science",
+        "Critical Thinking",
+        "Speaking",
+        "Writing"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "communication",
+      "name": "Communication",
+      "category": "Media & Communication",
+      "blurb": "How messages move through people, organizations, and media.",
+      "cip_codes": [
+        "09.0100"
+      ],
+      "riasec": [
+        1.26,
+        2.937,
+        4.538,
+        3.869,
+        5.132,
+        3.898
+      ],
+      "example_careers": [
+        "Fundraisers",
+        "Broadcast Announcers and Radio Disc Jockeys",
+        "News Analysts, Reporters, and Journalists",
+        "Public Relations Specialists",
+        "Editors",
+        "Writers and Authors",
+        "Public Relations Managers",
+        "Fundraising Managers"
+      ],
+      "job_zone": 4.11,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Customer and Personal Service",
+        "Administration and Management",
+        "Computers and Electronics",
+        "Sales and Marketing"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 9,
+      "thin": false
+    },
+    {
+      "slug": "digital-media",
+      "name": "Digital & Multimedia",
+      "category": "Media & Communication",
+      "blurb": "Web, social, video, and interactive content.",
+      "cip_codes": [
+        "09.0702",
+        "11.0801"
+      ],
+      "riasec": [
+        3.098,
+        4.048,
+        4.763,
+        3.72,
+        2.897,
+        3.892
+      ],
+      "example_careers": [
+        "Web Developers",
+        "Web and Digital Interface Designers",
+        "Special Effects Artists and Animators",
+        "Graphic Designers",
+        "Communications Teachers, Postsecondary",
+        "Career/Technical Education Teachers, Postsecondary"
+      ],
+      "job_zone": 3.83,
+      "top_knowledge": [
+        "Computers and Electronics",
+        "English Language",
+        "Communications and Media",
+        "Customer and Personal Service",
+        "Design",
+        "Sales and Marketing"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Learning",
+        "Speaking",
+        "Writing"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "journalism",
+      "name": "Journalism",
+      "category": "Media & Communication",
+      "blurb": "Reporting, writing, and producing the news.",
+      "cip_codes": [
+        "09.0401"
+      ],
+      "riasec": [
+        1.424,
+        3.486,
+        4.908,
+        3.474,
+        3.498,
+        4.28
+      ],
+      "example_careers": [
+        "News Analysts, Reporters, and Journalists",
+        "Editors",
+        "Writers and Authors",
+        "Proofreaders and Copy Markers",
+        "Communications Teachers, Postsecondary"
+      ],
+      "job_zone": 4.2,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Administration and Management",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Writing",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "public-relations",
+      "name": "Public Relations & Advertising",
+      "category": "Media & Communication",
+      "blurb": "Shaping how organizations are seen, and moving audiences to act.",
+      "cip_codes": [
+        "09.0902",
+        "09.0903"
+      ],
+      "riasec": [
+        1.197,
+        2.633,
+        3.645,
+        4.367,
+        5.997,
+        4.123
+      ],
+      "example_careers": [
+        "Fundraisers",
+        "Public Relations Specialists",
+        "Advertising and Promotions Managers",
+        "Public Relations Managers",
+        "Fundraising Managers",
+        "Communications Teachers, Postsecondary"
+      ],
+      "job_zone": 4.17,
+      "top_knowledge": [
+        "English Language",
+        "Communications and Media",
+        "Customer and Personal Service",
+        "Administration and Management",
+        "Sales and Marketing",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "astronomy",
+      "name": "Astronomy & Astrophysics",
+      "category": "Physical Sciences",
+      "blurb": "Stars, galaxies, cosmology, and the physics of the universe.",
+      "cip_codes": [
+        "40.0201",
+        "40.0202"
+      ],
+      "riasec": [
+        4.188,
+        6.37,
+        2.902,
+        3.607,
+        2.902,
+        4.165
+      ],
+      "example_careers": [
+        "Astronomers",
+        "Physicists",
+        "Natural Sciences Managers",
+        "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "Mathematics",
+        "English Language",
+        "Physics",
+        "Computers and Electronics",
+        "Education and Training",
+        "Chemistry"
+      ],
+      "top_skills": [
+        "Science",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Writing",
+        "Active Listening"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "atmospheric-science",
+      "name": "Atmospheric Science & Meteorology",
+      "category": "Physical Sciences",
+      "blurb": "Weather, climate, and the physics of the atmosphere.",
+      "cip_codes": [
+        "40.0404"
+      ],
+      "riasec": [
+        3.837,
+        5.913,
+        2.767,
+        4.03,
+        3.55,
+        4.09
+      ],
+      "example_careers": [
+        "Atmospheric and Space Scientists",
+        "Natural Sciences Managers",
+        "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Mathematics",
+        "Computers and Electronics",
+        "Education and Training",
+        "Physics",
+        "Chemistry"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Science",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "chemistry",
+      "name": "Chemistry",
+      "category": "Physical Sciences",
+      "blurb": "Matter at the level of atoms and molecules, and the reactions between them.",
+      "cip_codes": [
+        "40.0501"
+      ],
+      "riasec": [
+        4.484,
+        5.406,
+        2.184,
+        3.116,
+        2.41,
+        4.527
+      ],
+      "example_careers": [
+        "Chemists",
+        "Food Science Technicians",
+        "Chemical Technicians",
+        "Forensic Science Technicians",
+        "Natural Sciences Managers",
+        "Chemistry Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 3.86,
+      "top_knowledge": [
+        "English Language",
+        "Chemistry",
+        "Education and Training",
+        "Computers and Electronics",
+        "Mathematics",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 7,
+      "thin": false
+    },
+    {
+      "slug": "geology",
+      "name": "Geology & Earth Science",
+      "category": "Physical Sciences",
+      "blurb": "The Earth's materials, structure, and history.",
+      "cip_codes": [
+        "40.0601"
+      ],
+      "riasec": [
+        4.754,
+        6.014,
+        2.242,
+        3.088,
+        2.604,
+        4.326
+      ],
+      "example_careers": [
+        "Geoscientists, Except Hydrologists and Geographers",
+        "Hydrologists",
+        "Geological Technicians, Except Hydrologic Technicians",
+        "Natural Sciences Managers",
+        "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.4,
+      "top_knowledge": [
+        "Mathematics",
+        "English Language",
+        "Chemistry",
+        "Computers and Electronics",
+        "Physics",
+        "Engineering and Technology"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Science"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "mathematics",
+      "name": "Mathematics",
+      "category": "Physical Sciences",
+      "blurb": "Proof, structure, and abstraction, pure and applied.",
+      "cip_codes": [
+        "27.0101",
+        "27.0301"
+      ],
+      "riasec": [
+        2.675,
+        5.794,
+        2.466,
+        3.223,
+        2.426,
+        5.124
+      ],
+      "example_careers": [
+        "Actuaries",
+        "Mathematicians",
+        "Statisticians",
+        "Data Scientists",
+        "Bioinformatics Technicians",
+        "Natural Sciences Managers",
+        "Mathematical Science Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "Mathematics",
+        "Computers and Electronics",
+        "English Language",
+        "Education and Training",
+        "Administration and Management",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Mathematics",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Listening",
+        "Speaking",
+        "Writing"
+      ],
+      "n_occupations": 8,
+      "thin": false
+    },
+    {
+      "slug": "oceanography",
+      "name": "Oceanography",
+      "category": "Physical Sciences",
+      "blurb": "The physics, chemistry, and biology of the oceans.",
+      "cip_codes": [
+        "40.0607",
+        "26.1302"
+      ],
+      "riasec": [
+        4.56,
+        6.435,
+        2.414,
+        3.108,
+        2.345,
+        4.421
+      ],
+      "example_careers": [
+        "Zoologists and Wildlife Biologists",
+        "Bioinformatics Scientists",
+        "Molecular and Cellular Biologists",
+        "Geneticists",
+        "Biologists",
+        "Geoscientists, Except Hydrologists and Geographers",
+        "Hydrologists",
+        "Biological Technicians"
+      ],
+      "job_zone": 4.64,
+      "top_knowledge": [
+        "Biology",
+        "English Language",
+        "Mathematics",
+        "Chemistry",
+        "Computers and Electronics",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Science",
+        "Reading Comprehension",
+        "Speaking",
+        "Critical Thinking",
+        "Active Listening",
+        "Writing"
+      ],
+      "n_occupations": 11,
+      "thin": false
+    },
+    {
+      "slug": "physics",
+      "name": "Physics",
+      "category": "Physical Sciences",
+      "blurb": "The fundamental laws governing matter, energy, space, and time.",
+      "cip_codes": [
+        "40.0801"
+      ],
+      "riasec": [
+        3.545,
+        5.51,
+        3.06,
+        4.567,
+        3.155,
+        4.067
+      ],
+      "example_careers": [
+        "Physicists",
+        "Natural Sciences Managers",
+        "Physics Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.75,
+      "top_knowledge": [
+        "English Language",
+        "Mathematics",
+        "Education and Training",
+        "Computers and Electronics",
+        "Physics",
+        "Engineering and Technology"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "statistics",
+      "name": "Statistics",
+      "category": "Physical Sciences",
+      "blurb": "Reasoning about uncertainty and drawing conclusions from data.",
+      "cip_codes": [
+        "27.0501"
+      ],
+      "riasec": [
+        2.22,
+        5.975,
+        2.243,
+        2.913,
+        2.903,
+        5.26
+      ],
+      "example_careers": [
+        "Actuaries",
+        "Statisticians",
+        "Data Scientists",
+        "Survey Researchers",
+        "Natural Sciences Managers",
+        "Mathematical Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "Mathematics",
+        "Computers and Electronics",
+        "English Language",
+        "Administration and Management",
+        "Education and Training",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Mathematics",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Speaking",
+        "Writing"
+      ],
+      "n_occupations": 6,
+      "thin": false
+    },
+    {
+      "slug": "cognitive-science",
+      "name": "Cognitive Science",
+      "category": "Psychology & Behavior",
+      "blurb": "Mind and intelligence across psychology, neuroscience, linguistics, and AI.",
+      "cip_codes": [
+        "30.2501"
+      ],
+      "riasec": [
+        2.415,
+        6.01,
+        3.078,
+        4.665,
+        3.265,
+        3.952
+      ],
+      "example_careers": [
+        "Computer and Information Research Scientists",
+        "Clinical and Counseling Psychologists",
+        "Natural Sciences Managers",
+        "Psychology Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "English Language",
+        "Computers and Electronics",
+        "Psychology",
+        "Education and Training",
+        "Mathematics",
+        "Administration and Management"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Active Listening",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "human-development",
+      "name": "Human Development & Family Studies",
+      "category": "Psychology & Behavior",
+      "blurb": "How people grow and change across the lifespan, in families and communities.",
+      "cip_codes": [
+        "19.0701"
+      ],
+      "riasec": [
+        1.877,
+        3.823,
+        3.17,
+        6.95,
+        3.217,
+        3.677
+      ],
+      "example_careers": [
+        "Educational, Guidance, and Career Counselors and Advisors",
+        "Child, Family, and School Social Workers",
+        "Family and Consumer Sciences Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Customer and Personal Service",
+        "Education and Training",
+        "Psychology",
+        "Therapy and Counseling",
+        "Administrative"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "psychology",
+      "name": "Psychology",
+      "category": "Psychology & Behavior",
+      "blurb": "The science of mind and behavior.",
+      "cip_codes": [
+        "42.0101"
+      ],
+      "riasec": [
+        1.652,
+        5.647,
+        2.985,
+        5.058,
+        2.987,
+        4.25
+      ],
+      "example_careers": [
+        "Industrial-Organizational Psychologists",
+        "Clinical and Counseling Psychologists",
+        "Social Science Research Assistants",
+        "Psychology Teachers, Postsecondary"
+      ],
+      "job_zone": 4.75,
+      "top_knowledge": [
+        "Psychology",
+        "English Language",
+        "Education and Training",
+        "Therapy and Counseling",
+        "Customer and Personal Service",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Speaking",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "recreation",
+      "name": "Parks, Recreation & Leisure",
+      "category": "Public & Social Service",
+      "blurb": "Programming and managing parks, recreation, and the outdoors.",
+      "cip_codes": [
+        "31.0101"
+      ],
+      "riasec": [
+        3.73,
+        2.94,
+        2.947,
+        5.737,
+        4.07,
+        3.527
+      ],
+      "example_careers": [
+        "Coaches and Scouts",
+        "Recreation Workers",
+        "Recreation and Fitness Studies Teachers, Postsecondary"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "Education and Training",
+        "English Language",
+        "Customer and Personal Service",
+        "Psychology",
+        "Administration and Management",
+        "Public Safety and Security"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Monitoring",
+        "Learning Strategies",
+        "Critical Thinking",
+        "Reading Comprehension"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "public-administration",
+      "name": "Public Administration",
+      "category": "Public & Social Service",
+      "blurb": "Managing government agencies and public programs.",
+      "cip_codes": [
+        "44.0401"
+      ],
+      "riasec": [
+        1.92,
+        2.716,
+        1.916,
+        3.686,
+        6.488,
+        4.776
+      ],
+      "example_careers": [
+        "Chief Executives",
+        "Legislators",
+        "General and Operations Managers",
+        "Transportation, Storage, and Distribution Managers",
+        "Social and Community Service Managers"
+      ],
+      "job_zone": 4.2,
+      "top_knowledge": [
+        "Administration and Management",
+        "Customer and Personal Service",
+        "English Language",
+        "Personnel and Human Resources",
+        "Mathematics",
+        "Public Safety and Security"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Monitoring",
+        "Speaking",
+        "Writing"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "public-policy",
+      "name": "Public Policy",
+      "category": "Public & Social Service",
+      "blurb": "Analyzing and designing the policies governments adopt.",
+      "cip_codes": [
+        "44.0501"
+      ],
+      "riasec": [
+        1.718,
+        5.402,
+        3.045,
+        4.162,
+        3.662,
+        4.022
+      ],
+      "example_careers": [
+        "Legislators",
+        "Political Scientists",
+        "Social Science Research Assistants",
+        "Political Science Teachers, Postsecondary"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Law and Government",
+        "Computers and Electronics",
+        "Mathematics",
+        "Sociology and Anthropology"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "social-work",
+      "name": "Social Work",
+      "category": "Public & Social Service",
+      "blurb": "Helping individuals and families navigate hardship and systems.",
+      "cip_codes": [
+        "44.0701"
+      ],
+      "riasec": [
+        1.773,
+        3.943,
+        2.863,
+        6.421,
+        3.353,
+        3.439
+      ],
+      "example_careers": [
+        "Marriage and Family Therapists",
+        "Child, Family, and School Social Workers",
+        "Healthcare Social Workers",
+        "Mental Health and Substance Abuse Social Workers",
+        "Probation Officers and Correctional Treatment Specialists",
+        "Social and Community Service Managers",
+        "Social Work Teachers, Postsecondary"
+      ],
+      "job_zone": 4.57,
+      "top_knowledge": [
+        "Psychology",
+        "Therapy and Counseling",
+        "English Language",
+        "Customer and Personal Service",
+        "Sociology and Anthropology",
+        "Education and Training"
+      ],
+      "top_skills": [
+        "Active Listening",
+        "Speaking",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 7,
+      "thin": false
+    },
+    {
+      "slug": "anthropology",
+      "name": "Anthropology",
+      "category": "Social Sciences",
+      "blurb": "Human cultures, past and present, and what makes us human.",
+      "cip_codes": [
+        "45.0201"
+      ],
+      "riasec": [
+        3.725,
+        6.4,
+        3.89,
+        5.21,
+        2.05,
+        3.24
+      ],
+      "example_careers": [
+        "Anthropologists and Archeologists",
+        "Anthropology and Archeology Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "Sociology and Anthropology",
+        "English Language",
+        "History and Archeology",
+        "Education and Training",
+        "Foreign Language",
+        "Geography"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Writing",
+        "Active Listening",
+        "Active Learning",
+        "Critical Thinking"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "criminology",
+      "name": "Criminology & Criminal Justice",
+      "category": "Social Sciences",
+      "blurb": "Crime, the justice system, and how society responds to both.",
+      "cip_codes": [
+        "43.0104",
+        "45.0401"
+      ],
+      "riasec": [
+        2.513,
+        4.393,
+        2.773,
+        5.25,
+        4.257,
+        4.073
+      ],
+      "example_careers": [
+        "Sociologists",
+        "First-Line Supervisors of Correctional Officers",
+        "Criminal Justice and Law Enforcement Teachers, Postsecondary"
+      ],
+      "job_zone": 4.33,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Law and Government",
+        "Sociology and Anthropology",
+        "Public Safety and Security",
+        "Psychology"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Reading Comprehension",
+        "Writing",
+        "Monitoring"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "economics",
+      "name": "Economics",
+      "category": "Social Sciences",
+      "blurb": "How people, firms, and governments allocate scarce resources.",
+      "cip_codes": [
+        "45.0601"
+      ],
+      "riasec": [
+        2.174,
+        5.588,
+        2.684,
+        4.124,
+        3.096,
+        4.644
+      ],
+      "example_careers": [
+        "Economists",
+        "Survey Researchers",
+        "Social Science Research Assistants",
+        "Economics Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.6,
+      "top_knowledge": [
+        "English Language",
+        "Mathematics",
+        "Education and Training",
+        "Computers and Electronics",
+        "Customer and Personal Service",
+        "Economics and Accounting"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Active Listening",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 5,
+      "thin": false
+    },
+    {
+      "slug": "geography",
+      "name": "Geography",
+      "category": "Social Sciences",
+      "blurb": "Places, spatial patterns, and the relationship between people and land.",
+      "cip_codes": [
+        "45.0701"
+      ],
+      "riasec": [
+        4.763,
+        5.473,
+        3.097,
+        3.493,
+        1.903,
+        4.33
+      ],
+      "example_careers": [
+        "Surveying and Mapping Technicians",
+        "Geographers",
+        "Geography Teachers, Postsecondary"
+      ],
+      "job_zone": 4.0,
+      "top_knowledge": [
+        "Geography",
+        "English Language",
+        "Education and Training",
+        "Computers and Electronics",
+        "Mathematics",
+        "History and Archeology"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Critical Thinking",
+        "Speaking",
+        "Writing",
+        "Active Listening",
+        "Active Learning"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "international-relations",
+      "name": "International Relations",
+      "category": "Social Sciences",
+      "blurb": "Diplomacy, conflict, trade, and how countries deal with each other.",
+      "cip_codes": [
+        "45.0901"
+      ],
+      "riasec": [
+        1.475,
+        6.09,
+        3.795,
+        5.145,
+        3.43,
+        3.27
+      ],
+      "example_careers": [
+        "Political Scientists",
+        "Political Science Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "Law and Government",
+        "English Language",
+        "Education and Training",
+        "History and Archeology",
+        "Sociology and Anthropology",
+        "Mathematics"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Active Learning",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking"
+      ],
+      "n_occupations": 2,
+      "thin": true
+    },
+    {
+      "slug": "political-science",
+      "name": "Political Science",
+      "category": "Social Sciences",
+      "blurb": "Government, power, institutions, and political behavior.",
+      "cip_codes": [
+        "45.1001"
+      ],
+      "riasec": [
+        2.015,
+        5.362,
+        3.312,
+        4.99,
+        3.007,
+        4.02
+      ],
+      "example_careers": [
+        "Political Scientists",
+        "Social Science Research Assistants",
+        "Political Science Teachers, Postsecondary",
+        "Secondary School Teachers, Except Special and Career/Technical Education"
+      ],
+      "job_zone": 4.5,
+      "top_knowledge": [
+        "English Language",
+        "Education and Training",
+        "Law and Government",
+        "Computers and Electronics",
+        "Mathematics",
+        "Customer and Personal Service"
+      ],
+      "top_skills": [
+        "Reading Comprehension",
+        "Speaking",
+        "Active Listening",
+        "Critical Thinking",
+        "Writing",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    },
+    {
+      "slug": "sociology",
+      "name": "Sociology",
+      "category": "Social Sciences",
+      "blurb": "How groups, institutions, and social structures shape behavior.",
+      "cip_codes": [
+        "45.1101"
+      ],
+      "riasec": [
+        2.17,
+        6.097,
+        3.153,
+        4.577,
+        2.627,
+        4.267
+      ],
+      "example_careers": [
+        "Sociologists",
+        "Social Science Research Assistants",
+        "Sociology Teachers, Postsecondary"
+      ],
+      "job_zone": 4.67,
+      "top_knowledge": [
+        "English Language",
+        "Sociology and Anthropology",
+        "Education and Training",
+        "Computers and Electronics",
+        "Mathematics",
+        "Psychology"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Reading Comprehension",
+        "Active Listening",
+        "Writing",
+        "Critical Thinking",
+        "Learning Strategies"
+      ],
+      "n_occupations": 3,
+      "thin": false
+    },
+    {
+      "slug": "urban-studies",
+      "name": "Urban Studies & Planning",
+      "category": "Social Sciences",
+      "blurb": "How cities work, and how to make them work better.",
+      "cip_codes": [
+        "45.1201",
+        "04.0301"
+      ],
+      "riasec": [
+        2.8,
+        5.375,
+        3.543,
+        4.277,
+        4.1,
+        3.797
+      ],
+      "example_careers": [
+        "Sociologists",
+        "Urban and Regional Planners",
+        "Architectural and Engineering Managers",
+        "Architecture Teachers, Postsecondary"
+      ],
+      "job_zone": 5.0,
+      "top_knowledge": [
+        "English Language",
+        "Law and Government",
+        "Computers and Electronics",
+        "Mathematics",
+        "Education and Training",
+        "Sociology and Anthropology"
+      ],
+      "top_skills": [
+        "Speaking",
+        "Active Listening",
+        "Reading Comprehension",
+        "Writing",
+        "Critical Thinking",
+        "Active Learning"
+      ],
+      "n_occupations": 4,
+      "thin": false
+    }
+  ]
+}
