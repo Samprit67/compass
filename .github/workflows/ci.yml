@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check compass tests
+      - run: ruff format --check compass tests
+      - run: mypy compass
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - run: pytest --cov=compass --cov-report=term-missing
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t compass:ci .
+      - name: smoke test the image
+        run: |
+          docker run -d --name compass-ci -p 8791:8791 compass:ci
+          for i in $(seq 1 20); do
+            curl -sf http://localhost:8791/api/health && break || sleep 1
+          done
+          curl -sf http://localhost:8791/api/health
+          curl -sf http://localhost:8791/api/majors | head -c 100
+          docker rm -f compass-ci
