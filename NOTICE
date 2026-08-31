@@ -1,0 +1,30 @@
+Compass
+Copyright (c) 2026 Samprit Goswami
+
+The Compass source code is licensed under the MIT License (see LICENSE).
+
+This project includes and redistributes data derived from the following
+third-party sources:
+
+1. O*NET 31.0 Database
+   Created for the U.S. Department of Labor, Employment and Training
+   Administration (USDOL/ETA) by the National Center for O*NET Development.
+   Used under the Creative Commons Attribution 4.0 International License
+   (https://creativecommons.org/licenses/by/4.0/).
+   Source: https://www.onetcenter.org/database.html
+
+   The files compass/data/major_profiles.json and
+   compass/data/questionnaire.json contain values extracted and aggregated from
+   the O*NET database and the O*NET Interest Profiler Short Form. These are
+   modifications of the original O*NET data.
+
+   O*NET(R) is a trademark of USDOL/ETA. This project is not endorsed by or
+   affiliated with O*NET or the U.S. Department of Labor.
+
+2. CIP 2020 to SOC 2018 Crosswalk
+   U.S. Department of Education, National Center for Education Statistics, and
+   U.S. Bureau of Labor Statistics. Public domain (work of the U.S. government).
+   Source: https://nces.ed.gov/ipeds/cipcode/
+
+The mapping of majors to CIP codes in compass/data/majors.yaml, and all code in
+this repository, are original work by the project author.
