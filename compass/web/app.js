@@ -160,10 +160,16 @@ async function quizView() {
   const saved = loadAnswers();
   teardownQuiz();
   clear(view);
+
+  // Resume a genuinely interrupted run, or an explicit "answer more" from the
+  // results page. A finished quiz (or "Retake") starts clean at 30.
+  const n = saved ? Object.keys(saved.answers || {}).length : 0;
+  const resuming = saved && !saved.sample && (saved.resume || (!saved.completed && n > 0)) && n < 60;
+
   runQuiz(view, q, {
-    answers: saved && !saved.sample ? { ...saved.answers } : {},
+    answers: resuming ? { ...saved.answers } : {},
     onDone: (answers) => {
-      saveAnswers({ answers, ts: Date.now() });
+      saveAnswers({ answers, ts: Date.now(), completed: true, resume: false });
       location.hash = "#/results";
     },
   });
@@ -236,7 +242,7 @@ function renderResults(data, meta, isSample) {
       h(
         "p",
         { class: "tiny muted", style: "margin:.2rem 0 0" },
-        `Answered ${p.answered} of ${p.total_items}. `,
+        `${p.answered} questions answered. `,
         h("span", { class: "conf " + data.confidence }, data.confidence + " confidence"),
         "  ·  ",
         h("a", { href: "#/quiz" }, "Retake"),
@@ -254,6 +260,25 @@ function renderResults(data, meta, isSample) {
           "Start over",
         ),
       ),
+      p.answered < p.total_items
+        ? h(
+            "p",
+            { class: "tiny", style: "margin:.4rem 0 0" },
+            h(
+              "a",
+              {
+                href: "#/quiz",
+                onclick: (e) => {
+                  e.preventDefault();
+                  const s = loadAnswers() || {};
+                  saveAnswers({ ...s, completed: false, resume: true });
+                  location.hash = "#/quiz";
+                },
+              },
+              `Answer the other ${p.total_items - p.answered} for a sharper read →`,
+            ),
+          )
+        : null,
       data.notes.length ? h("ul", { class: "notes" }, ...data.notes.map((n) => h("li", {}, n))) : null,
     ),
     hexagon({ user: userHex, size: 150 }),

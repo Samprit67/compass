@@ -13,10 +13,19 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
   const totalPages = Math.ceil(items.length / PER_PAGE);
   const halfPages = HALF / PER_PAGE;
 
-  let page = 0;
-  let extended = Object.keys(answers).length > HALF;
+  let extended = Object.keys(answers).length >= HALF;
   const cap = () => (extended ? totalPages : halfPages);
   const target = () => (extended ? items.length : HALF);
+  // Resume on the first page that still has an unanswered item.
+  let page = 0;
+  for (let pg = 0; pg < cap(); pg++) {
+    const on = items.slice(pg * PER_PAGE, pg * PER_PAGE + PER_PAGE);
+    if (on.some((it) => answers[it.id] === undefined)) {
+      page = pg;
+      break;
+    }
+    page = Math.min(pg + 1, cap() - 1);
+  }
 
   const root = h("div", { class: "quiz" });
   clear(mount).append(root);
