@@ -1,63 +1,114 @@
 import { h, clear, saveAnswers } from "./format.js";
 
+const PER_PAGE = 10;
+const ENOUGH_TO_FINISH = 20; // once this many are answered, offer "see results"
+
 /**
- * Render the questionnaire into `mount`. Calls `onDone(answers)` when finished
- * (answers is {qid: 0..4}). `start` lets a resumed quiz jump back in.
+ * Paged grid questionnaire. `onDone(answers)` gets {qid: 0..4}.
  */
 export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
   const items = questionnaire.questions;
   const labels = questionnaire.response_labels;
-  let idx = Object.keys(answers).length;
-  if (idx >= items.length) idx = items.length - 1;
+  const pages = Math.ceil(items.length / PER_PAGE);
+  let page = Math.min(Math.floor(Object.keys(answers).length / PER_PAGE), pages - 1);
 
-  const bar = h("span");
-  const progress = h("div", { class: "progress" }, bar);
-  const count = h("div", { class: "q-count" });
-  const qtext = h("div", { class: "q-text" });
-  const scale = h("div", { class: "scale" });
-  const back = h("button", { onclick: () => go(idx - 1) }, "← Back");
-  const skip = h("button", { class: "ghost", onclick: () => choose(2) }, "Not sure");
-  const nav = h("div", { class: "quiz-nav" }, back, skip);
-
-  const root = h("div", { class: "quiz" }, progress, count, qtext, scale, nav);
+  const root = h("div", { class: "quiz" });
   clear(mount).append(root);
 
-  function choose(value) {
-    answers[items[idx].id] = value;
-    saveAnswers({ answers, ts: Date.now() });
-    if (idx + 1 >= items.length) {
-      onDone(answers);
-    } else {
-      go(idx + 1);
-    }
-  }
+  const answeredCount = () => Object.keys(answers).length;
 
-  function go(n) {
-    idx = Math.max(0, Math.min(items.length - 1, n));
+  function setAnswer(id, v) {
+    answers[id] = v;
+    saveAnswers({ answers, ts: Date.now() });
     render();
   }
 
   function render() {
-    const item = items[idx];
-    bar.style.width = ((idx / items.length) * 100).toFixed(1) + "%";
-    count.textContent = `Activity ${idx + 1} of ${items.length}`;
-    qtext.textContent = "Would you enjoy: " + lowerFirst(item.text) + "?";
-    back.disabled = idx === 0;
-    clear(scale);
-    labels.forEach((label, v) => {
-      const btn = h(
-        "button",
-        { class: answers[item.id] === v ? "sel" : "", onclick: () => choose(v) },
-        h("span", { class: "key" }, String(v + 1)),
-        label,
+    clear(root);
+    const start = page * PER_PAGE;
+    const slice = items.slice(start, start + PER_PAGE);
+    const done = answeredCount();
+
+    root.append(
+      h(
+        "div",
+        { class: "quiz-head" },
+        h("span", { class: "step" }, `Part ${page + 1} of ${pages}`),
+        h("span", { class: "tiny muted" }, `${done} of ${items.length} answered`),
+      ),
+      h("div", { class: "progress" }, h("span", { style: `width:${(done / items.length) * 100}%` })),
+      h(
+        "p",
+        { class: "quiz-sub" },
+        "How much would you enjoy each activity? Skip any you are unsure about.",
+      ),
+    );
+
+    const grid = h("div", { class: "q-grid" });
+    for (const item of slice) {
+      const cur = answers[item.id];
+      const dots = h(
+        "div",
+        { class: "dots" },
+        ...labels.map((label, v) =>
+          h("button", {
+            "data-v": v,
+            class: cur === v ? "on" : "",
+            title: label,
+            "aria-label": label,
+            onclick: () => setAnswer(item.id, v),
+          }),
+        ),
       );
-      scale.append(btn);
-    });
+      grid.append(
+        h(
+          "div",
+          { class: "q-item" + (cur !== undefined ? " answered" : "") },
+          h("span", { class: "label" }, upperFirst(item.text)),
+          dots,
+        ),
+      );
+    }
+    root.append(grid);
+    root.append(
+      h(
+        "div",
+        { class: "scale-legend" },
+        h("span", {}, labels[0]),
+        h("span", {}, labels[labels.length - 1]),
+      ),
+    );
+
+    const back = h("button", { disabled: page === 0, onclick: () => go(page - 1) }, "← Back");
+    const forwardLabel = page + 1 >= pages ? "See my results" : "Next →";
+    const forward = h(
+      "button",
+      { class: "primary", onclick: () => (page + 1 >= pages ? finish() : go(page + 1)) },
+      forwardLabel,
+    );
+    const nav = h("div", { class: "quiz-nav" }, back, forward);
+    if (page + 1 < pages && done >= ENOUGH_TO_FINISH) {
+      nav.insertBefore(
+        h("button", { class: "ghost skip", onclick: finish }, "That is enough, show results"),
+        forward,
+      );
+    }
+    root.append(nav);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function go(n) {
+    page = Math.max(0, Math.min(pages - 1, n));
+    render();
+  }
+
+  function finish() {
+    onDone(answers);
   }
 
   function onKey(e) {
-    if (e.key >= "1" && e.key <= "5") choose(Number(e.key) - 1);
-    else if (e.key === "ArrowLeft") go(idx - 1);
+    if (e.key === "ArrowRight" && page + 1 < pages) go(page + 1);
+    else if (e.key === "ArrowLeft") go(page - 1);
   }
   document.addEventListener("keydown", onKey);
   mount.addEventListener("quiz:teardown", () => document.removeEventListener("keydown", onKey), { once: true });
@@ -65,6 +116,6 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
   render();
 }
 
-function lowerFirst(s) {
-  return s.charAt(0).toLowerCase() + s.slice(1);
+function upperFirst(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }

@@ -40,9 +40,9 @@ drove it and where you and the major do not line up.
 
 ## Screenshots
 
-| Take the quiz | Browse a major |
+| The questionnaire | A major's page |
 |---|---|
-| ![](docs/screenshots/landing.png) | ![](docs/screenshots/major.png) |
+| ![](docs/screenshots/quiz.png) | ![](docs/screenshots/major.png) |
 
 ## Quickstart
 

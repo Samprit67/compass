@@ -16,6 +16,22 @@ export const DIM_LABEL = {
   conventional: "Conventional",
 };
 
+// CSS custom property per interest, defined in style.css.
+export const DIM_VAR = {
+  realistic: "var(--R)",
+  investigative: "var(--I)",
+  artistic: "var(--A)",
+  social: "var(--S)",
+  enterprising: "var(--E)",
+  conventional: "var(--C)",
+};
+export const LETTER_VAR = { R: "var(--R)", I: "var(--I)", A: "var(--A)", S: "var(--S)", E: "var(--E)", C: "var(--C)" };
+
+/** Colour for a major's dominant interest, from its high-point code. */
+export function stripeFor(code) {
+  return LETTER_VAR[code && code[0]] || "var(--C)";
+}
+
 /** Tiny hyperscript helper. */
 export function h(tag, attrs = {}, ...kids) {
   const el = document.createElement(tag);

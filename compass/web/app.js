@@ -5,7 +5,10 @@ import {
   clear,
   RIASEC,
   DIM_LABEL,
+  DIM_VAR,
   LETTER,
+  LETTER_VAR,
+  stripeFor,
   loadAnswers,
   saveAnswers,
   clearAnswers,
@@ -13,7 +16,7 @@ import {
 import { runQuiz } from "./quiz.js";
 
 const view = document.getElementById("view");
-let CACHE = { questionnaire: null, majors: null, meta: null };
+const CACHE = { questionnaire: null, majors: null, meta: null };
 
 // ---------------------------------------------------------------- theme
 const themeBtn = document.getElementById("theme-toggle");
@@ -50,27 +53,71 @@ function teardownQuiz() {
   view.dispatchEvent(new Event("quiz:teardown"));
 }
 
+function hasAnswers() {
+  const a = loadAnswers();
+  return a && Object.keys(a.answers || {}).length >= 6;
+}
+
+/** Circular fit gauge as an SVG. */
+function gauge(score, color = "var(--accent)") {
+  const r = 56;
+  const c = 2 * Math.PI * r;
+  const svg = `
+    <svg viewBox="0 0 132 132" width="132" height="132">
+      <circle cx="66" cy="66" r="${r}" fill="none" stroke="var(--surface-2)" stroke-width="10"/>
+      <circle cx="66" cy="66" r="${r}" fill="none" stroke="${color}" stroke-width="10"
+        stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - score / 100)}"/>
+    </svg>`;
+  return h(
+    "div",
+    { class: "gauge" },
+    Object.assign(document.createElement("div"), { innerHTML: svg }).firstElementChild,
+    h("div", { class: "num" }, h("b", {}, String(score)), h("span", {}, "fit")),
+  );
+}
+
+/** The three-letter interest code, each letter in its colour. */
+function codeChip(code) {
+  return h(
+    "span",
+    { class: "code-chip" },
+    ...code.split("").map((L) => h("i", { style: `background:${LETTER_VAR[L] || "var(--C)"}` }, L)),
+  );
+}
+
 // ---------------------------------------------------------------- landing
 function landing() {
-  const answers = loadAnswers();
   const cta = h("div", { class: "cta" });
-  if (answers && Object.keys(answers.answers || {}).length >= 6) {
+  if (hasAnswers()) {
     cta.append(
       h("button", { class: "primary", onclick: () => (location.hash = "#/results") }, "See my results"),
       h("button", { onclick: () => (location.hash = "#/quiz") }, "Retake the quiz"),
     );
   } else {
     cta.append(
-      h("button", { class: "primary", onclick: () => (location.hash = "#/quiz") }, "Take the quiz"),
+      h("button", { class: "primary", onclick: () => (location.hash = "#/quiz") }, "Start the quiz"),
       h("button", { onclick: () => (location.hash = "#/sample") }, "See a sample result"),
     );
   }
 
+  const strip = h(
+    "div",
+    { class: "riasec-strip" },
+    ...RIASEC.map((d) =>
+      h(
+        "span",
+        { class: "riasec-pill" },
+        h("b", { style: `background:${DIM_VAR[d]}` }, LETTER[d]),
+        DIM_LABEL[d],
+      ),
+    ),
+  );
+
   const pillars = h(
     "div",
     { class: "pillars" },
-    pillar("Real interest data", "Every major is profiled from O*NET, the interest database career counselors use, mapped through the government's CIP-to-SOC crosswalk."),
-    pillar("It shows its work", "Each recommendation tells you which of your answers drove it, and where you and the major do not line up."),
+    pillar("Real interest data", "Every major is profiled from O*NET, the interest database career counselors use, joined to the government's CIP-to-SOC crosswalk."),
+    pillar("It shows its work", "Each recommendation names which of your answers drove it, and where you and the major do not line up."),
     pillar("Honest about limits", "Interest fit is one signal. It is not aptitude, and it is not a prediction of the job market."),
   );
 
@@ -78,9 +125,15 @@ function landing() {
     h(
       "section",
       { class: "hero" },
-      h("h1", {}, "Find a major that fits how you like to work"),
-      h("p", { class: "lede" }, "A 60-question interest inventory, scored against 112 college majors, with the reasoning shown."),
+      h("p", { class: "eyebrow" }, "Career Compass"),
+      h("h1", {}, "Find your ", h("span", { class: "grad" }, "major")),
+      h(
+        "p",
+        { class: "lede" },
+        "Answer a short interest inventory. Get 112 college majors ranked for you, each with the reason it fits.",
+      ),
       cta,
+      strip,
     ),
     pillars,
   );
@@ -97,7 +150,7 @@ async function quizView() {
   teardownQuiz();
   clear(view);
   runQuiz(view, q, {
-    answers: saved ? { ...saved.answers } : {},
+    answers: saved && !saved.sample ? { ...saved.answers } : {},
     onDone: (answers) => {
       saveAnswers({ answers, ts: Date.now() });
       location.hash = "#/results";
@@ -114,33 +167,51 @@ async function results() {
   }
   spinner();
   const meta = await ensure("meta", api.meta);
-  const data = await api.score(saved.answers, saved.dealbreakers || [], 20);
+  const data = await api.score(saved.answers, saved.dealbreakers || [], 24);
   renderResults(data, meta, !!saved.sample);
 }
 
 function renderResults(data, meta, isSample) {
   const p = data.profile;
   const userHex = norm(p.riasec, 4);
+  const [top, ...rest] = data.results;
+  const topColor = stripeFor(top.major.high_point_code);
 
-  const head = h(
+  const matchHero = h(
     "div",
-    { class: "card results-head" },
+    { class: "match-hero" },
+    gauge(top.score, topColor),
     h(
       "div",
       {},
-      h("h2", {}, "Your interest profile ", h("span", { class: "code-chip" }, p.high_point_code)),
+      h("div", { class: "label" }, "Your top match"),
+      h("h2", {}, top.major.name),
+      h("p", {}, top.explanation ? top.explanation.summary : top.major.blurb),
+      h(
+        "div",
+        { class: "why-tags" },
+        ...(top.explanation ? top.explanation.matches : []).slice(0, 3).map((d) => h("span", { class: "tag pos" }, DIM_LABEL[d])),
+        ...(top.explanation ? top.explanation.clashes : []).slice(0, 2).map((d) => h("span", { class: "tag neg" }, DIM_LABEL[d])),
+      ),
+      h("p", { class: "tiny", style: "margin-top:.7rem" }, h("a", { href: "#/major/" + top.major.slug }, "Full page for " + top.major.name + " →")),
+    ),
+  );
+
+  const profileBar = h(
+    "div",
+    { class: "card profile-bar" },
+    h(
+      "div",
+      {},
+      h("h3", {}, "Your interest profile ", codeChip(p.high_point_code)),
       h(
         "p",
-        { class: "muted tiny" },
+        { class: "tiny muted", style: "margin:.2rem 0 0" },
         `Answered ${p.answered} of ${p.total_items}. `,
         h("span", { class: "conf " + data.confidence }, data.confidence + " confidence"),
-      ),
-      data.notes.length ? h("ul", { class: "notes" }, ...data.notes.map((n) => h("li", {}, n))) : null,
-      h(
-        "p",
-        { class: "tiny", style: "margin-top:.8rem" },
+        "  ·  ",
         h("a", { href: "#/quiz" }, "Retake"),
-        " · ",
+        "  ·  ",
         h(
           "a",
           {
@@ -154,37 +225,32 @@ function renderResults(data, meta, isSample) {
           "Start over",
         ),
       ),
+      data.notes.length ? h("ul", { class: "notes" }, ...data.notes.map((n) => h("li", {}, n))) : null,
     ),
-    hexagon({ user: userHex, size: 200 }),
+    hexagon({ user: userHex, size: 150 }),
   );
 
-  const cats = [...new Set(data.results.map((r) => r.major.category))].sort();
+  const cats = [...new Set(rest.map((r) => r.major.category))].sort();
   let activeCat = null;
-  const list = h("div", {});
-  const filters = h(
-    "div",
-    { class: "filters" },
-    chip("All", true, () => setCat(null)),
-    ...cats.map((c) => chip(c, false, () => setCat(c))),
-  );
+  const listEl = h("div", {});
+  const filterEls = [
+    chip("All", () => setCat(null)),
+    ...cats.map((c) => chip(c, () => setCat(c))),
+  ];
+  const filters = h("div", { class: "filters" }, ...filterEls);
 
   function setCat(c) {
     activeCat = c;
-    [...filters.children].forEach((el, i) => {
-      const label = i === 0 ? null : cats[i - 1];
-      el.classList.toggle("on", label === c);
-    });
+    filterEls.forEach((el, i) => el.classList.toggle("on", (i === 0 ? null : cats[i - 1]) === c));
     drawList();
   }
-
   function drawList() {
-    clear(list);
-    data.results
+    clear(listEl);
+    rest
       .filter((r) => !activeCat || r.major.category === activeCat)
-      .forEach((r, i) => list.append(majorRow(r, userHex, i)));
+      .forEach((r) => listEl.append(majorRow(r, userHex)));
   }
-
-  filters.firstChild.classList.add("on");
+  filterEls[0].classList.add("on");
   drawList();
 
   clear(view).append(
@@ -192,15 +258,17 @@ function renderResults(data, meta, isSample) {
       ? h(
           "p",
           { class: "disclaimer", style: "margin-bottom:1rem" },
-          "This is a sample profile (someone who likes science and hands-on work). ",
+          "Sample profile (someone who likes science and hands-on work). ",
           h("a", { href: "#/quiz" }, "Take the quiz"),
           " for your own.",
         )
       : null,
-    head,
-    h("h3", { style: "margin:1.6rem 0 .8rem" }, "Best-fitting majors"),
+    matchHero,
+    profileBar,
+    h("h3", { style: "margin:1.8rem 0 .4rem" }, "Other strong fits"),
+    h("p", { class: "section-lead tiny" }, "Tap any major to see why."),
     filters,
-    list,
+    listEl,
     h(
       "p",
       { class: "tiny muted", style: "margin-top:1.5rem" },
@@ -209,28 +277,33 @@ function renderResults(data, meta, isSample) {
   );
 }
 
-const chip = (label, on, onclick) => h("button", { class: "chip" + (on ? " on" : ""), onclick }, label);
+const chip = (label, onclick) => h("button", { class: "chip", onclick }, label);
 
-function majorRow(r, userHex, rank) {
+function majorRow(r, userHex) {
   const m = r.major;
+  const color = stripeFor(m.high_point_code);
   const row = h(
     "div",
-    { class: "card major-row" },
+    { class: "card major-row", style: `--stripe:${color}` },
     h("div", { class: "fit" }, String(r.score), h("small", {}, "FIT")),
     h(
       "div",
       {},
-      h("h4", {}, m.name, " ", rank === 0 ? h("span", { class: "tag pos" }, "top match") : null),
-      h("div", { class: "cat" }, m.category + "  ·  interest code " + m.high_point_code),
-      h("p", { class: "why" }, r.explanation ? r.explanation.summary : m.blurb),
+      h("h4", {}, m.name),
+      h(
+        "div",
+        { class: "cat", style: "display:flex;gap:.5rem;align-items:center;flex-wrap:wrap" },
+        h("span", {}, m.category),
+        codeChip(m.high_point_code),
+      ),
+      h("p", { class: "why" }, m.blurb),
     ),
-    h("div", { class: "expand", html: "&#8250;" }),
+    h("div", { class: "expand" }, "›"),
   );
   row.addEventListener("click", (e) => {
-    if (e.target.tagName === "A") return;
+    if (e.target.tagName === "A" || e.target.closest("a")) return;
     const open = row.classList.toggle("open");
-    const existing = row.querySelector(".detail");
-    if (existing) existing.remove();
+    row.querySelector(".detail")?.remove();
     if (open) row.append(rowDetail(r, userHex));
   });
   return row;
@@ -242,6 +315,9 @@ function rowDetail(r, userHex) {
   const e = r.explanation;
   const reasons = h("div", { class: "reasons" });
 
+  if (e) {
+    reasons.append(h("p", { style: "margin:0 0 .9rem;font-size:.92rem" }, e.summary));
+  }
   if (e && e.matches.length) {
     reasons.append(
       h("h5", {}, "You line up on"),
@@ -250,7 +326,7 @@ function rowDetail(r, userHex) {
   }
   if (e && e.clashes.length) {
     reasons.append(
-      h("h5", { style: "margin-top:.7rem" }, "The major leans on, but you did not"),
+      h("h5", { style: "margin-top:.8rem" }, "The major needs, but you rated low"),
       h("div", {}, ...e.clashes.map((d) => h("span", { class: "tag neg" }, DIM_LABEL[d]))),
     );
   }
@@ -267,7 +343,7 @@ function rowDetail(r, userHex) {
     );
   }
   reasons.append(
-    h("p", { class: "tiny", style: "margin-top:.9rem" }, h("a", { href: "#/major/" + m.slug }, "Full page for " + m.name + " →")),
+    h("p", { class: "tiny", style: "margin-top:.6rem" }, h("a", { href: "#/major/" + m.slug }, "Full page for " + m.name + " →")),
   );
 
   return h(
@@ -276,14 +352,14 @@ function rowDetail(r, userHex) {
     h(
       "div",
       {},
-      hexagon({ user: userHex, major: majorHex, size: 170, animate: false }),
-      h("p", { class: "tiny muted", style: "text-align:center;max-width:170px" }, "solid = you, dashed = the major"),
+      hexagon({ user: userHex, major: majorHex, size: 168, animate: false }),
+      h("p", { class: "tiny muted", style: "text-align:center;max-width:168px;margin:.3rem auto 0" }, "solid = you, dashed = the major"),
     ),
     reasons,
   );
 }
 
-// ---------------------------------------------------------------- browse majors
+// ---------------------------------------------------------------- browse
 async function browse() {
   spinner();
   const { majors } = await ensure("majors", api.majors);
@@ -291,21 +367,21 @@ async function browse() {
   for (const m of majors) (byCat[m.category] ||= []).push(m);
 
   clear(view).append(
-    h("h2", {}, "All majors"),
-    h("p", { class: "muted" }, `${majors.length} majors, each profiled from the occupations it leads to.`),
+    h("h1", { style: "font-size:1.9rem" }, "All majors"),
+    h("p", { class: "section-lead" }, `${majors.length} majors, each profiled from the occupations it leads to.`),
     ...Object.keys(byCat)
       .sort()
       .flatMap((cat) => [
-        h("h3", { style: "margin:1.6rem 0 .6rem" }, cat),
+        h("h3", { style: "margin:1.8rem 0 .6rem" }, cat),
         h(
           "div",
           { class: "grid-majors" },
           ...byCat[cat].map((m) =>
             h(
               "a",
-              { class: "card mini", href: "#/major/" + m.slug },
+              { class: "card mini", href: "#/major/" + m.slug, style: `--stripe:${stripeFor(m.high_point_code)}` },
               h("h4", {}, m.name),
-              h("div", { class: "tiny muted" }, "interest code " + m.high_point_code),
+              h("div", { class: "tiny muted" }, codeChip(m.high_point_code)),
             ),
           ),
         ),
@@ -323,56 +399,64 @@ async function majorDetail(slug) {
     clear(view).append(h("p", {}, "Not found: " + err.message), h("p", {}, h("a", { href: "#/majors" }, "Back to all majors")));
     return;
   }
-  const [{ majors }] = await Promise.all([ensure("majors", api.majors)]);
+  const { majors } = await ensure("majors", api.majors);
   const saved = loadAnswers();
 
   let scored = null;
+  let userProfileHex = null;
   if (saved && Object.keys(saved.answers || {}).length >= 6) {
     try {
       const cmp = await api.compare(saved.answers, saved.dealbreakers || [], [slug]);
       scored = cmp.results[0];
+      const s = await api.score(saved.answers, saved.dealbreakers || [], 1);
+      userProfileHex = norm(s.profile.riasec, 4);
     } catch (_) {
-      /* no score overlay */
+      /* no overlay */
     }
   }
 
   const majorHex = norm(m.riasec, 7);
-  const userProfileHex = saved ? await userHexFromAnswers(saved) : null;
-
+  const color = stripeFor(m.high_point_code);
   const related = majors
-    .filter((x) => x.slug !== m.slug && (x.category === m.category || sharePrefix(x.high_point_code, m.high_point_code)))
+    .filter((x) => x.slug !== m.slug && (x.category === m.category || x.high_point_code[0] === m.high_point_code[0]))
     .slice(0, 6);
 
   const left = h(
     "div",
     {},
-    hexagon({ user: userProfileHex, major: majorHex, size: 240 }),
+    hexagon({ user: userProfileHex, major: majorHex, size: 260 }),
     userProfileHex
-      ? h("p", { class: "tiny muted", style: "text-align:center" }, "solid = you, dashed = " + m.name)
-      : h("p", { class: "tiny muted", style: "text-align:center" }, h("a", { href: "#/quiz" }, "Take the quiz"), " to overlay your profile"),
-    scored
-      ? h(
-          "p",
-          { style: "text-align:center;margin-top:.6rem" },
-          h("span", { class: "fit", style: "font-size:2rem" }, String(scored.score)),
-          h("div", { class: "tiny muted" }, "your fit"),
-        )
-      : null,
+      ? h("p", { class: "tiny muted", style: "text-align:center;margin-top:.4rem" }, "solid = you, dashed = " + m.name)
+      : h("p", { class: "tiny muted", style: "text-align:center;margin-top:.4rem" }, h("a", { href: "#/quiz" }, "Take the quiz"), " to overlay your profile"),
+    scored ? h("div", { style: "display:grid;place-items:center;margin-top:1rem" }, gauge(scored.score, color)) : null,
   );
 
   const right = h(
     "div",
     {},
     h("h1", {}, m.name),
-    h("div", { class: "muted" }, m.category + "  ·  interest code " + m.high_point_code + "  ·  Job Zone " + m.job_zone.toFixed(1) + "/5"),
-    h("p", {}, m.blurb),
+    h(
+      "div",
+      { class: "muted", style: "display:flex;gap:.55rem;align-items:center;flex-wrap:wrap;font-size:.9rem" },
+      h("span", {}, m.category),
+      h("span", { style: "color:var(--ink-3)" }, "•"),
+      codeChip(m.high_point_code),
+      h("span", { style: "color:var(--ink-3)" }, "•"),
+      h("span", {}, "Job Zone " + m.job_zone.toFixed(1) + " / 5"),
+    ),
+    h("p", { style: "margin-top:.7rem" }, m.blurb),
     m.thin_profile
       ? h("p", { class: "tiny", style: "color:var(--warn)" }, `Built from only ${m.n_occupations} occupations, so this profile is approximate.`)
       : null,
     kv("Interests, R to C", RIASEC.map((d) => `${DIM_LABEL[d]} ${m.riasec[d].toFixed(1)}`)),
     kv("Where it leads (labor market, not fit)", m.example_careers),
     m.top_knowledge.length ? kv("Knowledge it draws on", m.top_knowledge) : null,
-    h("div", { class: "kv" }, h("h5", {}, "Related majors"), h("div", { class: "related" }, ...related.map((x) => h("a", { href: "#/major/" + x.slug }, x.name)))),
+    h(
+      "div",
+      { class: "kv" },
+      h("h5", {}, "Related majors"),
+      h("div", { class: "related" }, ...related.map((x) => h("a", { href: "#/major/" + x.slug }, x.name))),
+    ),
     h(
       "p",
       { class: "disclaimer" },
@@ -380,43 +464,32 @@ async function majorDetail(slug) {
     ),
   );
 
-  clear(view).append(h("p", { class: "tiny" }, h("a", { href: "#/majors" }, "← All majors")), h("div", { class: "major-detail" }, left, right));
-}
-
-async function userHexFromAnswers(saved) {
-  try {
-    const data = await api.score(saved.answers, saved.dealbreakers || [], 1);
-    return norm(data.profile.riasec, 4);
-  } catch (_) {
-    return null;
-  }
+  clear(view).append(
+    h("p", { class: "tiny" }, h("a", { href: "#/majors" }, "← All majors")),
+    h("div", { class: "major-detail" }, left, right),
+  );
 }
 
 const kv = (title, items) =>
   h("div", { class: "kv" }, h("h5", {}, title), h("ul", {}, ...items.map((i) => h("li", {}, i))));
 
-function sharePrefix(a, b) {
-  return a && b && a[0] === b[0];
-}
-
 // ---------------------------------------------------------------- about
 async function about() {
   const meta = await ensure("meta", api.meta);
   clear(view).append(
-    h("h2", {}, "How Compass works"),
-    section("The interest inventory", "You answer the 60-item O*NET Interest Profiler Short Form, a validated questionnaire from the US Department of Labor. Your answers become six scores, one for each of Holland's RIASEC interest types: Realistic, Investigative, Artistic, Social, Enterprising, Conventional."),
-    section("Profiling the majors", "The O*NET database rates every occupation on the same six interests. The government's CIP-to-SOC crosswalk maps each college major to the occupations it leads to. Averaging those gives each major a RIASEC profile. A few interdisciplinary majors are mapped to a single teaching occupation by the crosswalk; for those, a handful of related occupations are added by hand."),
-    section("Scoring the fit", "The fit score blends two comparisons: the correlation between the shape of your six scores and the major's, and how well your top three interests match the major's as a three-letter code. A dealbreaker you mark lowers a major's score if it leads with that interest."),
-    section("What it does not tell you", "Interest fit is not aptitude, and it is not a forecast of pay or hiring. The major pages show labor-market context separately, and clearly labeled."),
+    h("h1", { style: "font-size:1.9rem" }, "How Compass works"),
+    aboutSection("The interest inventory", "You answer the 60-item O*NET Interest Profiler Short Form, a validated questionnaire from the US Department of Labor. Your answers become six scores, one for each of Holland's RIASEC interest types."),
+    aboutSection("Profiling the majors", "The O*NET database rates every occupation on the same six interests. The government's CIP-to-SOC crosswalk maps each major to the occupations it leads to. Averaging those gives each major a RIASEC profile. A few interdisciplinary majors are mapped to a single teaching occupation by the crosswalk; for those, related occupations are added by hand."),
+    aboutSection("Scoring the fit", "The 0-100 score blends the correlation between the shape of your six scores and the major's, with how well your top three interests match the major's as a three-letter code. A dealbreaker you mark lowers a major that leads with that interest."),
+    aboutSection("What it does not tell you", "Interest fit is not aptitude, and it is not a forecast of pay or hiring. The major pages show labor-market context separately and clearly labeled."),
     h("p", { class: "tiny muted", style: "margin-top:2rem" }, `Data: O*NET ${meta.onet_version}, ${meta.n_majors} majors, generated ${meta.data_generated}. Sources: ${meta.sources.join("; ")}.`),
   );
 }
 
-const section = (title, body) => h("div", { style: "margin:1.2rem 0" }, h("h3", {}, title), h("p", { class: "muted" }, body));
+const aboutSection = (title, body) =>
+  h("div", { class: "about-section" }, h("h3", {}, title), h("p", {}, body));
 
-// ---------------------------------------------------------------- sample profile
-// Seeds a plausible "likes science and building things" profile so someone can
-// see a full result without answering 60 questions first.
+// ---------------------------------------------------------------- sample
 function seedSample() {
   const band = { investigative: [3, 4], realistic: [2, 4], conventional: [2, 3], artistic: [0, 2], social: [1, 3], enterprising: [1, 2] };
   const pre = { r: "realistic", i: "investigative", a: "artistic", s: "social", e: "enterprising", c: "conventional" };
