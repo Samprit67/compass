@@ -161,10 +161,10 @@ async function quizView() {
   teardownQuiz();
   clear(view);
 
-  // Resume a genuinely interrupted run, or an explicit "answer more" from the
-  // results page. A finished quiz (or "Retake") starts clean at 30.
+  // The quiz always starts clean at 30. The one exception is the explicit
+  // "answer the other 30" link on the results page, which sets `resume`.
   const n = saved ? Object.keys(saved.answers || {}).length : 0;
-  const resuming = saved && !saved.sample && (saved.resume || (!saved.completed && n > 0)) && n < 60;
+  const resuming = !!(saved && !saved.sample && saved.resume === true && n > 0 && n < 60);
 
   runQuiz(view, q, {
     answers: resuming ? { ...saved.answers } : {},
