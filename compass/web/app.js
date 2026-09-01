@@ -3,6 +3,7 @@ import { hexagon, norm } from "./charts.js";
 import {
   h,
   clear,
+  mount,
   RIASEC,
   DIM_LABEL,
   DIM_VAR,
@@ -41,7 +42,7 @@ try {
 
 // ---------------------------------------------------------------- helpers
 function spinner() {
-  return clear(view).append(h("div", { class: "spinner" }));
+  return mount(clear(view),h("div", { class: "spinner" }));
 }
 
 async function ensure(key, loader) {
@@ -121,7 +122,7 @@ function landing() {
     pillar("Honest about limits", "Interest fit is one signal. It is not aptitude, and it is not a prediction of the job market."),
   );
 
-  clear(view).append(
+  mount(clear(view),
     h(
       "section",
       { class: "hero" },
@@ -176,23 +177,34 @@ function renderResults(data, meta, isSample) {
   const userHex = norm(p.riasec, 4);
   const [top, ...rest] = data.results;
   const topColor = stripeFor(top.major.high_point_code);
+  const weak = top.score < 55 || data.confidence === "low";
 
   const matchHero = h(
     "div",
     { class: "match-hero" },
-    gauge(top.score, topColor),
+    gauge(top.score, weak ? "var(--ink-3)" : topColor),
     h(
       "div",
       {},
-      h("div", { class: "label" }, "Your top match"),
+      h("div", { class: "label" }, weak ? "Closest fit" : "Your top match"),
       h("h2", {}, top.major.name),
-      h("p", {}, top.explanation ? top.explanation.summary : top.major.blurb),
-      h(
-        "div",
-        { class: "why-tags" },
-        ...(top.explanation ? top.explanation.matches : []).slice(0, 3).map((d) => h("span", { class: "tag pos" }, DIM_LABEL[d])),
-        ...(top.explanation ? top.explanation.clashes : []).slice(0, 2).map((d) => h("span", { class: "tag neg" }, DIM_LABEL[d])),
-      ),
+      weak
+        ? h(
+            "p",
+            {},
+            "Nothing scored as a strong match. Your answers did not point clearly in one direction, so the ranking below is a loose guide. ",
+            h("a", { href: "#/quiz" }, "Retake"),
+            " and use the full range (some strong dislikes, some strong likes) for a sharper result.",
+          )
+        : h("p", {}, top.explanation ? top.explanation.summary : top.major.blurb),
+      weak
+        ? null
+        : h(
+            "div",
+            { class: "why-tags" },
+            ...(top.explanation ? top.explanation.matches : []).slice(0, 3).map((d) => h("span", { class: "tag pos" }, DIM_LABEL[d])),
+            ...(top.explanation ? top.explanation.clashes : []).slice(0, 2).map((d) => h("span", { class: "tag neg" }, DIM_LABEL[d])),
+          ),
       h("p", { class: "tiny", style: "margin-top:.7rem" }, h("a", { href: "#/major/" + top.major.slug }, "Full page for " + top.major.name + " →")),
     ),
   );
@@ -253,7 +265,7 @@ function renderResults(data, meta, isSample) {
   filterEls[0].classList.add("on");
   drawList();
 
-  clear(view).append(
+  mount(clear(view),
     isSample
       ? h(
           "p",
@@ -366,7 +378,7 @@ async function browse() {
   const byCat = {};
   for (const m of majors) (byCat[m.category] ||= []).push(m);
 
-  clear(view).append(
+  mount(clear(view),
     h("h1", { style: "font-size:1.9rem" }, "All majors"),
     h("p", { class: "section-lead" }, `${majors.length} majors, each profiled from the occupations it leads to.`),
     ...Object.keys(byCat)
@@ -396,7 +408,7 @@ async function majorDetail(slug) {
   try {
     m = await api.major(slug);
   } catch (err) {
-    clear(view).append(h("p", {}, "Not found: " + err.message), h("p", {}, h("a", { href: "#/majors" }, "Back to all majors")));
+    mount(clear(view),h("p", {}, "Not found: " + err.message), h("p", {}, h("a", { href: "#/majors" }, "Back to all majors")));
     return;
   }
   const { majors } = await ensure("majors", api.majors);
@@ -464,7 +476,7 @@ async function majorDetail(slug) {
     ),
   );
 
-  clear(view).append(
+  mount(clear(view),
     h("p", { class: "tiny" }, h("a", { href: "#/majors" }, "← All majors")),
     h("div", { class: "major-detail" }, left, right),
   );
@@ -476,7 +488,7 @@ const kv = (title, items) =>
 // ---------------------------------------------------------------- about
 async function about() {
   const meta = await ensure("meta", api.meta);
-  clear(view).append(
+  mount(clear(view),
     h("h1", { style: "font-size:1.9rem" }, "How Compass works"),
     aboutSection("The interest inventory", "You answer the 60-item O*NET Interest Profiler Short Form, a validated questionnaire from the US Department of Labor. Your answers become six scores, one for each of Holland's RIASEC interest types."),
     aboutSection("Profiling the majors", "The O*NET database rates every occupation on the same six interests. The government's CIP-to-SOC crosswalk maps each major to the occupations it leads to. Averaging those gives each major a RIASEC profile. A few interdisciplinary majors are mapped to a single teaching occupation by the crosswalk; for those, related occupations are added by hand."),
@@ -523,7 +535,7 @@ function route() {
     if (m) {
       window.scrollTo(0, 0);
       Promise.resolve(fn(m)).catch((err) => {
-        clear(view).append(h("p", {}, "Something went wrong: " + err.message));
+        mount(clear(view),h("p", {}, "Something went wrong: " + err.message));
       });
       return;
     }

@@ -53,6 +53,15 @@ export function clear(node) {
   return node;
 }
 
+/** Append children to a node, skipping null/undefined/false (unlike DOM append). */
+export function mount(node, ...kids) {
+  for (const kid of kids.flat()) {
+    if (kid === null || kid === undefined || kid === false) continue;
+    node.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+  }
+  return node;
+}
+
 const KEY = "compass.answers.v1";
 
 export function saveAnswers(state) {
