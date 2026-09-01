@@ -23,10 +23,11 @@ opposite types are not.
 
 ## 1. Your profile (`profile.py`)
 
-You answer up to 60 activities on a 0-4 scale (strongly dislike to strongly
-like). Ten activities map to each interest. Your score for an interest is the
-**mean of your answers to its activities**; unanswered activities are treated as
-the neutral midpoint (2).
+You answer the activities on a 0-4 scale, strongly dislike to strongly like. The
+questionnaire has 60 items, ten per interest; the quiz asks 30 by default (five
+per interest) and offers the other 30 for a sharper read. Your score for an
+interest is the **mean of your answers to its activities**; unanswered activities
+are treated as the neutral midpoint (2).
 
 Two summary numbers come out of this:
 
@@ -122,7 +123,7 @@ For a shown major, Compass reports:
 |---|---|
 | differentiation < 0.20 | confidence = low, with a note that no major stands out |
 | differentiation < 0.35 | confidence = moderate |
-| fewer than 40 of 60 answered | confidence drops one level, with a note |
+| fewer than 28 answered | confidence drops one level, with a note |
 | elevation > 0.8 | a note that you liked almost everything |
 
 ## Things this gets wrong

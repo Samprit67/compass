@@ -30,7 +30,7 @@ drove it and where you and the major do not line up.
 
 | | |
 |---|---|
-| **Runs the real questionnaire** | The 60-item O*NET Interest Profiler Short Form, a validated instrument from the US Department of Labor. Your answers become six scores, one per Holland interest type (Realistic, Investigative, Artistic, Social, Enterprising, Conventional). |
+| **Runs the real questionnaire** | The O*NET Interest Profiler Short Form (60 items; the quiz asks 30 by default and offers the rest), a validated instrument from the US Department of Labor. Your answers become six scores, one per Holland interest type (Realistic, Investigative, Artistic, Social, Enterprising, Conventional). |
 | **Profiles majors from government data** | Each major's interest profile is built from the O*NET database: the CIP-to-SOC crosswalk maps the major to the occupations it leads to, and their RIASEC ratings are averaged. |
 | **Ranks with a transparent score** | The 0-100 fit score blends the correlation between your profile shape and the major's with how well your top-three interest code matches theirs. No black box, no machine learning. |
 | **Shows its work** | Every recommendation names the interests you share, the ones the major needs that you rated low, and the individual activities that moved the score, with a sensitivity check on each. |
@@ -53,7 +53,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
 compass serve                  # web dashboard
-compass quiz --limit 30        # a shorter terminal run
+compass quiz --limit 60        # ask all 60 (default is 30)
 ```
 
 No data downloads: the 112 major profiles and the questionnaire are committed to

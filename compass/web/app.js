@@ -1,5 +1,6 @@
 import { api } from "./api.js";
 import { hexagon, norm } from "./charts.js";
+import { celebrate } from "./confetti.js";
 import {
   h,
   clear,
@@ -122,6 +123,14 @@ function landing() {
     pillar("Honest about limits", "Interest fit is one signal. It is not aptitude, and it is not a prediction of the job market."),
   );
 
+  const meta = h(
+    "div",
+    { class: "hero-meta" },
+    h("span", {}, "🎓 Built for high school students"),
+    h("span", {}, "⏱ About 5 minutes"),
+    h("span", {}, "🧭 112 majors, ranked and explained"),
+  );
+
   mount(clear(view),
     h(
       "section",
@@ -134,6 +143,7 @@ function landing() {
         "Answer a short interest inventory. Get 112 college majors ranked for you, each with the reason it fits.",
       ),
       cta,
+      meta,
       strip,
     ),
     pillars,
@@ -170,6 +180,13 @@ async function results() {
   const meta = await ensure("meta", api.meta);
   const data = await api.score(saved.answers, saved.dealbreakers || [], 24);
   renderResults(data, meta, !!saved.sample);
+
+  // Celebrate a real match, once, the first time these results are seen.
+  const weak = data.results[0].score < 55 || data.confidence === "low";
+  if (!weak && !saved.celebrated && !saved.sample) {
+    saveAnswers({ ...saved, celebrated: true });
+    setTimeout(celebrate, 150);
+  }
 }
 
 function renderResults(data, meta, isSample) {
@@ -490,7 +507,7 @@ async function about() {
   const meta = await ensure("meta", api.meta);
   mount(clear(view),
     h("h1", { style: "font-size:1.9rem" }, "How Compass works"),
-    aboutSection("The interest inventory", "You answer the 60-item O*NET Interest Profiler Short Form, a validated questionnaire from the US Department of Labor. Your answers become six scores, one for each of Holland's RIASEC interest types."),
+    aboutSection("The interest inventory", "You answer the O*NET Interest Profiler Short Form, a validated questionnaire from the US Department of Labor. It has 60 items; the quiz asks 30 by default (five per interest) and offers the rest for a sharper read. Your answers become six scores, one for each of Holland's RIASEC interest types."),
     aboutSection("Profiling the majors", "The O*NET database rates every occupation on the same six interests. The government's CIP-to-SOC crosswalk maps each major to the occupations it leads to. Averaging those gives each major a RIASEC profile. A few interdisciplinary majors are mapped to a single teaching occupation by the crosswalk; for those, related occupations are added by hand."),
     aboutSection("Scoring the fit", "The 0-100 score blends the correlation between the shape of your six scores and the major's, with how well your top three interests match the major's as a three-letter code. A dealbreaker you mark lowers a major that leads with that interest."),
     aboutSection("What it does not tell you", "Interest fit is not aptitude, and it is not a forecast of pay or hiring. The major pages show labor-market context separately and clearly labeled."),

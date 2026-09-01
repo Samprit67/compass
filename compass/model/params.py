@@ -50,7 +50,7 @@ class Params:
 
     moderate_differentiation: float = 0.35
 
-    min_answers_for_confidence: int = 40
+    min_answers_for_confidence: int = 28
     """Of 60 items. Below this the ranking is downgraded one confidence level."""
 
     # -- explanation ------------------------------------------------------

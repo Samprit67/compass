@@ -1,16 +1,22 @@
 import { h, clear, saveAnswers } from "./format.js";
 
 const PER_PAGE = 10;
-const ENOUGH_TO_FINISH = 20; // once this many are answered, offer "see results"
+const HALF = 30; // the default run; the rest is optional
 
 /**
- * Paged grid questionnaire. `onDone(answers)` gets {qid: 0..4}.
+ * Paged grid questionnaire. Defaults to 30 items (3 pages); after that the user
+ * can stop or answer 30 more. `onDone(answers)` gets {qid: 0..4}.
  */
 export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
   const items = questionnaire.questions;
   const labels = questionnaire.response_labels;
-  const pages = Math.ceil(items.length / PER_PAGE);
-  let page = Math.min(Math.floor(Object.keys(answers).length / PER_PAGE), pages - 1);
+  const totalPages = Math.ceil(items.length / PER_PAGE);
+  const halfPages = HALF / PER_PAGE;
+
+  let page = 0;
+  let extended = Object.keys(answers).length > HALF;
+  const cap = () => (extended ? totalPages : halfPages);
+  const target = () => (extended ? items.length : HALF);
 
   const root = h("div", { class: "quiz" });
   clear(mount).append(root);
@@ -20,27 +26,28 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
   function setAnswer(id, v) {
     answers[id] = v;
     saveAnswers({ answers, ts: Date.now() });
-    render();
+    renderPage();
   }
 
-  function render() {
+  function renderPage() {
     clear(root);
     const start = page * PER_PAGE;
     const slice = items.slice(start, start + PER_PAGE);
     const done = answeredCount();
+    const goal = target();
 
     root.append(
       h(
         "div",
         { class: "quiz-head" },
-        h("span", { class: "step" }, `Part ${page + 1} of ${pages}`),
-        h("span", { class: "tiny muted" }, `${done} of ${items.length} answered`),
+        h("span", { class: "step" }, `Part ${page + 1} of ${cap()}`),
+        h("span", { class: "tiny muted" }, `${Math.min(done, goal)} of ${goal}`),
       ),
-      h("div", { class: "progress" }, h("span", { style: `width:${(done / items.length) * 100}%` })),
+      h("div", { class: "progress" }, h("span", { style: `width:${Math.min(1, done / goal) * 100}%` })),
       h(
         "p",
         { class: "quiz-sub" },
-        "How much would you enjoy each activity? Skip any you are unsure about.",
+        "How much would you enjoy each activity? Use the whole range, and skip any you are unsure about.",
       ),
     );
 
@@ -80,26 +87,40 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
     );
 
     const back = h("button", { disabled: page === 0, onclick: () => go(page - 1) }, "← Back");
-    const forwardLabel = page + 1 >= pages ? "See my results" : "Next →";
-    const forward = h(
-      "button",
-      { class: "primary", onclick: () => (page + 1 >= pages ? finish() : go(page + 1)) },
-      forwardLabel,
-    );
-    const nav = h("div", { class: "quiz-nav" }, back, forward);
-    if (page + 1 < pages && done >= ENOUGH_TO_FINISH) {
-      nav.insertBefore(
-        h("button", { class: "ghost skip", onclick: finish }, "That is enough, show results"),
-        forward,
-      );
+    const atHalf = !extended && page + 1 >= halfPages;
+    const atEnd = extended && page + 1 >= totalPages;
+
+    let nav;
+    if (atHalf || atEnd) {
+      const seeResults = h("button", { class: "primary", onclick: finish }, "See my results");
+      const more = atHalf
+        ? h(
+            "button",
+            {
+              onclick: () => {
+                extended = true;
+                go(page + 1);
+              },
+            },
+            "Answer 30 more →",
+          )
+        : null;
+      nav = h("div", { class: "quiz-nav" }, back, h("div", { style: "display:flex;gap:.6rem" }, more, seeResults));
+    } else {
+      const next = h("button", { class: "primary", onclick: () => go(page + 1) }, "Next →");
+      const skipEarly =
+        answeredCount() >= 20
+          ? h("button", { class: "ghost skip", onclick: finish }, "Skip to results")
+          : null;
+      nav = h("div", { class: "quiz-nav" }, back, h("div", { style: "display:flex;gap:.6rem" }, skipEarly, next));
     }
     root.append(nav);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function go(n) {
-    page = Math.max(0, Math.min(pages - 1, n));
-    render();
+    page = Math.max(0, Math.min(cap() - 1, n));
+    renderPage();
   }
 
   function finish() {
@@ -107,13 +128,13 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
   }
 
   function onKey(e) {
-    if (e.key === "ArrowRight" && page + 1 < pages) go(page + 1);
+    if (e.key === "ArrowRight" && page + 1 < cap()) go(page + 1);
     else if (e.key === "ArrowLeft") go(page - 1);
   }
   document.addEventListener("keydown", onKey);
   mount.addEventListener("quiz:teardown", () => document.removeEventListener("keydown", onKey), { once: true });
 
-  render();
+  renderPage();
 }
 
 function upperFirst(s) {

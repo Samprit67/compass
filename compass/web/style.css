@@ -287,6 +287,19 @@ button:disabled {
   font-size: 1.05rem;
 }
 
+.hero-meta {
+  display: flex;
+  gap: 0.4rem 1.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 0.86rem;
+  color: var(--ink-2);
+}
+.hero-meta span {
+  white-space: nowrap;
+}
+
 .riasec-strip {
   display: flex;
   gap: 0.5rem;

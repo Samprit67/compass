@@ -67,7 +67,7 @@ def version() -> None:
 @app.command()
 @_friendly
 def quiz(
-    limit: int = typer.Option(60, help="Ask only the first N of 60 activities."),
+    limit: int = typer.Option(30, help="How many of the 60 activities to ask (5 per interest at 30)."),
     top: int = typer.Option(10, help="How many majors to show."),
 ) -> None:
     """Take the O*NET Interest Profiler in the terminal."""
