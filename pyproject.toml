@@ -36,6 +36,7 @@ dev = [
     "pytest>=7.4",
     "pytest-cov>=4.1",
     "hypothesis>=6.90",
+    "httpx>=0.27",  # Starlette's TestClient needs an HTTP client
     "ruff>=0.6",
     "mypy>=1.8",
     "types-pyyaml",
@@ -91,7 +92,7 @@ disallow_incomplete_defs = true
 # produce more noise than signal under a strict config, so they run looser.
 
 [[tool.mypy.overrides]]
-module = ["uvicorn.*", "numpy.*", "openpyxl.*", "yaml.*"]
+module = ["uvicorn.*", "numpy.*", "openpyxl.*", "yaml.*", "httpx.*"]
 ignore_missing_imports = true
 
 [[tool.mypy.overrides]]
@@ -104,7 +105,7 @@ testpaths = ["tests"]
 addopts = "-q --strict-markers"
 filterwarnings = [
     "error::DeprecationWarning:compass.*",
-    "ignore:Using `httpx` with `starlette.testclient`:DeprecationWarning",
+    "ignore:Using `httpx` with `starlette.testclient`",
 ]
 
 [tool.coverage.run]
