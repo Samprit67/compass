@@ -98,6 +98,9 @@ class MajorProfile:
     name: str
     category: str
     blurb: str
+    """One line, shown on cards."""
+    description: str
+    """A short paragraph on what the major is, shown on its page."""
     cip_codes: tuple[str, ...]
     riasec: Riasec
     """Employment-unweighted mean of the interest profiles of this major's

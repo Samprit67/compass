@@ -473,7 +473,7 @@ async function majorDetail(slug) {
       h("span", { style: "color:var(--ink-3)" }, "•"),
       h("span", {}, "Job Zone " + m.job_zone.toFixed(1) + " / 5"),
     ),
-    h("p", { style: "margin-top:.7rem" }, m.blurb),
+    h("p", { style: "margin-top:.8rem;font-size:.98rem" }, m.description || m.blurb),
     m.thin_profile
       ? h("p", { class: "tiny", style: "color:var(--warn)" }, `Built from only ${m.n_occupations} occupations, so this profile is approximate.`)
       : null,

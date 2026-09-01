@@ -9,6 +9,7 @@ def test_profiles_load_and_are_well_formed():
     assert len(slugs) == len(set(slugs))
     for m in majors:
         assert m.name and m.category and m.blurb
+        assert len(m.description) > 60 and m.description != m.blurb
         assert len(m.riasec.as_tuple) == 6
         assert all(1.0 <= v <= 7.0 for v in m.riasec.as_tuple)
         assert m.cip_codes

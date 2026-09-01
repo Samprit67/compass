@@ -318,6 +318,7 @@ def build_profiles(
                 "name": major["name"],
                 "category": major["category"],
                 "blurb": major["blurb"],
+                "description": major.get("description", major["blurb"]),
                 "cip_codes": list(major["cip"]),
                 "riasec": _mean_vectors(riasec_vectors),
                 "example_careers": titles[:MAX_CAREERS],

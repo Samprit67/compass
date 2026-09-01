@@ -30,6 +30,7 @@ def major_summary(m: MajorProfile) -> dict:
 def major_detail(m: MajorProfile) -> dict:
     return {
         **major_summary(m),
+        "description": m.description,
         "cip_codes": list(m.cip_codes),
         "example_careers": list(m.example_careers),
         "job_zone": m.job_zone,

@@ -38,6 +38,7 @@ def load_profiles() -> tuple[MajorProfile, ...]:
                 name=m["name"],
                 category=m["category"],
                 blurb=m["blurb"],
+                description=m.get("description", m["blurb"]),
                 cip_codes=tuple(m["cip_codes"]),
                 riasec=Riasec.from_iterable(m["riasec"]),
                 example_careers=tuple(m["example_careers"]),

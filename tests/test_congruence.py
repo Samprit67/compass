@@ -14,6 +14,7 @@ def _major(vec, slug="x"):
         name=slug,
         category="test",
         blurb="",
+        description="",
         cip_codes=(),
         riasec=Riasec.from_iterable(vec),
         example_careers=(),

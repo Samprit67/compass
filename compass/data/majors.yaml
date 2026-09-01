@@ -14,574 +14,686 @@ majors:
     name: Computer Science
     category: Computing & Data
     blurb: "Algorithms, systems, and the theory behind how software works."
+    description: "Computer science is the study of computation itself: what problems can be solved, how efficiently, and how to build the software that solves them. Coursework runs from theory (algorithms, data structures, the limits of computation) to systems (operating systems, networks, databases) and usually a math core in discrete structures and probability. It is a broad foundation for software work, research, and most technical roles that involve building things."
     cip: ["11.0701", "11.0101"]
   - slug: software-engineering
     name: Software Engineering
     category: Computing & Data
     blurb: "Building and maintaining large software systems as an engineering discipline."
+    description: "Software engineering focuses on building and maintaining large software systems as a discipline: requirements, design, testing, version control, deployment, and working on a team. It overlaps heavily with computer science but spends more time on the practices that keep a codebase healthy over years and less on theory. Graduates typically go directly into development roles."
     cip: ["14.0903", "11.0701"]
   - slug: data-science
     name: Data Science
     category: Computing & Data
     blurb: "Turning data into models and decisions with statistics and code."
+    description: "Data science combines statistics, programming, and domain knowledge to turn data into models and decisions. You study probability and statistical inference, machine learning, data wrangling and visualization, and often databases and a bit of software engineering. The work ranges from analysis and dashboards to building predictive models."
     cip: ["30.7001", "27.0501"]
   - slug: information-technology
     name: Information Technology
     category: Computing & Data
     blurb: "Running the networks, systems, and infrastructure organizations depend on."
+    description: "Information technology is about running the computing infrastructure organizations depend on: networks, servers, cloud services, security, and user support. It is more applied and operations-focused than computer science, with less theory and more hands-on configuration, administration, and troubleshooting."
     cip: ["11.0103", "11.1001"]
   - slug: cybersecurity
     name: Cybersecurity
     category: Computing & Data
     blurb: "Defending systems and networks against attackers."
+    description: "Cybersecurity is the study of protecting systems, networks, and data from attack. Coursework covers cryptography, network and operating-system security, secure coding, digital forensics, risk, and often the policy and legal side. It sits between computer science and IT, with a strong hands-on component."
     cip: ["11.1003", "43.0404"]
   - slug: informatics
     name: Informatics
     category: Computing & Data
     blurb: "How people, information, and technology fit together."
+    description: "Informatics studies how people, information, and technology fit together. It is more human-centered than computer science, drawing on design, social science, and information organization alongside programming, and often specializes in a domain like health, bioinformatics, or libraries."
     cip: ["11.0104"]
   - slug: computer-engineering
     name: Computer Engineering
     category: Engineering
     blurb: "Where hardware meets software: chips, embedded systems, and architecture."
+    description: "Computer engineering sits where hardware meets software. You study digital logic, computer architecture, embedded systems, and signal processing along with a solid chunk of electrical engineering, plus enough programming to work close to the metal. It leads to work on chips, devices, firmware, and systems."
     cip: ["14.0901", "14.4701"]
   - slug: electrical-engineering
     name: Electrical Engineering
     category: Engineering
     blurb: "Circuits, signals, power, and electronics."
+    description: "Electrical engineering is the study of electricity, electronics, and electromagnetic systems: circuits, signals and systems, electromagnetics, power, control, and communications, built on a heavy math and physics core. It is one of the broadest engineering fields, spanning power grids, chips, wireless, and instrumentation."
     cip: ["14.1001"]
   - slug: mechanical-engineering
     name: Mechanical Engineering
     category: Engineering
     blurb: "Machines, mechanisms, energy, and how physical things are made to move."
+    description: "Mechanical engineering deals with forces, motion, energy, and how physical things are designed and made. Core coursework covers statics and dynamics, thermodynamics, fluid mechanics, materials, heat transfer, and machine design. It is the most general engineering major and touches nearly every industry that builds physical products."
     cip: ["14.1901"]
   - slug: civil-engineering
     name: Civil Engineering
     category: Engineering
     blurb: "Roads, bridges, water systems, and the built environment."
+    description: "Civil engineering designs and maintains the built environment: buildings, bridges, roads, water and wastewater systems, and public infrastructure. Coursework covers structural analysis, geotechnical engineering, transportation, hydraulics, and construction, with an emphasis on safety codes and public responsibility."
     cip: ["14.0801"]
   - slug: chemical-engineering
     name: Chemical Engineering
     category: Engineering
     blurb: "Designing processes that turn raw materials into products at scale."
+    description: "Chemical engineering applies chemistry, physics, and math to designing processes that convert raw materials into products at industrial scale. Core topics are material and energy balances, thermodynamics, reaction engineering, transport phenomena, and process control. Fields include energy, pharmaceuticals, materials, food, and the environment."
     cip: ["14.0701"]
   - slug: aerospace-engineering
     name: Aerospace Engineering
     category: Engineering
     blurb: "Aircraft, spacecraft, propulsion, and flight."
+    description: "Aerospace engineering is the design of aircraft, spacecraft, and their propulsion. It builds on mechanical engineering with added coursework in aerodynamics, flight mechanics, propulsion, structures, and control. Work spans commercial aviation, defense, and space."
     cip: ["14.0201"]
   - slug: biomedical-engineering
     name: Biomedical Engineering
     category: Engineering
     blurb: "Applying engineering to medicine: devices, imaging, prosthetics, tissue."
+    description: "Biomedical engineering applies engineering to medicine and biology: medical devices, imaging, prosthetics, biomechanics, tissue engineering, and instrumentation. It is interdisciplinary, combining a chosen engineering track (mechanical, electrical, materials, or chemical) with anatomy, physiology, and biology."
     cip: ["14.0501"]
   - slug: industrial-engineering
     name: Industrial Engineering
     category: Engineering
     blurb: "Making systems of people, machines, and materials run efficiently."
+    description: "Industrial engineering optimizes systems of people, machines, materials, and information. Coursework covers operations research, statistics and quality, supply-chain and logistics, human factors, and simulation. Graduates work on efficiency, planning, and process improvement across manufacturing, healthcare, and services."
     cip: ["14.3501"]
   - slug: materials-engineering
     name: Materials Science & Engineering
     category: Engineering
     blurb: "Why materials behave the way they do, and designing better ones."
+    description: "Materials science and engineering studies why materials behave as they do and how to design better ones. It connects structure at the atomic and microscopic scale to properties and processing, covering metals, ceramics, polymers, semiconductors, and composites."
     cip: ["14.1801", "40.1001"]
   - slug: environmental-engineering
     name: Environmental Engineering
     category: Engineering
     blurb: "Engineering for clean water, clean air, and waste."
+    description: "Environmental engineering applies engineering to clean water, clean air, and waste. Coursework covers water and wastewater treatment, air-quality control, solid and hazardous waste, environmental chemistry and microbiology, and the regulations that govern them. It is closely related to civil engineering."
     cip: ["14.1401"]
   - slug: robotics-engineering
     name: Robotics Engineering
     category: Engineering
     blurb: "Mechatronics, control, and autonomous machines."
+    description: "Robotics engineering is an interdisciplinary field combining mechanical design, electronics, control theory, and software to build machines that sense and act in the world. Coursework covers kinematics and dynamics, sensors and actuators, control, computer vision, and autonomy."
     cip: ["14.4201", "14.4101"]
   - slug: engineering-general
     name: General Engineering
     category: Engineering
     blurb: "A broad engineering foundation before specializing."
+    description: "General or undeclared engineering gives a broad first-year-and-beyond foundation, math, physics, computing, and introductory design, before you commit to a specialty. Some programs keep it general throughout for students headed toward interdisciplinary or management roles."
     cip: ["14.0101", "14.1301"]
   - slug: mathematics
     name: Mathematics
     category: Physical Sciences
     blurb: "Proof, structure, and abstraction, pure and applied."
+    description: "Mathematics is the study of structure, quantity, and change through proof. A typical path runs from calculus and linear algebra into real analysis, abstract algebra, and topology, with electives in areas like number theory, geometry, or applied math. It develops rigorous reasoning that transfers widely."
     cip: ["27.0101", "27.0301"]
   - slug: statistics
     name: Statistics
     category: Physical Sciences
     blurb: "Reasoning about uncertainty and drawing conclusions from data."
+    description: "Statistics is the science of learning from data under uncertainty: how to design studies, estimate quantities, test hypotheses, and quantify how much to trust a conclusion. Coursework covers probability, statistical inference, regression, experimental design, and computing, and increasingly overlaps with data science and machine learning."
     cip: ["27.0501"]
   - slug: physics
     name: Physics
     category: Physical Sciences
     blurb: "The fundamental laws governing matter, energy, space, and time."
+    description: "Physics is the study of the fundamental laws governing matter, energy, space, and time. The core sequence covers classical mechanics, electromagnetism, quantum mechanics, thermodynamics and statistical mechanics, all built on heavy mathematics, with lab work throughout."
     cip: ["40.0801"]
   - slug: chemistry
     name: Chemistry
     category: Physical Sciences
     blurb: "Matter at the level of atoms and molecules, and the reactions between them."
+    description: "Chemistry studies matter at the level of atoms and molecules and the reactions between them. The core covers general, organic, inorganic, analytical, and physical chemistry, with substantial laboratory work. It underpins medicine, materials, energy, and biology."
     cip: ["40.0501"]
   - slug: astronomy
     name: Astronomy & Astrophysics
     category: Physical Sciences
     blurb: "Stars, galaxies, cosmology, and the physics of the universe."
+    description: "Astronomy and astrophysics study stars, planets, galaxies, and the universe as a whole, applying physics to objects we mostly cannot experiment on. It shares a physics core and adds coursework in stellar and galactic astrophysics, cosmology, and observational techniques."
     cip: ["40.0201", "40.0202"]
   - slug: geology
     name: Geology & Earth Science
     category: Physical Sciences
     blurb: "The Earth's materials, structure, and history."
+    description: "Geology, or earth science, studies the Earth's materials, structure, and history, from minerals and rocks to plate tectonics, surface processes, and deep time. Coursework combines field work with chemistry, physics, and often data analysis, and connects to energy, water, hazards, and the environment."
     cip: ["40.0601"]
   - slug: atmospheric-science
     name: Atmospheric Science & Meteorology
     category: Physical Sciences
     blurb: "Weather, climate, and the physics of the atmosphere."
+    description: "Atmospheric science and meteorology study the physics and chemistry of the atmosphere: weather systems, forecasting, atmospheric dynamics, radiation, and climate. It is math- and physics-heavy and increasingly involves large datasets and modeling."
     cip: ["40.0404"]
   - slug: oceanography
     name: Oceanography
     category: Physical Sciences
     blurb: "The physics, chemistry, and biology of the oceans."
+    description: "Oceanography studies the physics, chemistry, biology, and geology of the oceans as a connected system, from currents and waves to marine ecosystems and seafloor geology. It is interdisciplinary and field-oriented, with a strong quantitative core."
     cip: ["40.0607", "26.1302"]
   - slug: biology
     name: Biology
     category: Life Sciences
     blurb: "Living systems from molecules to ecosystems."
+    description: "Biology is the study of living systems across scales, from molecules and cells to organisms and ecosystems. Core coursework includes cell and molecular biology, genetics, evolution, physiology, and ecology, plus chemistry and often physics and statistics. It is a broad major that feeds medicine, research, education, and industry."
     cip: ["26.0101"]
   - slug: biochemistry
     name: Biochemistry & Molecular Biology
     category: Life Sciences
     blurb: "The chemistry of life: proteins, DNA, metabolism, and cell machinery."
+    description: "Biochemistry and molecular biology study the chemistry of life: proteins, nucleic acids, metabolism, and the molecular machinery of cells. It combines an organic and physical chemistry core with cell and molecular biology and heavy laboratory work."
     cip: ["26.0202", "26.0204"]
   - slug: neuroscience
     name: Neuroscience
     category: Life Sciences
     blurb: "How the brain and nervous system produce behavior and cognition."
+    description: "Neuroscience studies the brain and nervous system and how they produce behavior and cognition. It is interdisciplinary, spanning molecular and cellular neuroscience, systems and circuits, and cognitive and behavioral approaches, with coursework in biology, chemistry, psychology, and statistics."
     cip: ["26.1501"]
   - slug: microbiology
     name: Microbiology
     category: Life Sciences
     blurb: "Bacteria, viruses, and other microbes, and their role in health and disease."
+    description: "Microbiology studies bacteria, viruses, fungi, and other microbes: their biology, genetics, and roles in health, disease, agriculture, and the environment. It combines cell and molecular biology with substantial lab technique in culturing and identification."
     cip: ["26.0502"]
   - slug: genetics
     name: Genetics
     category: Life Sciences
     blurb: "Heredity, genomes, and how genes shape organisms."
+    description: "Genetics studies heredity and the genome: how genes are structured, expressed, inherited, and edited, and how genetic variation shapes organisms and disease. It builds on molecular and cell biology with added coursework in genomics and bioinformatics."
     cip: ["26.0801"]
   - slug: ecology
     name: Ecology & Evolutionary Biology
     category: Life Sciences
     blurb: "How organisms interact with each other and their environment over time."
+    description: "Ecology and evolutionary biology study how organisms interact with each other and their environment, and how populations change over time. Coursework covers population and community ecology, evolution, biodiversity, and quantitative methods, with field and lab components."
     cip: ["26.1301", "26.1310"]
   - slug: marine-biology
     name: Marine Biology
     category: Life Sciences
     blurb: "Life in the oceans, from plankton to whales."
+    description: "Marine biology studies life in the oceans, from plankton and invertebrates to fish and marine mammals, and the ecosystems they form. It is a specialization within biology with added coursework in oceanography and marine ecology, and a strong field emphasis."
     cip: ["26.1302"]
   - slug: zoology
     name: Zoology
     category: Life Sciences
     blurb: "Animal biology, behavior, and physiology."
+    description: "Zoology is the study of animals: their anatomy, physiology, behavior, evolution, and ecology, from invertebrates to vertebrates. It overlaps with biology and often leads toward wildlife, veterinary, or research paths."
     cip: ["26.0701"]
   - slug: nursing
     name: Nursing
     category: Health & Medicine
     blurb: "Direct patient care, assessment, and coordination across a care team."
+    description: "Nursing prepares registered nurses to provide direct patient care, assess and monitor conditions, administer treatments, educate patients, and coordinate across a care team. The degree combines anatomy, physiology, pharmacology, and pathophysiology with supervised clinical rotations, and leads to licensure by exam."
     cip: ["51.3801"]
   - slug: public-health
     name: Public Health
     category: Health & Medicine
     blurb: "Preventing disease and improving health at the population level."
+    description: "Public health focuses on preventing disease and improving health at the population level rather than one patient at a time. Coursework covers epidemiology, biostatistics, health policy and management, environmental health, and health behavior. Roles range from data and program work to policy and community health."
     cip: ["51.2201"]
   - slug: kinesiology
     name: Kinesiology & Exercise Science
     category: Health & Medicine
     blurb: "How the body moves, and how training and rehab change it."
+    description: "Kinesiology and exercise science study how the human body moves and responds to physical activity: anatomy, exercise physiology, biomechanics, and motor control. It is a common path toward physical therapy, athletic training, strength and conditioning, and clinical or research work."
     cip: ["31.0505"]
     extra_soc: ["29-1128", "29-1123", "29-9091", "25-1071"]
   - slug: nutrition
     name: Nutrition & Dietetics
     category: Health & Medicine
     blurb: "Food, metabolism, and how diet affects health."
+    description: "Nutrition and dietetics study food, metabolism, and how diet affects health across the lifespan and in disease. Coursework combines biochemistry and physiology with food science, community nutrition, and medical nutrition therapy. The registered-dietitian path adds a supervised internship and exam."
     cip: ["30.1901", "51.3101"]
   - slug: athletic-training
     name: Athletic Training
     category: Health & Medicine
     blurb: "Preventing, assessing, and rehabilitating athletic injuries."
+    description: "Athletic training prepares clinicians who prevent, evaluate, and rehabilitate injuries, mostly in sport and physically active populations. It combines anatomy, physiology, and biomechanics with hands-on assessment and treatment skills and extensive clinical hours, and leads to certification."
     cip: ["51.0913"]
   - slug: health-administration
     name: Health Administration
     category: Health & Medicine
     blurb: "Running hospitals, clinics, and health systems."
+    description: "Health administration is the management side of healthcare: running hospitals, clinics, and health systems. Coursework covers health policy, economics, finance, operations, informatics, and law as they apply to care delivery."
     cip: ["51.0701"]
     extra_soc: ["11-9111", "13-1111", "29-2072"]
   - slug: communication-sciences-disorders
     name: Communication Sciences & Disorders
     category: Health & Medicine
     blurb: "Speech, language, and hearing, and the disorders that affect them."
+    description: "Communication sciences and disorders is the study of speech, language, and hearing and the disorders that affect them. The undergraduate degree is a foundation, covering phonetics, anatomy of speech and hearing, language development, and audiology, before a graduate degree in speech-language pathology or audiology."
     cip: ["51.0201"]
   - slug: medical-laboratory-science
     name: Medical Laboratory Science
     category: Health & Medicine
     blurb: "The lab testing that diagnoses disease."
+    description: "Medical laboratory science trains the professionals who run the lab tests that diagnose and monitor disease: hematology, clinical chemistry, microbiology, immunology, and blood banking. The degree is heavy on lab technique and quality control and leads to certification."
     cip: ["51.1005"]
   - slug: pre-med
     name: Pre-Medicine
     category: Health & Medicine
     blurb: "A science track aimed at medical, dental, or veterinary school."
+    description: "Pre-medicine is not usually a major itself but a track: a science-heavy course load (biology, general and organic chemistry, biochemistry, physics, math, and often psychology and sociology) taken alongside any major to prepare for medical, dental, or veterinary school and the admissions exams."
     cip: ["26.0102"]
   - slug: economics
     name: Economics
     category: Social Sciences
     blurb: "How people, firms, and governments allocate scarce resources."
+    description: "Economics studies how people, firms, and governments allocate scarce resources and respond to incentives. The core is microeconomics, macroeconomics, and econometrics, built on calculus and statistics. It is analytical rather than business-focused and feeds finance, policy, data, and academia."
     cip: ["45.0601"]
   - slug: political-science
     name: Political Science
     category: Social Sciences
     blurb: "Government, power, institutions, and political behavior."
+    description: "Political science studies government, power, institutions, and political behavior. Subfields include American politics, comparative politics, international relations, and political theory, with growing use of quantitative methods."
     cip: ["45.1001"]
   - slug: sociology
     name: Sociology
     category: Social Sciences
     blurb: "How groups, institutions, and social structures shape behavior."
+    description: "Sociology studies how groups, institutions, and social structures shape behavior, covering inequality, family, crime, work, race, and social change. It teaches both qualitative and quantitative research methods and a habit of looking for patterns beyond the individual."
     cip: ["45.1101"]
   - slug: anthropology
     name: Anthropology
     category: Social Sciences
     blurb: "Human cultures, past and present, and what makes us human."
+    description: "Anthropology is the study of humans across time and cultures. It has four traditional branches: cultural, biological, linguistic, and archaeological. Fieldwork and the comparative method are central, and it develops a close-observation, cross-cultural perspective."
     cip: ["45.0201"]
   - slug: geography
     name: Geography
     category: Social Sciences
     blurb: "Places, spatial patterns, and the relationship between people and land."
+    description: "Geography studies places, spatial patterns, and the relationship between people and the environment. It spans physical geography (landforms, climate) and human geography (cities, migration, economies), and increasingly centers on geographic information systems (GIS) and spatial data."
     cip: ["45.0701"]
   - slug: international-relations
     name: International Relations
     category: Social Sciences
     blurb: "Diplomacy, conflict, trade, and how countries deal with each other."
+    description: "International relations studies how states and other actors interact: diplomacy, conflict and security, trade, international law, and global institutions. It combines political science with economics, history, and usually a foreign language and regional focus."
     cip: ["45.0901"]
   - slug: urban-studies
     name: Urban Studies & Planning
     category: Social Sciences
     blurb: "How cities work, and how to make them work better."
+    description: "Urban studies and planning examine how cities work and how to shape them: land use, transportation, housing, the economy, and the environment. It is interdisciplinary and applied, with studio and policy work alongside social-science coursework."
     cip: ["45.1201", "04.0301"]
   - slug: criminology
     name: Criminology & Criminal Justice
     category: Social Sciences
     blurb: "Crime, the justice system, and how society responds to both."
+    description: "Criminology and criminal justice study crime, the justice system, and how society responds to both: the causes of crime, policing, courts, corrections, and policy. It draws on sociology, psychology, and law, with training in research methods."
     cip: ["43.0104", "45.0401"]
   - slug: psychology
     name: Psychology
     category: Psychology & Behavior
     blurb: "The science of mind and behavior."
+    description: "Psychology is the scientific study of mind and behavior, covering cognition, development, social behavior, personality, and mental health, along with the biological basis of behavior. Research methods and statistics are central. The bachelor's is broad; clinical practice requires graduate training."
     cip: ["42.0101"]
   - slug: cognitive-science
     name: Cognitive Science
     category: Psychology & Behavior
     blurb: "Mind and intelligence across psychology, neuroscience, linguistics, and AI."
+    description: "Cognitive science studies the mind and intelligence across disciplines: psychology, neuroscience, linguistics, philosophy, and artificial intelligence. It asks how thinking works in both brains and machines, and blends experiment, theory, and computation."
     cip: ["30.2501"]
     extra_soc: ["15-1221", "19-3033", "25-1066"]
   - slug: human-development
     name: Human Development & Family Studies
     category: Psychology & Behavior
     blurb: "How people grow and change across the lifespan, in families and communities."
+    description: "Human development and family studies examine how people grow and change across the lifespan, within families and communities. Coursework covers developmental psychology, family systems, and applied topics like early intervention, aging, and family policy."
     cip: ["19.0701"]
     extra_soc: ["25-1192", "21-1021", "21-1012"]
   - slug: english
     name: English
     category: Humanities
     blurb: "Literature, criticism, and writing."
+    description: "English is the study of literature, language, and writing. Coursework spans literary history and criticism, close reading and analysis, and a lot of writing. It builds strong reading, argument, and communication skills and leads to many fields, not just teaching."
     cip: ["23.0101"]
     extra_soc: ["25-1123", "27-3043", "27-3041", "27-3042"]
   - slug: creative-writing
     name: Creative Writing
     category: Humanities
     blurb: "The craft of fiction, poetry, and nonfiction."
+    description: "Creative writing focuses on the craft of fiction, poetry, and creative nonfiction, taught largely through workshops where students write and critique. It usually sits within an English department and pairs practice with reading widely."
     cip: ["23.1302"]
   - slug: history
     name: History
     category: Humanities
     blurb: "The human past, and how we reconstruct and argue about it."
+    description: "History is the study of the human past and the methods for reconstructing and arguing about it from evidence. Students choose regional and thematic concentrations and write research papers using primary sources. It develops research, synthesis, and written argument."
     cip: ["54.0101"]
   - slug: philosophy
     name: Philosophy
     category: Humanities
     blurb: "Argument about knowledge, ethics, mind, and reality."
+    description: "Philosophy is the study of fundamental questions about knowledge, reality, mind, ethics, and logic through careful argument. Areas include logic, ethics, metaphysics, epistemology, and the history of philosophy. It is training in precise reasoning and analysis."
     cip: ["38.0101"]
     extra_soc: ["25-1126", "27-3043", "23-1011"]
   - slug: religious-studies
     name: Religious Studies
     category: Humanities
     blurb: "Religious traditions, texts, and practices, studied academically."
+    description: "Religious studies examines religious traditions, texts, practices, and their role in societies, studied academically rather than devotionally. It draws on history, philosophy, anthropology, and textual analysis, often with a language component."
     cip: ["38.0201"]
     extra_soc: ["25-1126", "21-2011", "27-3043"]
   - slug: classics
     name: Classics
     category: Humanities
     blurb: "The languages, literature, and history of ancient Greece and Rome."
+    description: "Classics is the study of the languages, literature, history, and culture of ancient Greece and Rome. Learning Latin and ancient Greek is usually central, alongside coursework in ancient history, philosophy, and archaeology."
     cip: ["16.1200"]
   - slug: linguistics
     name: Linguistics
     category: Humanities
     blurb: "The structure of language: sound, meaning, grammar, and change."
+    description: "Linguistics is the scientific study of language: its sound systems (phonetics and phonology), structure (morphology and syntax), meaning (semantics), and how it varies and changes. It is analytical and increasingly computational, and connects to psychology, computer science, and anthropology."
     cip: ["16.0102"]
     extra_soc: ["16-1020", "25-1113", "27-3091"]
   - slug: american-studies
     name: American Studies
     category: Humanities
     blurb: "US culture, history, and society across disciplines."
+    description: "American studies examines the culture, history, politics, and society of the United States across disciplines, often with a focus on race, class, gender, and power. It combines history, literature, and social science around American themes."
     cip: ["05.0102"]
     extra_soc: ["25-1062", "25-1125", "27-3043"]
   - slug: gender-studies
     name: Gender & Women's Studies
     category: Humanities
     blurb: "Gender and sexuality as they shape culture, politics, and everyday life."
+    description: "Gender and women's studies examine how gender and sexuality shape culture, politics, institutions, and everyday life. It is interdisciplinary, drawing on history, sociology, literature, and philosophy, with an emphasis on power and social change."
     cip: ["05.0207"]
     extra_soc: ["25-1062", "19-3041", "27-3043"]
   - slug: africana-studies
     name: Africana / Black Studies
     category: Humanities
     blurb: "The history, culture, and politics of African and African-descended peoples."
+    description: "Africana or Black studies examine the history, culture, politics, and social experience of African and African-descended peoples, across the continent and the diaspora. It is interdisciplinary, combining history, literature, sociology, and political science."
     cip: ["05.0201"]
     extra_soc: ["25-1062", "25-1125", "19-3041"]
   - slug: liberal-arts
     name: Liberal Arts / Interdisciplinary Studies
     category: Humanities
     blurb: "A broad, self-directed path across the arts and sciences."
+    description: "Liberal arts or interdisciplinary studies is a broad, often self-directed path across the arts, humanities, and sciences, sometimes built around a custom theme. It emphasizes breadth, writing, and critical thinking over a single specialization."
     cip: ["24.0101"]
     extra_soc: ["27-3043", "13-1111", "25-1062", "25-3021"]
   - slug: studio-art
     name: Studio Art
     category: Arts & Design
     blurb: "Making art: painting, sculpture, drawing, printmaking."
+    description: "Studio art is the practice of making visual art: drawing, painting, sculpture, printmaking, and often digital media. Coursework is largely studio-based, with critiques, plus art history and theory. Students build a portfolio and a personal body of work."
     cip: ["50.0702"]
   - slug: graphic-design
     name: Graphic Design
     category: Arts & Design
     blurb: "Visual communication: type, layout, identity, and interface."
+    description: "Graphic design is visual communication: typography, layout, branding and identity, and increasingly digital and interface design. It combines studio practice and critique with design history and principles, and produces a portfolio."
     cip: ["50.0409"]
   - slug: industrial-design
     name: Industrial & Product Design
     category: Arts & Design
     blurb: "Designing physical products for how people actually use them."
+    description: "Industrial and product design is the design of physical products for how people actually use them, balancing form, function, materials, manufacturing, and cost. It is studio-based, with prototyping, human factors, and design process alongside sketching and 3D modeling."
     cip: ["50.0404", "04.0501"]
   - slug: interior-design
     name: Interior Design
     category: Arts & Design
     blurb: "Shaping interior spaces for function, safety, and feel."
+    description: "Interior design shapes indoor spaces for function, safety, accessibility, and experience. Coursework covers space planning, building systems, lighting, materials, codes, and the business of design, with studio projects throughout. It is a regulated field in many states."
     cip: ["50.0408"]
   - slug: architecture
     name: Architecture
     category: Arts & Design
     blurb: "Designing buildings and the spaces between them."
+    description: "Architecture is the design of buildings and the spaces between them, balancing aesthetics, structure, human use, and environment. The degree is studio-intensive, with coursework in history, structures, building systems, and environmental design. Licensure requires further education, experience, and exams."
     cip: ["04.0201"]
   - slug: film
     name: Film & Media Production
     category: Arts & Design
     blurb: "Making films and video: directing, shooting, editing, producing."
+    description: "Film and media production covers making films and video: directing, cinematography, editing, sound, and producing, alongside film history and analysis. It is project-based and collaborative, and students graduate with a reel of work."
     cip: ["50.0602", "50.0601"]
   - slug: animation
     name: Animation & Game Art
     category: Arts & Design
     blurb: "Animation, visual effects, and interactive media art."
+    description: "Animation and game art focus on creating moving images and interactive visuals: 2D and 3D animation, modeling, rigging, visual effects, and game art pipelines. It combines drawing and design fundamentals with specialized software and a portfolio."
     cip: ["50.0411", "10.0304"]
     extra_soc: ["27-1014", "27-1024", "27-2012"]
   - slug: music
     name: Music
     category: Arts & Design
     blurb: "Performance, composition, and the study of music."
+    description: "A music major covers performance, theory, ear training, music history, and often composition or technology. Students concentrate in performance, education, composition, or a related track, with regular lessons, ensembles, and recitals."
     cip: ["50.0901", "50.0903"]
   - slug: theatre
     name: Theatre & Drama
     category: Arts & Design
     blurb: "Acting, directing, design, and dramatic literature."
+    description: "Theatre and drama cover acting, directing, design (set, lighting, costume, sound), stage management, and dramatic literature. It is production-oriented and collaborative, with performance and technical work alongside script analysis and theatre history."
     cip: ["50.0501"]
   - slug: dance
     name: Dance
     category: Arts & Design
     blurb: "Performance, choreography, and the study of dance."
+    description: "Dance combines technical training in one or more forms (ballet, modern, jazz, and others) with choreography, improvisation, dance history, and often kinesiology. It is studio-intensive with regular performance."
     cip: ["50.0301"]
   - slug: photography
     name: Photography
     category: Arts & Design
     blurb: "The technical and artistic craft of the photographic image."
+    description: "Photography covers the technical and artistic craft of the still image: camera and lighting technique, darkroom and digital workflow, and the history and criticism of the medium. It is studio- and portfolio-based."
     cip: ["50.0605"]
   - slug: fashion-design
     name: Fashion & Apparel Design
     category: Arts & Design
     blurb: "Designing garments, from concept to construction."
+    description: "Fashion and apparel design covers designing garments from concept to finished piece: sketching, draping, patternmaking, construction, textiles, and often the business of fashion. It is studio-heavy and culminates in a collection."
     cip: ["19.0901", "50.0407"]
   - slug: communication
     name: Communication
     category: Media & Communication
     blurb: "How messages move through people, organizations, and media."
+    description: "Communication studies how messages move through people, organizations, and media, covering interpersonal and group communication, rhetoric, media theory, and often public speaking and writing. It is broad and applied, feeding roles in PR, marketing, media, and human resources."
     cip: ["09.0100"]
   - slug: journalism
     name: Journalism
     category: Media & Communication
     blurb: "Reporting, writing, and producing the news."
+    description: "Journalism trains reporters and producers to gather, verify, write, and present the news across print, broadcast, and digital. Coursework covers reporting and writing, media law and ethics, and multimedia production, with real reporting throughout."
     cip: ["09.0401"]
   - slug: public-relations
     name: Public Relations & Advertising
     category: Media & Communication
     blurb: "Shaping how organizations are seen, and moving audiences to act."
+    description: "Public relations and advertising focus on shaping how organizations are seen and moving audiences to act: strategy, messaging, media relations, campaigns, and increasingly social and digital media. Coursework combines communication theory with writing and campaign work."
     cip: ["09.0902", "09.0903"]
   - slug: digital-media
     name: Digital & Multimedia
     category: Media & Communication
     blurb: "Web, social, video, and interactive content."
+    description: "Digital and multimedia programs cover creating content for web, social, video, and interactive platforms: design, video and audio production, web basics, and storytelling. They sit between communication and design and are strongly project-based."
     cip: ["09.0702", "11.0801"]
   - slug: business-administration
     name: Business Administration
     category: Business
     blurb: "A general foundation in management, operations, and strategy."
+    description: "Business administration is a general management degree: accounting, finance, marketing, operations, organizational behavior, and strategy, plus economics and statistics. It is broad by design and often paired with a concentration."
     cip: ["52.0201"]
   - slug: accounting
     name: Accounting
     category: Business
     blurb: "Measuring, reporting, and auditing the financial position of an organization."
+    description: "Accounting is the measurement, reporting, and auditing of an organization's financial activity. Coursework covers financial and managerial accounting, auditing, tax, and accounting information systems. It is the standard path toward the CPA, which requires extra credit hours and an exam."
     cip: ["52.0301"]
   - slug: finance
     name: Finance
     category: Business
     blurb: "Investment, valuation, capital markets, and corporate financial decisions."
+    description: "Finance studies how money is raised, invested, and managed: valuation, capital markets, corporate financial decisions, risk, and portfolio management. It builds on accounting, economics, and statistics and leads to corporate finance, investing, and banking roles."
     cip: ["52.0801"]
   - slug: marketing
     name: Marketing
     category: Business
     blurb: "Understanding customers and bringing products to them."
+    description: "Marketing studies how to understand customers and bring products to them: consumer behavior, market research, branding, pricing, distribution, and increasingly digital and analytics. It blends quantitative analysis with strategy and creative work."
     cip: ["52.1401"]
   - slug: management-information-systems
     name: Management Information Systems
     category: Business
     blurb: "The business side of technology: systems, data, and process."
+    description: "Management information systems is the business side of technology: databases, systems analysis and design, project management, business process, and data analytics. It bridges IT and management and does not require the depth of programming that computer science does."
     cip: ["52.1201"]
   - slug: entrepreneurship
     name: Entrepreneurship
     category: Business
     blurb: "Starting and growing new ventures."
+    description: "Entrepreneurship focuses on starting and growing new ventures: opportunity assessment, business models, financing, and the practical work of launching, often including running a real project. It draws on the rest of the business curriculum applied to early-stage companies."
     cip: ["52.0701"]
   - slug: supply-chain
     name: Supply Chain & Operations
     category: Business
     blurb: "Getting products made and moved: logistics, sourcing, and operations."
+    description: "Supply chain and operations management is about getting products made and moved efficiently: sourcing, production planning, inventory, logistics, and process improvement. It is quantitative, using operations research and analytics, and highly employable."
     cip: ["52.0203", "52.0205"]
   - slug: human-resources
     name: Human Resources
     category: Business
     blurb: "Hiring, developing, and supporting the people in an organization."
+    description: "Human resources management covers hiring, developing, compensating, and supporting the people in an organization, along with employment law, labor relations, and organizational behavior. It sits within business and is people- and policy-oriented."
     cip: ["52.1001"]
   - slug: hospitality-management
     name: Hospitality & Tourism Management
     category: Business
     blurb: "Running hotels, restaurants, events, and travel businesses."
+    description: "Hospitality and tourism management is the business of hotels, restaurants, events, and travel: operations, service, revenue management, marketing, and finance for these industries, usually with substantial required work experience."
     cip: ["52.0901"]
   - slug: actuarial-science
     name: Actuarial Science
     category: Business
     blurb: "Pricing risk with probability and statistics, mostly for insurance and pensions."
+    description: "Actuarial science is the mathematics of risk, mainly for insurance and pensions: probability, statistics, financial mathematics, and modeling of mortality and loss. The major is built around passing a sequence of professional actuarial exams."
     cip: ["52.1304"]
   - slug: real-estate
     name: Real Estate
     category: Business
     blurb: "Property markets, development, valuation, and investment."
+    description: "Real estate covers property markets, development, valuation, finance, and investment. It combines finance and economics with law and market analysis specific to land and buildings."
     cip: ["52.1501"]
   - slug: elementary-education
     name: Elementary Education
     category: Education
     blurb: "Teaching across subjects in the early grades."
+    description: "Elementary education prepares teachers for the early grades, covering child development, how to teach reading, math, science, and social studies to young children, classroom management, and assessment, with a supervised student-teaching placement and a path to state licensure."
     cip: ["13.1202"]
   - slug: secondary-education
     name: Secondary Education
     category: Education
     blurb: "Teaching a subject at the middle- and high-school level."
+    description: "Secondary education prepares middle- and high-school teachers in a specific subject, pairing that subject's coursework with methods classes, adolescent development, and classroom practice, plus student teaching and licensure."
     cip: ["13.1205"]
   - slug: special-education
     name: Special Education
     category: Education
     blurb: "Teaching students with disabilities and designing individualized support."
+    description: "Special education prepares teachers to work with students with disabilities: assessment, individualized education programs, instructional strategies, behavior support, and the laws that govern services. It includes substantial supervised practice and licensure."
     cip: ["13.1001"]
   - slug: early-childhood-education
     name: Early Childhood Education
     category: Education
     blurb: "Teaching and caring for children from birth through the early grades."
+    description: "Early childhood education focuses on teaching and caring for children from birth through the early grades, with heavy emphasis on child development, play-based learning, family engagement, and observation."
     cip: ["13.1210"]
   - slug: social-work
     name: Social Work
     category: Public & Social Service
     blurb: "Helping individuals and families navigate hardship and systems."
+    description: "Social work helps individuals and families cope with hardship and navigate systems, and works to change those systems. Coursework covers human behavior, social policy, and practice skills, with supervised field placements. Clinical practice generally requires a master's and licensure."
     cip: ["44.0701"]
   - slug: public-administration
     name: Public Administration
     category: Public & Social Service
     blurb: "Managing government agencies and public programs."
+    description: "Public administration is the management of government agencies and public programs: budgeting, policy implementation, human resources, and ethics in the public sector. It is the public-sector counterpart to a management degree."
     cip: ["44.0401"]
   - slug: public-policy
     name: Public Policy
     category: Public & Social Service
     blurb: "Analyzing and designing the policies governments adopt."
+    description: "Public policy analyzes and designs the policies governments adopt, using economics, statistics, and political science to weigh costs, benefits, and tradeoffs. It is analytical and problem-focused, often ending in a capstone client project."
     cip: ["44.0501"]
   - slug: environmental-science
     name: Environmental Science
     category: Environment & Agriculture
     blurb: "The science of ecosystems, pollution, and environmental change."
+    description: "Environmental science is the natural-science study of ecosystems, pollution, and environmental change, integrating biology, chemistry, geology, and often data analysis. It is field- and lab-oriented and leads to work in monitoring, remediation, conservation, and consulting."
     cip: ["03.0104"]
   - slug: environmental-studies
     name: Environmental Studies
     category: Environment & Agriculture
     blurb: "Environmental problems through policy, economics, and the social sciences."
+    description: "Environmental studies approaches environmental problems through policy, economics, ethics, and the social sciences, alongside a grounding in environmental science. It is interdisciplinary and aimed at policy, advocacy, planning, and management."
     cip: ["03.0103"]
   - slug: sustainability
     name: Sustainability
     category: Environment & Agriculture
     blurb: "Balancing human needs with the limits of natural systems."
+    description: "Sustainability studies focus on balancing human needs with the limits of natural systems, spanning energy, climate, resources, business, and policy. It is interdisciplinary and systems-oriented, connecting environmental science with economics and management."
     cip: ["03.0201", "30.3301"]
   - slug: forestry
     name: Forestry & Natural Resources
     category: Environment & Agriculture
     blurb: "Managing forests, rangelands, and wild lands."
+    description: "Forestry and natural resource management prepare people to manage forests, rangelands, and wild lands for timber, water, wildlife, recreation, and ecosystem health, combining ecology and silviculture with measurement, GIS, and policy, and a strong field component."
     cip: ["03.0501", "03.0101"]
   - slug: wildlife-biology
     name: Wildlife & Fisheries
     category: Environment & Agriculture
     blurb: "Managing and conserving wild animal populations and their habitats."
+    description: "Wildlife and fisheries science study the biology, populations, and habitats of wild animals and how to conserve and manage them. It combines ecology, zoology, and quantitative methods with field techniques and wildlife and fisheries policy."
     cip: ["03.0601"]
   - slug: agricultural-science
     name: Agricultural Science
     category: Environment & Agriculture
     blurb: "The science and business of growing food and fiber."
+    description: "Agricultural science is the science and business of growing food and fiber, spanning soils, crops, plant and animal production, agricultural economics, and increasingly agricultural technology and data. Programs are applied and often tied to a specific commodity or system."
     cip: ["01.0000", "01.1101"]
   - slug: animal-science
     name: Animal Science
     category: Environment & Agriculture
     blurb: "The biology, care, and production of domestic animals."
+    description: "Animal science studies the biology, nutrition, genetics, reproduction, health, and management of domestic animals, mostly livestock and companion animals. It is a common pre-veterinary path and also leads into production agriculture and animal industries."
     cip: ["01.0901"]
   - slug: food-science
     name: Food Science
     category: Environment & Agriculture
     blurb: "The chemistry, safety, and engineering of the food supply."
+    description: "Food science applies chemistry, microbiology, and engineering to the food supply: food chemistry, processing, safety, quality, and product development. It is lab- and industry-oriented and highly employable in food manufacturing and regulation."
     cip: ["01.1001"]
   - slug: sport-management
     name: Sport Management
     category: Business
     blurb: "The business of athletics: teams, venues, events, and media."
+    description: "Sport management is the business of athletics: teams, leagues, venues, events, sponsorship, and media. It applies management, marketing, finance, and law to the sport industry, usually with an internship."
     cip: ["31.0504"]
   - slug: recreation
     name: Parks, Recreation & Leisure
     category: Public & Social Service
     blurb: "Programming and managing parks, recreation, and the outdoors."
+    description: "Parks, recreation, and leisure studies prepare people to program and manage parks, recreation departments, outdoor and adventure programs, and community services, covering programming, facility and event management, and often environmental interpretation."
     cip: ["31.0101"]
     extra_soc: ["25-1193", "39-9032", "27-2022"]
   - slug: aviation
     name: Aviation / Professional Flight
     category: Engineering
     blurb: "Flying aircraft professionally, and the systems around it."
+    description: "Aviation or professional flight programs train pilots and cover the systems around flying: aerodynamics, aircraft systems, meteorology, air-traffic and airspace regulations, navigation, and crew resource management. Flight training toward FAA certificates and ratings is a central part of the degree."
     cip: ["49.0102"]
   - slug: construction-management
     name: Construction Management
     category: Engineering
     blurb: "Planning, budgeting, and running building projects."
+    description: "Construction management is the business and coordination side of building projects: estimating, scheduling, budgeting, contracts, safety, and site supervision. It blends construction knowledge with project management, and graduates run projects rather than design the structures."
     cip: ["52.2001", "15.1001"]
   - slug: world-languages
     name: World Languages & Cultures
     category: Languages
     blurb: "A modern language (Spanish, French, Mandarin, ...) plus the literature and culture behind it."
+    description: "A world languages major develops advanced proficiency in a modern language such as Spanish, French, Mandarin, or Japanese, along with the literature, history, and culture of the places where it is spoken. Coursework is conducted largely in the target language, and study abroad is common."
     cip: ["16.0905", "16.0901", "16.0301", "16.0302", "16.0104"]
     extra_soc: ["25-1124", "27-3091"]
