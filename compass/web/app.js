@@ -135,19 +135,74 @@ function landing() {
     h(
       "section",
       { class: "hero" },
-      h("p", { class: "eyebrow" }, "Career Compass"),
-      h("h1", {}, "Find your ", h("span", { class: "grad" }, "major")),
       h(
-        "p",
-        { class: "lede" },
-        "Answer a short interest inventory. Get 112 college majors ranked for you, each with the reason it fits.",
+        "div",
+        {},
+        h("p", { class: "eyebrow" }, "Career Compass"),
+        h("h1", {}, "Find the major that ", h("span", { class: "grad" }, "feels like you")),
+        h(
+          "p",
+          { class: "lede" },
+          "Answer a short interest inventory. Get 112 college majors ranked for you, each with the reason it fits.",
+        ),
+        cta,
+        meta,
       ),
-      cta,
-      meta,
-      strip,
+      heroVisual(),
     ),
+    strip,
     pillars,
   );
+}
+
+/** The RIASEC hexagon as a landing-page centrepiece: six colour-coded points,
+ * a slow drift, and a soft glow. */
+function heroVisual() {
+  const wrap = document.createElement("div");
+  wrap.className = "hero-visual";
+  const R = 118;
+  const cx = 150;
+  const cy = 150;
+  const pts = RIASEC.map((_, i) => {
+    const a = -Math.PI / 2 + (i * Math.PI) / 3;
+    return [cx + R * Math.cos(a), cy + R * Math.sin(a)];
+  });
+  const poly = pts.map((p) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
+  wrap.innerHTML = `
+    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="hg" cx="50%" cy="42%" r="60%">
+          <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.16"/>
+          <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="150" cy="150" r="140" fill="url(#hg)"/>
+      <polygon points="${poly}" fill="none" stroke="var(--border-strong)" stroke-width="1.5"/>
+      ${pts
+        .map(
+          (p) =>
+            `<line x1="150" y1="150" x2="${p[0].toFixed(1)}" y2="${p[1].toFixed(1)}" stroke="var(--border)" stroke-width="1"/>`,
+        )
+        .join("")}
+      ${RIASEC.map(
+        (d, i) => `
+        <g class="hv-node" style="transform-origin:${pts[i][0].toFixed(1)}px ${pts[i][1].toFixed(1)}px; animation-delay:${i * 0.4}s">
+          <circle cx="${pts[i][0].toFixed(1)}" cy="${pts[i][1].toFixed(1)}" r="17" fill="${DIM_VAR[d]}"/>
+          <text x="${pts[i][0].toFixed(1)}" y="${pts[i][1].toFixed(1)}" text-anchor="middle" dominant-baseline="central"
+            font-family="var(--display)" font-weight="600" font-size="15" fill="#fff">${LETTER[d]}</text>
+        </g>`,
+      ).join("")}
+      <circle cx="150" cy="150" r="6" fill="var(--ink)"/>
+    </svg>
+    <style>
+      .hero-visual .hv-node { animation: hvpulse 4.8s ease-in-out infinite; }
+      @keyframes hvpulse {
+        0%, 70%, 100% { transform: scale(1); }
+        12% { transform: scale(1.14); }
+      }
+      @media (prefers-reduced-motion: reduce) { .hero-visual .hv-node { animation: none; } }
+    </style>`;
+  return wrap;
 }
 
 const pillar = (title, body) =>
@@ -260,29 +315,37 @@ function renderResults(data, meta, isSample) {
           "Start over",
         ),
       ),
-      p.answered < p.total_items
-        ? h(
-            "p",
-            { class: "tiny", style: "margin:.4rem 0 0" },
-            h(
-              "a",
-              {
-                href: "#/quiz",
-                onclick: (e) => {
-                  e.preventDefault();
-                  const s = loadAnswers() || {};
-                  saveAnswers({ ...s, completed: false, resume: true });
-                  location.hash = "#/quiz";
-                },
-              },
-              `Answer the other ${p.total_items - p.answered} for a sharper read →`,
-            ),
-          )
-        : null,
       data.notes.length ? h("ul", { class: "notes" }, ...data.notes.map((n) => h("li", {}, n))) : null,
     ),
     hexagon({ user: userHex, size: 150 }),
   );
+
+  const remaining = p.total_items - p.answered;
+  const moreNudge =
+    remaining > 0
+      ? h(
+          "div",
+          { class: "more-nudge" },
+          h(
+            "div",
+            {},
+            h("b", {}, "Want a more precise ranking? "),
+            `You answered ${p.answered} questions. Answering the last ${remaining} sharpens the order of majors that scored close, and firms up a borderline profile.`,
+          ),
+          h(
+            "button",
+            {
+              class: "primary",
+              onclick: () => {
+                const s = loadAnswers() || {};
+                saveAnswers({ ...s, completed: false, resume: true });
+                location.hash = "#/quiz";
+              },
+            },
+            `Answer ${remaining} more`,
+          ),
+        )
+      : null;
 
   const cats = [...new Set(rest.map((r) => r.major.category))].sort();
   let activeCat = null;
@@ -319,6 +382,7 @@ function renderResults(data, meta, isSample) {
       : null,
     matchHero,
     profileBar,
+    isSample ? null : moreNudge,
     h("h3", { style: "margin:1.8rem 0 .4rem" }, "Other strong fits"),
     h("p", { class: "section-lead tiny" }, "Tap any major to see why."),
     filters,
