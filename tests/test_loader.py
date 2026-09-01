@@ -35,3 +35,15 @@ def test_meta_has_sources():
     meta = profiles_meta()
     assert meta["onet_version"]
     assert meta["sources"]
+
+
+def test_default_30_covers_every_interest_equally():
+    """The web quiz asks the first 30 items by default; they must be five per
+    interest so no dimension is dropped from a short run."""
+    from collections import Counter
+
+    q = load_questionnaire()
+    first30 = q.questions[:30]
+    counts = Counter(item.dimension for item in first30)
+    assert set(counts) == set(RIASEC)
+    assert all(counts[d] == 5 for d in RIASEC)

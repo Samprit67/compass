@@ -26,7 +26,7 @@
     },
     {
       "id": "s1",
-      "text": "Teach an individual an exercise routine",
+      "text": "Help people with personal or emotional problems",
       "dimension": "social"
     },
     {
@@ -41,7 +41,7 @@
     },
     {
       "id": "r2",
-      "text": "Lay brick or tile",
+      "text": "Repair household appliances",
       "dimension": "realistic"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "id": "s2",
-      "text": "Help people with personal or emotional problems",
+      "text": "Give career guidance to people",
       "dimension": "social"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "id": "r3",
-      "text": "Repair household appliances",
+      "text": "Drive a truck to deliver packages to offices and homes",
       "dimension": "realistic"
     },
     {
@@ -81,27 +81,27 @@
     },
     {
       "id": "a3",
-      "text": "Compose or arrange music",
+      "text": "Draw pictures",
       "dimension": "artistic"
     },
     {
       "id": "s3",
-      "text": "Give career guidance to people",
+      "text": "Teach a high-school class",
       "dimension": "social"
     },
     {
       "id": "e3",
-      "text": "Operate a beauty salon or barber shop",
+      "text": "Start your own business",
       "dimension": "enterprising"
     },
     {
       "id": "c3",
-      "text": "Install software across computers on a large network",
+      "text": "Calculate the wages of employees",
       "dimension": "conventional"
     },
     {
       "id": "r4",
-      "text": "Raise fish in a fish hatchery",
+      "text": "Assemble electronic parts",
       "dimension": "realistic"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "id": "a4",
-      "text": "Draw pictures",
+      "text": "Create special effects for movies",
       "dimension": "artistic"
     },
     {
@@ -126,22 +126,22 @@
     },
     {
       "id": "c4",
-      "text": "Operate a calculator",
+      "text": "Keep inventory records",
       "dimension": "conventional"
     },
     {
       "id": "r5",
-      "text": "Assemble electronic parts",
+      "text": "Put out forest fires",
       "dimension": "realistic"
     },
     {
       "id": "i5",
-      "text": "Examine blood samples using a microscope",
+      "text": "Do laboratory tests to identify diseases",
       "dimension": "investigative"
     },
     {
       "id": "a5",
-      "text": "Create special effects for movies",
+      "text": "Perform jazz or tap dance",
       "dimension": "artistic"
     },
     {
@@ -151,112 +151,112 @@
     },
     {
       "id": "e5",
-      "text": "Start your own business",
+      "text": "Sell merchandise at a department store",
       "dimension": "enterprising"
     },
     {
       "id": "c5",
-      "text": "Keep shipping and receiving records",
+      "text": "Operate a calculator",
       "dimension": "conventional"
     },
     {
       "id": "r6",
-      "text": "Drive a truck to deliver packages to offices and homes",
+      "text": "Lay brick or tile",
       "dimension": "realistic"
     },
     {
       "id": "i6",
-      "text": "Investigate the cause of a fire",
+      "text": "Examine blood samples using a microscope",
       "dimension": "investigative"
     },
     {
       "id": "a6",
-      "text": "Paint sets for plays",
+      "text": "Compose or arrange music",
       "dimension": "artistic"
     },
     {
       "id": "s6",
-      "text": "Teach children how to play sports",
+      "text": "Teach an individual an exercise routine",
       "dimension": "social"
     },
     {
       "id": "e6",
-      "text": "Negotiate business contracts",
+      "text": "Operate a beauty salon or barber shop",
       "dimension": "enterprising"
     },
     {
       "id": "c6",
-      "text": "Calculate the wages of employees",
+      "text": "Install software across computers on a large network",
       "dimension": "conventional"
     },
     {
       "id": "r7",
-      "text": "Test the quality of parts before shipment",
+      "text": "Raise fish in a fish hatchery",
       "dimension": "realistic"
     },
     {
       "id": "i7",
-      "text": "Develop a way to better predict the weather",
+      "text": "Investigate the cause of a fire",
       "dimension": "investigative"
     },
     {
       "id": "a7",
-      "text": "Write scripts for movies or television shows",
+      "text": "Paint sets for plays",
       "dimension": "artistic"
     },
     {
       "id": "s7",
-      "text": "Teach sign language to people who are deaf or hard of hearing",
+      "text": "Teach children how to play sports",
       "dimension": "social"
     },
     {
       "id": "e7",
-      "text": "Represent a client in a lawsuit",
+      "text": "Negotiate business contracts",
       "dimension": "enterprising"
     },
     {
       "id": "c7",
-      "text": "Inventory supplies using a hand-held computer",
+      "text": "Keep shipping and receiving records",
       "dimension": "conventional"
     },
     {
       "id": "r8",
-      "text": "Repair and install locks",
+      "text": "Test the quality of parts before shipment",
       "dimension": "realistic"
     },
     {
       "id": "i8",
-      "text": "Work in a biology lab",
+      "text": "Develop a way to better predict the weather",
       "dimension": "investigative"
     },
     {
       "id": "a8",
-      "text": "Perform jazz or tap dance",
+      "text": "Write scripts for movies or television shows",
       "dimension": "artistic"
     },
     {
       "id": "s8",
-      "text": "Help conduct a group therapy session",
+      "text": "Teach sign language to people who are deaf or hard of hearing",
       "dimension": "social"
     },
     {
       "id": "e8",
-      "text": "Market a new line of clothing",
+      "text": "Represent a client in a lawsuit",
       "dimension": "enterprising"
     },
     {
       "id": "c8",
-      "text": "Record rent payments",
+      "text": "Inventory supplies using a hand-held computer",
       "dimension": "conventional"
     },
     {
       "id": "r9",
-      "text": "Set up and operate machines to make products",
+      "text": "Repair and install locks",
       "dimension": "realistic"
     },
     {
       "id": "i9",
-      "text": "Invent a replacement for sugar",
+      "text": "Work in a biology lab",
       "dimension": "investigative"
     },
     {
@@ -266,27 +266,27 @@
     },
     {
       "id": "s9",
-      "text": "Take care of children at a day-care center",
+      "text": "Help conduct a group therapy session",
       "dimension": "social"
     },
     {
       "id": "e9",
-      "text": "Sell merchandise at a department store",
+      "text": "Market a new line of clothing",
       "dimension": "enterprising"
     },
     {
       "id": "c9",
-      "text": "Keep inventory records",
+      "text": "Record rent payments",
       "dimension": "conventional"
     },
     {
       "id": "r10",
-      "text": "Put out forest fires",
+      "text": "Set up and operate machines to make products",
       "dimension": "realistic"
     },
     {
       "id": "i10",
-      "text": "Do laboratory tests to identify diseases",
+      "text": "Invent a replacement for sugar",
       "dimension": "investigative"
     },
     {
@@ -296,7 +296,7 @@
     },
     {
       "id": "s10",
-      "text": "Teach a high-school class",
+      "text": "Take care of children at a day-care center",
       "dimension": "social"
     },
     {

@@ -24,10 +24,19 @@ opposite types are not.
 ## 1. Your profile (`profile.py`)
 
 You answer the activities on a 0-4 scale, strongly dislike to strongly like. The
-questionnaire has 60 items, ten per interest; the quiz asks 30 by default (five
-per interest) and offers the other 30 for a sharper read. Your score for an
-interest is the **mean of your answers to its activities**; unanswered activities
-are treated as the neutral midpoint (2).
+questionnaire has 60 items, ten per interest. The quiz asks 30 by default: **five
+per interest**, chosen to span the breadth of each one (for Realistic, for
+example, one construction item, one repair item, one vehicle item, one
+electronics item, one outdoor item) rather than five near-duplicates. The other
+30 are offered as a "sharper read". Your score for an interest is the **mean of
+your answers to its activities**; unanswered activities are treated as the
+neutral midpoint (2).
+
+This is a balanced subset of the O*NET Short Form, not the separately validated
+30-item O*NET Mini Interest Profiler, whose exact item selection is not published
+in a reusable form. Halving the items lowers scale reliability somewhat, which is
+part of why a borderline profile is reported as low-confidence and the extra 30
+are one click away.
 
 Two summary numbers come out of this:
 
