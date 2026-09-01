@@ -3,6 +3,9 @@ import { h, clear, saveAnswers } from "./format.js";
 const PER_PAGE = 10;
 const HALF = 30; // the default run; the rest is optional
 
+// Emoji anchors for the 5-point scale (this is what the O*NET web tool uses).
+const FACES = ["\u{1F616}", "\u{1F641}", "\u{1F610}", "\u{1F642}", "\u{1F60A}"];
+
 /**
  * Paged grid questionnaire. Defaults to 30 items (3 pages); after that the user
  * can stop or answer 30 more. `onDone(answers)` gets {qid: 0..4}.
@@ -56,24 +59,30 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
       h(
         "p",
         { class: "quiz-sub" },
-        "How much would you enjoy each activity? Use the whole range, and skip any you are unsure about.",
+        'For each activity, tap how much you would enjoy doing it. There is no wrong answer, and you can leave one blank if you are unsure.',
       ),
     );
 
     const grid = h("div", { class: "q-grid" });
     for (const item of slice) {
       const cur = answers[item.id];
-      const dots = h(
+      const scale = h(
         "div",
-        { class: "dots" },
-        ...labels.map((label, v) =>
-          h("button", {
-            "data-v": v,
-            class: cur === v ? "on" : "",
-            title: label,
-            "aria-label": label,
-            onclick: () => setAnswer(item.id, v),
-          }),
+        { class: "scale5", role: "radiogroup", "aria-label": item.text },
+        ...FACES.map((face, v) =>
+          h(
+            "button",
+            {
+              class: "face" + (cur === v ? " on" : ""),
+              "data-v": v,
+              title: labels[v],
+              "aria-label": labels[v],
+              "aria-pressed": cur === v ? "true" : "false",
+              onclick: () => setAnswer(item.id, v),
+            },
+            h("span", { class: "emoji" }, face),
+            h("span", { class: "cap" }, labels[v]),
+          ),
         ),
       );
       grid.append(
@@ -81,19 +90,11 @@ export function runQuiz(mount, questionnaire, { answers = {}, onDone }) {
           "div",
           { class: "q-item" + (cur !== undefined ? " answered" : "") },
           h("span", { class: "label" }, upperFirst(item.text)),
-          dots,
+          scale,
         ),
       );
     }
     root.append(grid);
-    root.append(
-      h(
-        "div",
-        { class: "scale-legend" },
-        h("span", {}, labels[0]),
-        h("span", {}, labels[labels.length - 1]),
-      ),
-    );
 
     const back = h("button", { disabled: page === 0, onclick: () => go(page - 1) }, "← Back");
     const atHalf = !extended && page + 1 >= halfPages;

@@ -396,76 +396,99 @@ button:disabled {
 }
 .q-grid {
   display: grid;
-  gap: 0.55rem;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 .q-item {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.85rem 1rem;
+  padding: 0.95rem 1rem 0.8rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--surface);
-  transition: border-color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 .q-item.answered {
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
 }
 .q-item .label {
-  font-size: 0.96rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.65rem;
 }
-@media (max-width: 560px) {
-  .q-item {
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
-  }
-}
-.dots {
-  display: inline-flex;
-  gap: 0.3rem;
-}
-.dots button {
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: 0;
-  border-radius: 50%;
-  border: 1.5px solid var(--border-strong);
-  background: var(--surface);
+
+.scale5 {
   display: grid;
-  place-items: center;
-  color: transparent;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.4rem;
 }
-.dots button:hover {
+.face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0.2rem 0.4rem;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    border-color 0.12s ease,
+    background 0.12s ease;
+}
+.face .emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+  filter: grayscale(0.5);
+  transition: filter 0.12s ease;
+}
+.face .cap {
+  font-size: 0.66rem;
+  color: var(--ink-3);
+  text-align: center;
+  line-height: 1.15;
+}
+.face:hover {
   border-color: var(--accent);
 }
-.dots button[data-v="0"].on,
-.dots button[data-v="1"].on {
-  background: color-mix(in srgb, var(--R) 85%, #000);
+.face:hover .emoji {
+  filter: grayscale(0);
+}
+.face.on {
+  transform: translateY(-1px);
   border-color: transparent;
 }
-.dots button[data-v="2"].on {
-  background: var(--ink-3);
-  border-color: transparent;
+.face.on .emoji {
+  filter: grayscale(0);
 }
-.dots button[data-v="3"].on,
-.dots button[data-v="4"].on {
-  background: var(--S);
-  border-color: transparent;
+.face.on .cap {
+  color: var(--ink);
+  font-weight: 600;
 }
-.dots button.on::after {
-  content: "";
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 50%;
-  background: #fff;
+.face[data-v="0"].on {
+  background: color-mix(in srgb, var(--R) 26%, var(--surface));
 }
-.scale-legend {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.74rem;
-  color: var(--ink-3);
-  margin: 0.4rem 0.2rem 1.3rem;
+.face[data-v="1"].on {
+  background: color-mix(in srgb, var(--R) 16%, var(--surface));
+}
+.face[data-v="2"].on {
+  background: color-mix(in srgb, var(--ink-3) 22%, var(--surface));
+}
+.face[data-v="3"].on {
+  background: color-mix(in srgb, var(--S) 16%, var(--surface));
+}
+.face[data-v="4"].on {
+  background: color-mix(in srgb, var(--S) 26%, var(--surface));
+}
+@media (max-width: 420px) {
+  .face .cap {
+    display: none;
+  }
+  .face {
+    padding: 0.55rem 0.2rem;
+  }
 }
 .quiz-nav {
   display: flex;
