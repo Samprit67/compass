@@ -3,6 +3,8 @@
 Recommend college majors from your interests, using the RIASEC interest data
 that career counselors actually use, and show the reasoning behind every match.
 
+**Live demo: <https://compass-calh.onrender.com>** (free tier, the first load takes ~30s to wake the server)
+
 <p align="center">
   <img src="docs/screenshots/results.png" alt="Compass results page: an interest hexagon and a ranked list of majors" width="860">
 </p>
